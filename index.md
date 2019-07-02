@@ -1,11 +1,11 @@
 ---
 layout: frontpage
-title: Blue Ham
-description: Blue Ham is a PhD candidate at Broom University. 
-keywords: Blue, Ham, treats, recycling, mail, being a good boy
+title: Hyun Seok ("Huck") Lee
+description: Huck Lee is an Assistant Professor at Oregon State University. 
+keywords: Hyun Seok, Huck, Lee, service, retail.
 ---
 
-Blue Ham is a PhD candidate at Broom University. His research interests include analyzing the effectiveness of treat-based incentives such as recycling and getting the mail, as well as designing new methods to protect humans from the adverse effects of rolling trash receptacles.
+Hyun Seok ("Huck") Lee is an Assisatn Professor of Supply Chain and Logistics Management in the College of Business at Oregon State University. His research interests include service operations with an emphasis on retail operations.
 
 [curriculum vitae ![CV as pdf]({{ BASE_PATH }}/pages/icons16/pdf-icon.png)]({{ BASE_PATH }}/assets/CV.pdf)<br/>
 
@@ -18,14 +18,14 @@ Blue Ham is a PhD candidate at Broom University. His research interests include 
 
     <div class="row-fluid">
         <div class="span5">
-            Blue Ham<br/>
-            Email: WOOFWOOF@goodboy.com<br/>
+            Hyun Seok ("Huck") Lee <br/>
+            Email: hyunseok.lee@oregonstate.edu<br/>
         </div>
 
         <div class="span2">
         <a href="../assets/headshot.jpg">
-            <img src="../assets/headshot.jpg"
-                  title="Blue Ham" alt="Blue Ham"/></a>
+            <img src="../assets/headshot_2016.jpg"
+                  title="Hyun Seok Lee" alt="Lee Hyun Seok"/></a>
         </div>
     </div>
 </div>
@@ -34,8 +34,9 @@ Blue Ham is a PhD candidate at Broom University. His research interests include 
   <div class="navbar-inner">
       <ul class="nav">
           <li><a href="{{ BASE_PATH }}/assets/CV.pdf">cv</a></li>
-          <li><a href="https://github.com/mbcarlos">GitHub</a></li>
-          <li><a href="https://twitter.com/dog_feelings">Twitter (@dog_feelings)</a></li>
+          <li><a href="https://business.oregonstate.edu/users/hyun-seok-lee">Official OSU homepage</a></li>
+          <li><a href="https://www.facebook.com/hyunseok1">Facebook</a></li>
+          <li><a href="https://www.linkedin.com/in/hyun-seok-lee-1885083a/">LinkedIn</a></li>
       </ul>
   </div>
 </div>
