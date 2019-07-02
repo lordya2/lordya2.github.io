@@ -8,14 +8,13 @@ highlighter: rouge
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : Blue Ham
+title : Hyun Seok ("Huck") Lee
 author :
-  name : Marisa Carlos
-  email : mbc96@cornell.edu
-  github : mbcarlos
-  twitter : MarisaBriCarlos
-
-production_url : http://marisabriana.github.io
+  name : Hyun Seok ("Huck") Lee
+  email : hyunseok.lee@oregonstate.edu
+  github : lordya2
+  
+production_url : http://lordya2.github.io
 
 # Tell Github to use the kramdown markdown interpreter
 # (see https://help.github.com/articles/migrating-your-pages-site-from-maruku)
