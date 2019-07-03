@@ -5,7 +5,7 @@ description: Huck Lee is an Assistant Professor at Oregon State University.
 keywords: Hyun Seok, Huck, Lee, service, retail.
 ---
 
-Hyun Seok ("Huck") Lee is an Assisatn Professor of Supply Chain and Logistics Management in the College of Business at Oregon State University. His research interests include service operations with an emphasis on retail operations.
+Hyun Seok ("Huck") Lee is an Assisant Professor of Supply Chain and Logistics Management in the College of Business at Oregon State University. His research interests include service operations with an emphasis on retail operations.
 
 [curriculum vitae ![CV as pdf]({{ BASE_PATH }}/pages/icons16/pdf-icon.png)]({{ BASE_PATH }}/assets/CV.pdf)<br/>
 
@@ -20,6 +20,8 @@ Hyun Seok ("Huck") Lee is an Assisatn Professor of Supply Chain and Logistics Ma
         <div class="span5">
             Hyun Seok ("Huck") Lee <br/>
             Email: hyunseok.lee@oregonstate.edu<br/>
+            Office: 541-737-6008<br/>
+            Address: Austin Hall 362, 2751 SW Jefferson Way, Corvallis, OR 97331<br/>
         </div>
 
         <div class="span2">
