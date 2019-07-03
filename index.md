@@ -24,7 +24,7 @@ Hyun Seok ("Huck") Lee is an Assisatn Professor of Supply Chain and Logistics Ma
 
         <div class="span2">
         <a href="../assets/headshot.jpg">
-            <img src="../assets/headshot_2016.jpg"
+            <img src="../assets/headshot.jpg"
                   title="Hyun Seok Lee" alt="Lee Hyun Seok"/></a>
         </div>
     </div>
