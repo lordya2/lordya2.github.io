@@ -21,7 +21,7 @@ description: Hyun Seok ("Huck") Lee's research
 * Under revision for resubmission at *Manufacturing & Service Operations Management (M&SOM)*
 * Best Interdisciplinary Paper Award at DSI 2018 Annual Conference, Chicago
 
-#### 3. "*Product Variety in Grocery Stores: Its Differential Effects on SKU-level Sales*" with Saravanan Kesavan & Camelia Kuhnen
+#### 3. "*Product Variety in Grocery Stores: Its Differential Effects on SKU-level Sales*" with Guanyi Lu & Junbo Son
 * Under revision for resubmission at *Journal of Operaions Management (JOM)*
 
 
