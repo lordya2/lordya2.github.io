@@ -18,7 +18,7 @@ description: Hyun Seok ("Huck") Lee's research
   * [*"Black Friday: Behind the scenes"*](https://www.kenan-flagler.unc.edu/news/black-friday-behind-the-scenes/) UNC KENAN-FLAGLER NEWS, November 24, 2014
 
 #### 2. "*Managerial Incentives, Operational Decisions, and Firm Outcomes: Evidence from a Quasi-Experiment at a Retail Chain*" with Saravanan Kesavan & Camelia Kuhnen
-* Under revision for resubmission at *Manufacturing & Service Operations Management (M&SOM)*
+* Under review at *Manufacturing & Service Operations Management (M&SOM)*
 * Best Interdisciplinary Paper Award at DSI 2018 Annual Conference, Chicago
 
 #### 3. "*Product Variety in Grocery Stores: Its Differential Effects on SKU-level Sales*" with Guanyi Lu & Junbo Son
