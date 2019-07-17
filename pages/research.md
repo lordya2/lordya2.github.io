@@ -17,7 +17,7 @@ description: Hyun Seok ("Huck") Lee's research
   * [*"Sometimes self-service costs more"*](https://www.kenan-flagler.unc.edu/news/2015/06/ROI-selfservice) UNC KENAN-FLAGLER NEWS, June 8, 2015
   * [*"Black Friday: Behind the scenes"*](https://www.kenan-flagler.unc.edu/news/black-friday-behind-the-scenes/) UNC KENAN-FLAGLER NEWS, November 24, 2014
 
-#### 2. "*Managerial Incentives, Operational Decisions, and Firm Outcomes: Evidence from a Quasi-Experiment at a Retail Chain*" with Saravanan Kesavan & Camelia Kuhnen
+#### 2. "*When Do Group Incentives for Retail Store Managers Work? Importance of Geographical Proximity and Past Performance*" with Saravanan Kesavan & Camelia Kuhnen
 * Under review at *Manufacturing & Service Operations Management (M&SOM)*
 * Best Interdisciplinary Paper Award at DSI 2018 Annual Conference, Chicago
 
