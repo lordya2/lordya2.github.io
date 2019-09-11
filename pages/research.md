@@ -19,11 +19,11 @@ description: Hyun Seok ("Huck") Lee's research
 
 ### <u>Working Papers (under review or revision)</u>
 #### 2. Lee, H., Kesavan, S., and Kuhnen, C. "*When Do Group Incentives for Retail Store Managers Work? Importance of Geographical Proximity and Past Performance*" 
-* Under review at *Manufacturing & Service Operations Management (M&SOM)*
+* Under revision at *Manufacturing & Service Operations Management (M&SOM)*
 * Best Interdisciplinary Paper Award at DSI 2018 Annual Conference, Chicago
 
 #### 3. Lu, G., Lee, H., and Son, J. "*Product Variety in Grocery Stores: Its Differential Effects on SKU-level Sales*" 
-* Under revision for resubmission at *Journal of Operaions Management (JOM)*
+* Under revision at *Journal of Operaions Management (JOM)* 
 
 
 ### <u>Work In Progress</u>
