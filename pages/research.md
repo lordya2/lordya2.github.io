@@ -6,7 +6,7 @@ description: Hyun Seok ("Huck") Lee's research
 
 
 ### <u>Publications (forthcoming, accepted) </u>
-#### 1. Lee, H., Kesavan, S., and Deshpande V. "*Managing the Impact of Fitting-Room Traffic on Retail Sales: Using Labor to Reduce Phantom Stockouts*" 
+#### 1. Lee, H., Kesavan, S., and Deshpande V. ["*Managing the Impact of Fitting-Room Traffic on Retail Sales: Using Labor to Reduce Phantom Stockouts*"](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2523680) 
 * ***Accepted*** at ***Manufacturing & Service Operations Management (M&SOM)***
 * Previously titled "*Understanding and Managing Congestion in Retail Stores*", "*Understanding and Managing Customer-Induced Negative Externalities in Congested Self-Service Retail Environments*" & "*Increasing Sales by Managing Congestion in Self-Service Environments*"
 * <u>Media</u>
