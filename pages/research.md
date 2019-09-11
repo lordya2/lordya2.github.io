@@ -5,10 +5,10 @@ description: Hyun Seok ("Huck") Lee's research
 ---
 
 
-### <u>Working Papers (under review or revision)</u>
-#### 1. "*Managing the Impact of Fitting-Room Traffic on Retail Sales: Using Labor to Reduce Phantom Stockouts*" with Saravanan Kesavan & Vinayak Deshpande
-* Previously titled "*Understanding and Managing Customer-Induced Negative Externalities in Congested Self-Service Retail Environments*" & "*Increasing Sales by Managing Congestion in Self-Service Environments*"
-* ***Minor Revision*** at *Manufacturing & Service Operations Management (M&SOM)*
+### <u>Publications (forthcoming, accepted) </u>
+#### 1. Lee, H., Kesavan, S., and Deshpande V. "*Managing the Impact of Fitting-Room Traffic on Retail Sales: Using Labor to Reduce Phantom Stockouts*" 
+* ***Accepted*** at ***Manufacturing & Service Operations Management (M&SOM)***
+* Previously titled "*Understanding and Managing Congestion in Retail Stores*", "*Understanding and Managing Customer-Induced Negative Externalities in Congested Self-Service Retail Environments*" & "*Increasing Sales by Managing Congestion in Self-Service Environments*"
 * <u>Media</u>
   * [*"The cost of self service: Higher staff levels can boost profits"*](http://contentviewer.adobe.com/s/ROI%20Magazine/43d7e10e-dd4d-4050-add4-f5dcc8372bf7/ROI%20Magazine-Fall%202015/05_Cost_of_Self_Service.html#page_0) ROI Magazine, Research insights from UNC Kenan-Flagler, Fall 2015
   * [*"Sometimes self-service costs more"*](http://www.forbesindia.com/article/kenanflagler/sometimes-selfservice-costs-more/41003/1) Forbes India, September 23, 2015
@@ -17,24 +17,25 @@ description: Hyun Seok ("Huck") Lee's research
   * [*"Sometimes self-service costs more"*](https://www.kenan-flagler.unc.edu/news/2015/06/ROI-selfservice) UNC KENAN-FLAGLER NEWS, June 8, 2015
   * [*"Black Friday: Behind the scenes"*](https://www.kenan-flagler.unc.edu/news/black-friday-behind-the-scenes/) UNC KENAN-FLAGLER NEWS, November 24, 2014
 
-#### 2. "*When Do Group Incentives for Retail Store Managers Work? Importance of Geographical Proximity and Past Performance*" with Saravanan Kesavan & Camelia Kuhnen
+### <u>Working Papers (under review or revision)</u>
+#### 2. Lee, H., Kesavan, S., and Kuhnen, C. "*When Do Group Incentives for Retail Store Managers Work? Importance of Geographical Proximity and Past Performance*" 
 * Under review at *Manufacturing & Service Operations Management (M&SOM)*
 * Best Interdisciplinary Paper Award at DSI 2018 Annual Conference, Chicago
 
-#### 3. "*Product Variety in Grocery Stores: Its Differential Effects on SKU-level Sales*" with Guanyi Lu & Junbo Son
+#### 3. Lu, G., Lee, H., and Son, J. "*Product Variety in Grocery Stores: Its Differential Effects on SKU-level Sales*" 
 * Under revision for resubmission at *Journal of Operaions Management (JOM)*
 
 
 ### <u>Work In Progress</u>
-#### 4. "*Does Competition Help Product Recovery? A Theory and Evidence from U.S. Drug Shortages*" with Junghee Lee, Hyoduk Shin & Vish Krishnan
+#### 4. Lee, J., Lee, H., Shin, H., and Krishnan, V. "*Accelerating Drug Shortage Recovery: The Key Role of Operational Transparency*" 
 * Expected submission: *Summer 2019*; Target: *Management Science (MS)*; Status: *manuscript is available upon request*.
 
-#### 5. "*An Investigation of Multi-staged, Dual-pronged Order Fulfillment in E-commerce Marketplace*" with Yusoon Kim & Junbo Son
+#### 5. Lee, H., Kim, Y., and Son, J. "*An Investigation of Multi-staged, Dual-pronged Order Fulfillment in E-commerce Marketplace*"
 * Expected submission: *Summer 2019*; Target: *Management Science (MS)*; Status: *manuscript is available upon request*.
 
 
 ### <u>Book Chapters</u>
-#### 6. "*Determinants of Excess Inventory Announcement and Stock Market Reaction in the Retail Sector*" with Saravanan Kesavan
+#### 6. Lee, H. and Kesavan, S. "*Determinants of Excess Inventory Announcement and Stock Market Reaction in the Retail Sector*"
 * Book Chapter, to appear in *Operations in an Omnichannel World*, Gallino S, Moreno A edt., Springer Series on Supply Chain Management.
 
 <!-- 
