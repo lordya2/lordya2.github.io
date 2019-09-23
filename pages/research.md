@@ -26,11 +26,11 @@ description: Hyun Seok ("Huck") Lee's research
 * Under revision at *Journal of Operaions Management (JOM)* 
 
 
-### <u>Work In Progress</u>
+### <u>Selected Work In Progress</u>
 #### 4. Lee, J., Lee, H., Shin, H., and Krishnan, V. "*Accelerating Drug Shortage Recovery: The Key Role of Operational Transparency*" 
 * Expected submission: *Summer 2019*; Target: *Management Science (MS)*; Status: *manuscript is available upon request*.
 
-#### 5. Lee, H., Kim, Y., and Son, J. "*An Investigation of Multi-staged, Dual-pronged Order Fulfillment in E-commerce Marketplace*"
+#### 5. Lee, H., Kim, Y., and Son, J. "*Intervention in Order Fulfillment in Online Retailing: How Platform Owner Delivers Differently from Merchants?*"
 * Expected submission: *Summer 2019*; Target: *Management Science (MS)*; Status: *manuscript is available upon request*.
 
 
