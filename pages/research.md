@@ -28,15 +28,17 @@ description: Hyun Seok ("Huck") Lee's research
 #### 4. Lee, J., Lee, H., Shin, H., and Krishnan, V. "*Accelerating Drug Shortage Recovery: The Key Role of Operational Transparency*" 
 * Under review at *Management Science (MS)*
 
-### <u>Selected Work In Progress</u>
+#### 5. Lee, H., Kim, Y., and Son, J. "*Order Fulfillment Intervention in Online Retailing: How Platform Owner Delivers Differently from Individual Merchants?*"
+* Under review at *Management Science (MS)*.
 
-#### 5. Lee, H., Kim, Y., and Son, J. "*Intervention in Order Fulfillment in Online Retailing: How Platform Owner Delivers Differently from Merchants?*"
-* Expected submission: *Fall 2019*; Target: *Management Science (MS)*; Status: *manuscript is available upon request (currently under friendly review)*.
+
+
+
 
 
 ### <u>Book Chapters</u>
-#### 6. Lee, H. and Kesavan, S. "*Determinants of Excess Inventory Announcement and Stock Market Reaction in the Retail Sector*"
-* Book Chapter, to appear in *Operations in an Omnichannel World*, Gallino S, Moreno A edt., Springer Series on Supply Chain Management.
+#### 7. Lee, H. and Kesavan, S. "*Determinants of Excess Inventory Announcement and Stock Market Reaction in the Retail Sector*"
+* Book Chapter, in *Operations in an Omnichannel World*, Gallino S, Moreno A edt., Springer Series on Supply Chain Management, vol. 8, Springer, Cham.
 
 <!-- 
 [click here for the most recent version of the paper]({{ BASE_PATH}}/pages/working_papers/sample-working-paper.pdf)
