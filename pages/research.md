@@ -25,7 +25,7 @@ description: Hyun Seok ("Huck") Lee's research
 #### 3. Lu, G., Lee, H., and Son, J. (2020) "*Product Variety in Grocery Stores: Its Differential Effects on SKU-level Sales*" 
 * Under revision (Major Revision) at *Journal of Operaions Management (JOM)* 
 
-#### 4. Lee, J., Lee, H., Shin, H., and Krishnan, V. (2020) "*Accelerating Drug Shortage Recovery: The Key Role of Operational Transparency*" 
+#### 4. Lee, J., Lee, H., Shin, H., and Krishnan, V. (2020) "*Alleviating Drug Shortage Recovery: The Role of Mandated Reporting-Induced Operational Transparency*" 
 * Under review (Reject & Resubmit) at *Management Science (MS)*
 
 #### 5. Lee, H., Kim, Y., and Son, J. (2020) "*Order Fulfillment Intervention in Online Retailing: How Platform Owner Delivers Differently from Individual Merchants?*"
