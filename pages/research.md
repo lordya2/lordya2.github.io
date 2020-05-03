@@ -6,8 +6,8 @@ description: Hyun Seok ("Huck") Lee's research
 
 
 ### <u>Publications (forthcoming, accepted) </u>
-#### 1. Lee, H., Kesavan, S., and Deshpande V. ["*Managing the Impact of Fitting-Room Traffic on Retail Sales: Using Labor to Reduce Phantom Stockouts*"](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2523680) 
-* ***Accepted*** at ***Manufacturing & Service Operations Management (M&SOM)***
+#### 1. Lee, H., Kesavan, S., and Deshpande V. (2020) ["*Managing the Impact of Fitting-Room Traffic on Retail Sales: Using Labor to Reduce Phantom Stockouts*"](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2523680) 
+* ***Forthcoming*** at ***Manufacturing & Service Operations Management (M&SOM)***
 * Previously titled "*Understanding and Managing Congestion in Retail Stores*", "*Understanding and Managing Customer-Induced Negative Externalities in Congested Self-Service Retail Environments*" & "*Increasing Sales by Managing Congestion in Self-Service Environments*"
 * <u>Media</u>
   * [*"The cost of self service: Higher staff levels can boost profits"*](http://contentviewer.adobe.com/s/ROI%20Magazine/43d7e10e-dd4d-4050-add4-f5dcc8372bf7/ROI%20Magazine-Fall%202015/05_Cost_of_Self_Service.html#page_0) ROI Magazine, Research insights from UNC Kenan-Flagler, Fall 2015
@@ -18,18 +18,18 @@ description: Hyun Seok ("Huck") Lee's research
   * [*"Black Friday: Behind the scenes"*](https://www.kenan-flagler.unc.edu/news/black-friday-behind-the-scenes/) UNC KENAN-FLAGLER NEWS, November 24, 2014
 
 ### <u>Working Papers (under review or revision)</u>
-#### 2. Lee, H., Kesavan, S., and Kuhnen, C. "*When Do Group Incentives for Retail Store Managers Work? Importance of Geographical Proximity and Past Performance*" 
-* Under revision at *Manufacturing & Service Operations Management (M&SOM)*
+#### 2. Lee, H., Kesavan, S., and Kuhnen, C. (2020) "*When Do Group Incentives for Retail Store Managers Work?*" 
+* Under revision (Reject & Resubmit) at *Production and Operations Management (POM)*
 * Best Interdisciplinary Paper Award at DSI 2018 Annual Conference, Chicago
 
-#### 3. Lu, G., Lee, H., and Son, J. "*Product Variety in Grocery Stores: Its Differential Effects on SKU-level Sales*" 
-* Under revision at *Journal of Operaions Management (JOM)* 
+#### 3. Lu, G., Lee, H., and Son, J. (2020) "*Product Variety in Grocery Stores: Its Differential Effects on SKU-level Sales*" 
+* Under revision (Major Revision) at *Journal of Operaions Management (JOM)* 
 
-#### 4. Lee, J., Lee, H., Shin, H., and Krishnan, V. "*Accelerating Drug Shortage Recovery: The Key Role of Operational Transparency*" 
-* Under review at *Management Science (MS)*
+#### 4. Lee, J., Lee, H., Shin, H., and Krishnan, V. (2020) "*Accelerating Drug Shortage Recovery: The Key Role of Operational Transparency*" 
+* Under review (Reject & Resubmit) at *Management Science (MS)*
 
-#### 5. Lee, H., Kim, Y., and Son, J. "*Order Fulfillment Intervention in Online Retailing: How Platform Owner Delivers Differently from Individual Merchants?*"
-* Under review at *Management Science (MS)*.
+#### 5. Lee, H., Kim, Y., and Son, J. (2020) "*Order Fulfillment Intervention in Online Retailing: How Platform Owner Delivers Differently from Individual Merchants?*"
+* Soon to be submitted.
 
 
 
@@ -37,7 +37,7 @@ description: Hyun Seok ("Huck") Lee's research
 
 
 ### <u>Book Chapters</u>
-#### 6. Lee, H. and Kesavan, S. "*Determinants of Excess Inventory Announcement and Stock Market Reaction in the Retail Sector*"
+#### 6. Lee, H. and Kesavan, S. (2019) "*Determinants of Excess Inventory Announcement and Stock Market Reaction in the Retail Sector*"
 * Book Chapter, in *Operations in an Omnichannel World*, Gallino S, Moreno A edt., Springer Series on Supply Chain Management, vol. 8, Springer, Cham.
 
 <!-- 
