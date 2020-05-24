@@ -6,11 +6,11 @@ description: Hyun Seok ("Huck") Lee's Awards
 
 
 ### <u>Awards </u>
-#### 1. Prominent Scholar Award, College of Business, Oregons State University, 06/2020
-#### 2. Betty and Forrest Simmons Excellence in Graduate Teaching Award, College of Business, Oregons State University, 06/2019
-#### 3. Best Interdisciplinary Paper Award, DSI 2018 Annual Conference, Chicago, 11/2018
-#### 4. Rising OM Scholar Award, Kenan-Flagler Business School, 08/2016
-#### 5. M. Wayne DeLozier Award, Kenan-Flagler Business School, 04/2016
+1. Prominent Scholar Award, College of Business, Oregons State University, 06/2020
+2. Betty and Forrest Simmons Excellence in Graduate Teaching Award, College of Business, Oregons State University, 06/2019
+3. Best Interdisciplinary Paper Award, DSI 2018 Annual Conference, Chicago, 11/2018
+4. Rising OM Scholar Award, Kenan-Flagler Business School, 08/2016
+5. M. Wayne DeLozier Award, Kenan-Flagler Business School, 04/2016
 
 <!-- 
 [click here for the most recent version of the paper]({{ BASE_PATH}}/pages/working_papers/sample-working-paper.pdf)
