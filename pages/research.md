@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Research
-description: Hyun Seok ("Huck") Lee's research
+description: Hyun Seok ("Huck") Lee's Research
 ---
 
 
