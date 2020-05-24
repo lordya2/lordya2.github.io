@@ -35,7 +35,7 @@ My [curriculum vitae ![CV as pdf]({{ BASE_PATH }}/pages/icons16/pdf-icon.png)]({
 <div class="navbar">
   <div class="navbar-inner">
       <ul class="nav">
-          <li><a href="{{ BASE_PATH }}/assets/CV.pdf">cv</a></li>
+          <li><a href="{{ BASE_PATH }}/assets/CV.pdf">CV</a></li>
           <li><a href="https://business.oregonstate.edu/users/hyun-seok-lee">Official OSU homepage</a></li>
           <li><a href="https://www.facebook.com/hyunseok1">Facebook</a></li>
           <li><a href="https://www.linkedin.com/in/hyun-seok-lee-1885083a/">LinkedIn</a></li>
