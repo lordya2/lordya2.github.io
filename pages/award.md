@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Award
-description: Hyun Seok ("Huck") Lee's award
+description: Hyun Seok ("Huck") Lee's Awards
 ---
 
 
