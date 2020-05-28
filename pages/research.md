@@ -18,15 +18,15 @@ description: Hyun Seok ("Huck") Lee's Research
     * [*"Black Friday: Behind the scenes"*](https://www.kenan-flagler.unc.edu/news/black-friday-behind-the-scenes/) UNC KENAN-FLAGLER NEWS, November 24, 2014
 
 ### <u>Working Papers (under review or revision)</u>
-**2. Lee, H., Kesavan, S., and Kuhnen, C. (2020) "*When Do Group Incentives for Retail Store Managers Work?*"**
-   * Under revision (Reject & Resubmit) at *Production and Operations Management (POM)*
-   * Best Interdisciplinary Paper Award at DSI 2018 Annual Conference, Chicago
+**2. Lee, J., Lee, H., Shin, H., and Krishnan, V. (2020) "*Alleviating Drug Shortage Recovery: The Role of Mandated Reporting-Induced Operational Transparency*"**
+   * Under revision (Minor Revision) at *Management Science (MS)*
 
 **3. Lu, G., Lee, H., and Son, J. (2020) "*Product Variety in Grocery Stores: Its Differential Effects on SKU-level Sales*"**
    * Under revision (Major Revision) at *Journal of Operaions Management (JOM)* 
 
-**4. Lee, J., Lee, H., Shin, H., and Krishnan, V. (2020) "*Alleviating Drug Shortage Recovery: The Role of Mandated Reporting-Induced Operational Transparency*"**
-   * Under review (Minor Revision) at *Management Science (MS)*
+**4. Lee, H., Kesavan, S., and Kuhnen, C. (2020) "*When Do Group Incentives for Retail Store Managers Work?*"**
+   * Under revision (Reject & Resubmit) at *Production and Operations Management (POM)*
+   * Best Interdisciplinary Paper Award at DSI 2018 Annual Conference, Chicago
 
 **5. Lee, H., Kim, Y., and Son, J. (2020) "*Order Fulfillment Intervention in Online Retailing: How Platform Owner Delivers Differently from Individual Merchants?*"**
    * Soon to be submitted.
