@@ -7,7 +7,7 @@ description: Hyun Seok ("Huck") Lee's Teaching
 
 ### Korea University Business School
 * Business Statistics (BUSS 154), Undergrad
-  * Fall 2020 (*Scheduled)
+  * Fall 2020 (*Scheduled*)
   
 ### College of Business, Oregon State University
 * Service Operations Management (BA 459/559), MBA & Undergrad
