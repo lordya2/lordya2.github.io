@@ -19,10 +19,10 @@ description: Hyun Seok ("Huck") Lee's Research
 
 ### <u>Working Papers (under review or revision)</u>
 **2. Lee, J., Lee, H., Shin, H., and Krishnan, V. (2020) "*Alleviating Drug Shortage Recovery: The Role of Mandated Reporting-Induced Operational Transparency*"**
-   * Under revision (Minor Revision) at *Management Science (MS)*
+   * Under review (Minor Revision) at *Management Science (MS)*
 
 **3. Lu, G., Lee, H., and Son, J. (2020) "*Product Variety in Grocery Stores: Its Differential Effects on SKU-level Sales*"**
-   * Under revision (Major Revision) at *Journal of Operaions Management (JOM)* 
+   * Under review (Major Revision) at *Journal of Operaions Management (JOM)* 
 
 **4. Lee, H., Kesavan, S., and Kuhnen, C. (2020) "*When Do Group Incentives for Retail Store Managers Work?*"**
    * Under revision (Reject & Resubmit) at *Production and Operations Management (POM)*
