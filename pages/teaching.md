@@ -19,6 +19,7 @@ description: Hyun Seok ("Huck") Lee's Teaching
 * Operations Management (BA 357), Undergrad
   * Spring 2018 (3 sections; 130 students; Overall: 5.57/6.00; Lecturer effectiveness: 5.80/6.00)
   * Spring 2019 (2 sections; 84 students; Overall: 5.45/6.00; Lecturer effectiveness: 5.75/6.00)
+  * Spring 2020 (3 sections; 131 students; NA due to COVID-19)
 
 ### Kenan-Flagler Business School, University of North Carolina at Chapel Hill
 * Business Analytics (BUSI 410), Undergrad
