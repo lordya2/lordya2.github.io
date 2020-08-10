@@ -20,7 +20,7 @@ My [curriculum vitae ![CV as pdf]({{ BASE_PATH }}/pages/icons16/pdf-icon.png)]({
         <div class="span5">
             Hyun Seok ("Huck") Lee <br/>
             Email: hyunseoklee@korea.ac.kr<br/>
-            Office: +82-2-3290-1915-6008<br/>
+            Office: +82-2-3290-1915<br/>
             Address: LG-POSCO 519, 145 Anam-ro, Seoul, Korea 02841<br/>
         </div>
 
