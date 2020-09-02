@@ -6,7 +6,7 @@ description: Hyun Seok ("Huck") Lee's Research
 
 
 ### <u>Publications (forthcoming, accepted) </u>
-**1. Lee, H., Kesavan, S., and Deshpande V. (2020) ["*Managing the Impact of Fitting-Room Traffic on Retail Sales: Using Labor to Reduce Phantom Stockouts*"](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2523680)**
+**1. Lee, H., Kesavan, S., and Deshpande V. (2020) "*Managing the Impact of Fitting-Room Traffic on Retail Sales: Using Labor to Reduce Phantom Stockouts*" [[*SSRN*](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2523680), [*INFORMS*](https://pubsonline.informs.org/doi/10.1287/msom.2020.0884)]**
   * ***Forthcoming*** at ***Manufacturing & Service Operations Management (M&SOM)***
   * Previously titled "*Understanding and Managing Congestion in Retail Stores*", "*Understanding and Managing Customer-Induced Negative Externalities in Congested Self-Service Retail Environments*" & "*Increasing Sales by Managing Congestion in Self-Service Environments*"
   * <u>Media</u>
@@ -17,7 +17,7 @@ description: Hyun Seok ("Huck") Lee's Research
     * [*"Sometimes self-service costs more"*](https://www.kenan-flagler.unc.edu/news/2015/06/ROI-selfservice) UNC KENAN-FLAGLER NEWS, June 8, 2015
     * [*"Black Friday: Behind the scenes"*](https://www.kenan-flagler.unc.edu/news/black-friday-behind-the-scenes/) UNC KENAN-FLAGLER NEWS, November 24, 2014
 
-**2. Lee, J., Lee, H., Shin, H., and Krishnan, V. (2020) ["*Alleviating Drug Shortage Recovery: The Role of Mandated Reporting-Induced Operational Transparency*"](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3565467)**
+**2. Lee, J., Lee, H., Shin, H., and Krishnan, V. (2020) "*Alleviating Drug Shortage Recovery: The Role of Mandated Reporting-Induced Operational Transparency*" [[*SSRN*](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3565467)]**
    * ***Accepted*** at ***Management Science (MS)***
    * The first two authors contributed equally to this paper.
 
