@@ -19,6 +19,7 @@ description: Hyun Seok ("Huck") Lee's Research
 
 **2. Lee, J., Lee, H., Shin, H., and Krishnan, V. (2020) ["*Alleviating Drug Shortage Recovery: The Role of Mandated Reporting-Induced Operational Transparency*"](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3565467)**
    * ***Accepted*** at ***Management Science (MS)***
+   * The first two authors contributed equally to this paper.
 
 ### <u>Working Papers (under review or revision)</u>
 
