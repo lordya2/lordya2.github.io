@@ -18,13 +18,13 @@ description: Hyun Seok ("Huck") Lee's Research
     * [*"Black Friday: Behind the scenes"*](https://www.kenan-flagler.unc.edu/news/black-friday-behind-the-scenes/) UNC KENAN-FLAGLER NEWS, November 24, 2014
 
 **2. Lee, J., Lee, H., Shin, H., and Krishnan, V. (2020) "*Alleviating Drug Shortage Recovery: The Role of Mandated Reporting-Induced Operational Transparency*" [[*SSRN*](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3565467)]**
-   * ***Accepted*** at ***Management Science (MS)***
+   * ***Forthcoming*** at ***Management Science (MS)***
    * The first two authors contributed equally to this paper.
 
 ### <u>Working Papers (under review or revision)</u>
 
 **3. Lu, G., Lee, H., and Son, J. (2020) "*Product Variety in Grocery Stores: Its Differential Effects on SKU-level Sales*"**
-   * Under review (Major Revision) at *Journal of Operaions Management (JOM)* 
+   * Under revision (Major Revision) at *Journal of Operaions Management (JOM)* 
 
 **4. Lee, H., Kesavan, S., and Kuhnen, C. (2020) "*When Do Group Incentives for Retail Store Managers Work?*"**
    * Under revision (Reject & Resubmit) at *Production and Operations Management (POM)*
