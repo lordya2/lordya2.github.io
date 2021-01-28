@@ -24,7 +24,7 @@ description: Hyun Seok ("Huck") Lee's Research
 ### <u>Working Papers (under review or revision)</u>
 
 **3. Lu, G., Lee, H., and Son, J. (2021) "*Product Variety in Grocery Stores: Its Differential Effects on SKU-level Sales*"**
-   * Under revision (Major Revision) at *Journal of Operaions Management (JOM)* 
+   * Under review (Major Revision) at *Journal of Operaions Management (JOM)* 
 
 **4. Lee, H., Kesavan, S., and Kuhnen, C. (2021) "*When Do Group Incentives for Retail Store Managers Work?*"**
    * Under review (Reject & Resubmit) at *Production and Operations Management (POM)*
