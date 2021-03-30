@@ -17,7 +17,7 @@ description: Hyun Seok ("Huck") Lee's Research
     * [*"Sometimes self-service costs more"*](https://www.kenan-flagler.unc.edu/news/2015/06/ROI-selfservice) UNC KENAN-FLAGLER NEWS, June 8, 2015
     * [*"Black Friday: Behind the scenes"*](https://www.kenan-flagler.unc.edu/news/black-friday-behind-the-scenes/) UNC KENAN-FLAGLER NEWS, November 24, 2014
 
-**2. Lee, J., Lee, H., Shin, H., and Krishnan, V. (2021) "*Alleviating Drug Shortage Recovery: The Role of Mandated Reporting-Induced Operational Transparency*" [[*SSRN*](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3565467), [*INFORMS*](https://pubsonline.informs.org/doi/10.1287/mnsc.2020.3857)]**
+**2. Lee, J., Lee, H., Shin, H., and Krishnan, V. (2021) "*Alleviating Drug Shortages: The Role of Mandated Reporting-Induced Operational Transparency*" [[*SSRN*](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3565467), [*INFORMS*](https://pubsonline.informs.org/doi/10.1287/mnsc.2020.3857)]**
    * ***Management Science (MS)***
    * The first two authors contributed equally to this paper.
 
