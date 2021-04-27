@@ -4,6 +4,9 @@ title: Research
 description: Hyun Seok ("Huck") Lee's Research
 ---
 
+### <u>Research Interest </u>
+* Empirical research in service operations with an emphasis on retail operations.
+* Empirical research in matching capacity and demand with an emphasis on drug shortages.
 
 ### <u>Publications (forthcoming, accepted) </u>
 **1. Lee, H., Kesavan, S., and Deshpande V. (2020) "*Managing the Impact of Fitting-Room Traffic on Retail Sales: Using Labor to Reduce Phantom Stockouts*" [[*SSRN*](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2523680), [*INFORMS*](https://pubsonline.informs.org/doi/10.1287/msom.2020.0884)]**
