@@ -21,7 +21,7 @@ description: Hyun Seok ("Huck") Lee's Research
     * [*"Black Friday: Behind the scenes"*](https://www.kenan-flagler.unc.edu/news/black-friday-behind-the-scenes/) UNC KENAN-FLAGLER NEWS, November 24, 2014
 
 **2. Lee, J., Lee, H., Shin, H., and Krishnan, V. (2021) "*Alleviating Drug Shortages: The Role of Mandated Reporting-Induced Operational Transparency*" [[*SSRN*](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3565467), [*INFORMS*](https://pubsonline.informs.org/doi/10.1287/mnsc.2020.3857)]**
-   * ***Management Science (MS)***
+   * ***Management Science (MS)*** 67(4): 2326-2339.
    * The first two authors contributed equally to this paper.
 
 ### <u>Working Papers (under review or revision)</u>
