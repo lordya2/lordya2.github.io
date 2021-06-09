@@ -5,7 +5,7 @@ description: Hyun Seok ("Huck") Lee's Research
 ---
 
 ### <u>Research Interest </u>
-* Empirical research in service operations with an emphasis on retail operations.
+* Empirical research in service operations with an emphasis on retail operations (both brick-and-mortar and online retailing).
 * Empirical research in matching capacity and demand with an emphasis on drug shortages.
 
 ### <u>Publications (forthcoming, accepted) </u>
@@ -27,14 +27,14 @@ description: Hyun Seok ("Huck") Lee's Research
 ### <u>Working Papers (under review or revision)</u>
 
 **3. Lu, G., Lee, H., and Son, J. (2021) "*Product Variety in Grocery Stores: Its Differential Effects on SKU-level Sales*"**
-   * Under revision (Major Revision) at *Journal of Operaions Management (JOM)* 
+   * Under review (Major Revision) at *Journal of Operaions Management (JOM)* 
 
 **4. Lee, H., Kesavan, S., and Kuhnen, C. (2021) "*When Do Group Incentives for Retail Store Managers Work?*"**
    * Under revision (Major Revision) at *Production and Operations Management (POM)*
    * Best Interdisciplinary Paper Award at DSI 2018 Annual Conference, Chicago
 
-**5. Lee, H., Kim, Y., and Son, J. (2021) "*Order Fulfillment Intervention in Online Retailing: How Platform Owner Delivers Differently from Individual Merchants?*"**
-   * Soon to be submitted.
+**5. Lee, H., Kim, Y., and Son, J. (2021) "*Platform Owner Interventions in Online Order Fulfillment: Performance Effects and Customer Perceptions*"**
+   * Under review at *Production and Operations Management (POM)*
 
 
 
