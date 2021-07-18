@@ -34,7 +34,7 @@ description: Hyun Seok ("Huck") Lee's Research
    * Best Interdisciplinary Paper Award at DSI 2018 Annual Conference, Chicago
 
 **5. Lee, H., Kim, Y., and Son, J. (2021) "*Platform Owner Interventions in Online Order Fulfillment: Performance Effects and Customer Perceptions*"**
-   * Under review at *Production and Operations Management (POM)*
+   * Under revision (Reject and Resubmit) at *Production and Operations Management (POM)*
 
 
 
