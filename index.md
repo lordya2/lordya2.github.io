@@ -22,7 +22,10 @@ My [curriculum vitae ![CV as pdf]({{ BASE_PATH }}/pages/icons16/pdf-icon.png)]({
             Email: hyunseoklee@korea.ac.kr<br/>
             Office: +82-2-3290-1915<br/>
             Address: LG-POSCO 519, 145 Anam-ro, Seoul, Korea 02841<br/>
-        </div>
+            
+            이현석<br/>
+            주소: 엘지 포스코관 519호, 경영대학, 고려대학교, 서울 특별시 성북구 암암동 145 안암로<br/>
+            </div>
 
         <div class="span2">
         <a href="../assets/headshot.jpg">
