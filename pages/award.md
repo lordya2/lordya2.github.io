@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Awards \& Scholarships
+title: Awards & Scholarships
 description: Hyun Seok ("Huck") Lee's Awards
 ---
 
