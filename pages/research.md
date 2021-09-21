@@ -25,7 +25,7 @@ description: Hyun Seok ("Huck") Lee's Research
    * The first two authors contributed equally to this paper.
 
 **3. Lu, G., Lee, H., and Son, J. (2021) "*Product Variety in Grocery Stores: Its Differential Effects on SKU-level Sales*"**
-   * Accepted at ***Journal of Operaions Management (JOM)*** 
+   * Forthcoming at ***Journal of Operaions Management (JOM)*** 
    * The first two authors contributed equally to this paper.
 
 
