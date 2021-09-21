@@ -24,8 +24,7 @@ My [curriculum vitae ![CV as pdf]({{ BASE_PATH }}/pages/icons16/pdf-icon.png)]({
             Address: LG-POSCO 519, 145 Anam-ro, Seoul, Korea 02841<br/>
             
             이현석<br/>
-            주소: 엘지 포스코관 519호, 경영대학, 고려대학교, <br/>
-                  서울 특별시 성북구 안암로 145<br/>
+            엘지 포스코관 519호, 경영대학, 고려대학교, 서울특별시 성북구 안암로 145<br/>
             </div>
 
         <div class="span2">
