@@ -9,8 +9,8 @@ description: Hyun Seok ("Huck") Lee's Research
 * Empirical research in matching capacity and demand with an emphasis on drug shortages.
 
 ### <u>Publications (forthcoming, accepted) </u>
-**1. Lee, H., Kesavan, S., and Deshpande V. (2020) "*Managing the Impact of Fitting-Room Traffic on Retail Sales: Using Labor to Reduce Phantom Stockouts*" [[*SSRN*](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2523680), [*INFORMS*](https://pubsonline.informs.org/doi/10.1287/msom.2020.0884)]**
-  * ***Manufacturing & Service Operations Management (M&SOM)***
+**1. Lee, H., Kesavan, S., and Deshpande V. (2021) "*Managing the Impact of Fitting-Room Traffic on Retail Sales: Using Labor to Reduce Phantom Stockouts*" [[*SSRN*](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2523680), [*INFORMS*](https://pubsonline.informs.org/doi/10.1287/msom.2020.0884)]**
+  * ***Manufacturing & Service Operations Management (M&SOM)*** 23(6): 1580-1596.
   * <u>Media</u>
     * [*"The cost of self service: Higher staff levels can boost profits"*](http://contentviewer.adobe.com/s/ROI%20Magazine/43d7e10e-dd4d-4050-add4-f5dcc8372bf7/ROI%20Magazine-Fall%202015/05_Cost_of_Self_Service.html#page_0) ROI Magazine, Research insights from UNC Kenan-Flagler, Fall 2015
     * [*"Sometimes self-service costs more"*](http://www.forbesindia.com/article/kenanflagler/sometimes-selfservice-costs-more/41003/1) Forbes India, September 23, 2015
