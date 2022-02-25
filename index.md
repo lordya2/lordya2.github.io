@@ -37,7 +37,7 @@ My [curriculum vitae ![CV as pdf]({{ BASE_PATH }}/pages/icons16/pdf-icon.png)]({
   <div class="navbar-inner">
       <ul class="nav">
           <li><a href="{{ BASE_PATH }}/assets/CV.pdf">CV</a></li>
-          <li><a href="https://biz.korea.ac.kr/eng/professor/lsom">Official KUBS homepage</a></li>
+          <li><a href="https://biz.korea.ac.kr/eng/professor/professor_view?major=607&no=222&refer=%2Feng%2Fprofessor%2Flsom.html">Official KUBS homepage</a></li>
           <li><a href="https://www.facebook.com/hyunseok1">Facebook</a></li>
           <li><a href="https://www.linkedin.com/in/hyun-seok-lee-1885083a/">LinkedIn</a></li>
       </ul>
