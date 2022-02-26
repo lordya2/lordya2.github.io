@@ -21,8 +21,8 @@ My [curriculum vitae ![CV as pdf]({{ BASE_PATH }}/pages/icons16/pdf-icon.png)]({
             Hyun Seok ("Huck") Lee [이현석]<br/>
             Email: hyunseoklee@korea.ac.kr<br/>
             Office: +82-2-3290-1915<br/>
-            Address: LG-POSCO 519, 145 Anam-ro, Seoul, Korea 02841<br/>
-            엘지 포스코관 519호, 경영대학, 고려대학교, 서울특별시 성북구 안암로 145<br/>
+            Address: LG-POSCO 604, 145 Anam-ro, Seoul, Korea 02841<br/>
+            엘지 포스코관 604호, 경영대학, 고려대학교, 서울특별시 성북구 안암로 145<br/>
             </div>
 
         <div class="span2">
