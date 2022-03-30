@@ -10,8 +10,8 @@ description: Hyun Seok ("Huck") Lee's Awards
 2. Excellence in Teaching Award, Korea University Business School, 11/2021
 3. SK Distinghished Research Award, Korea University Business School, 09/2021
 4. SK Distinghished Research Award, Korea University Business School, 03/2021
-5. Prominent Scholar Award, College of Business, Oregons State University, 06/2020
-6. Betty and Forrest Simmons Excellence in Graduate Teaching Award, College of Business, Oregons State University, 06/2019
+5. Prominent Scholar Award, College of Business, Oregon State University, 06/2020
+6. Betty and Forrest Simmons Excellence in Graduate Teaching Award, College of Business, Oregon State University, 06/2019
 7. Best Interdisciplinary Paper Award, DSI 2018 Annual Conference, Chicago, 11/2018
 8. Rising OM Scholar Award, Kenan-Flagler Business School, 08/2016
 9. M. Wayne DeLozier Award, Kenan-Flagler Business School, 04/2016
