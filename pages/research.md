@@ -27,12 +27,11 @@ description: Hyun Seok ("Huck") Lee's Research
    * ***Journal of Operations Management (JOM)*** 68(1): 33-54.
    * The first two authors contributed equally to this paper.
 
-
-### <u>Working Papers (under review or revision)</u>
-
 **4. Lee, H., Kesavan, S., and Kuhnen, C. (2021) "*When Do Group Incentives for Retail Store Managers Work?*"**
    * Under 3rd review (Major Revision) at *Production and Operations Management (POM)*
    * Best Interdisciplinary Paper Award at DSI 2018 Annual Conference, Chicago
+
+### <u>Working Papers (under review or revision)</u>
 
 **5. Lee, H., Kim, Y., and Son, J. (2021) "*Platform Owner Interventions in Online Order Fulfillment: Performance Effects and Customer Perceptions*"**
    * Under revision (Reject and Resubmit) at *Production and Operations Management (POM)*
