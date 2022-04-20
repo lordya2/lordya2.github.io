@@ -5,7 +5,8 @@ description: Hyun Seok ("Huck") Lee's Research
 ---
 
 ### <u>Research Interest </u>
-* Empirical research in service operations with an emphasis on retail operations (both brick-and-mortar and online retailing).
+* Empirical research in service operations with an emphasis on retail operations (both brick-and-mortar and online retailing) and healthcare operations.
+* Empirical research in people-centric operations with an emphasis on incentives and labor scheduling.
 * Empirical research in matching capacity and demand with an emphasis on drug shortages.
 
 ### <u>Publications (forthcoming, accepted) </u>
