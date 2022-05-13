@@ -10,7 +10,7 @@ description: Hyun Seok ("Huck") Lee's Research
 * Empirical research in matching capacity and demand with an emphasis on drug shortages.
 
 ### <u>Publications (forthcoming, accepted) </u>
-**1. Lee, H., Kesavan, S., and Deshpande V. (2021) "*Managing the Impact of Fitting-Room Traffic on Retail Sales: Using Labor to Reduce Phantom Stockouts*" [[*SSRN*](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2523680), [*INFORMS*](https://pubsonline.informs.org/doi/10.1287/msom.2020.0884)]**
+**1. Lee, H., Kesavan, S., and Deshpande V. (2021) "*Managing the Impact of Fitting-Room Traffic on Retail Sales: Using Labor to Reduce Phantom Stockouts*" [Link: [*SSRN*](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2523680), [*INFORMS*](https://pubsonline.informs.org/doi/10.1287/msom.2020.0884)]**
   * ***Manufacturing & Service Operations Management (M&SOM)*** 23(6): 1580-1596.
   * <u>Media</u>
     * [*"The cost of self service: Higher staff levels can boost profits"*](http://contentviewer.adobe.com/s/ROI%20Magazine/43d7e10e-dd4d-4050-add4-f5dcc8372bf7/ROI%20Magazine-Fall%202015/05_Cost_of_Self_Service.html#page_0) ROI Magazine, Research insights from UNC Kenan-Flagler, Fall 2015
@@ -20,15 +20,15 @@ description: Hyun Seok ("Huck") Lee's Research
     * [*"Sometimes self-service costs more"*](https://www.kenan-flagler.unc.edu/news/2015/06/ROI-selfservice) UNC KENAN-FLAGLER NEWS, June 8, 2015
     * [*"Black Friday: Behind the scenes"*](https://www.kenan-flagler.unc.edu/news/black-friday-behind-the-scenes/) UNC KENAN-FLAGLER NEWS, November 24, 2014
 
-**2. Lee, J., Lee, H., Shin, H., and Krishnan, V. (2021) "*Alleviating Drug Shortages: The Role of Mandated Reporting-Induced Operational Transparency*" [[*SSRN*](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3565467), [*INFORMS*](https://pubsonline.informs.org/doi/10.1287/mnsc.2020.3857)]**
+**2. Lee, J., Lee, H., Shin, H., and Krishnan, V. (2021) "*Alleviating Drug Shortages: The Role of Mandated Reporting-Induced Operational Transparency*" [Link: [*SSRN*](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3565467), [*INFORMS*](https://pubsonline.informs.org/doi/10.1287/mnsc.2020.3857)]**
    * ***Management Science (MS)*** 67(4): 2326-2339.
    * The first two authors contributed equally to this paper.
 
-**3. Lu, G., Lee, H., and Son, J. (2022) "*Product Variety in Grocery Stores: Its Differential Effects on Stock-Keeping Unit Level Sales*" [[*Wiley*](https://onlinelibrary.wiley.com/doi/epdf/10.1002/joom.1158)]**
+**3. Lu, G., Lee, H., and Son, J. (2022) "*Product Variety in Grocery Stores: Its Differential Effects on Stock-Keeping Unit Level Sales*" [Link: [*Wiley*](https://onlinelibrary.wiley.com/doi/epdf/10.1002/joom.1158)]**
    * ***Journal of Operations Management (JOM)*** 68(1): 33-54.
    * The first two authors contributed equally to this paper.
 
-**4. Lee, H., Kesavan, S., and Kuhnen, C. (2022) "*When Do Group Incentives for Retail Store Managers Work?*" [[*Wiley*](https://onlinelibrary.wiley.com/doi/epdf/10.1111/poms.13740)]**
+**4. Lee, H., Kesavan, S., and Kuhnen, C. (2022) "*When Do Group Incentives for Retail Store Managers Work?*" [Link: [*Wiley*](https://onlinelibrary.wiley.com/doi/epdf/10.1111/poms.13740)]**
    * Article in Advance at ***Production and Operations Management (POM)***
    * Best Interdisciplinary Paper Award at DSI 2018 Annual Conference, Chicago
 
