@@ -6,19 +6,20 @@ description: Hyun Seok ("Huck") Lee's Awards
 
 
 <!-- ### <u>Awards </u>-->
-1. Seok-Top Research Award (top 3% researcher in the university level), Korea University, 05/2022
-2. UTD Distinguished Research Award, Korea University Business School, 03/2022
-3. Excellence in Teaching Award, Korea University, 11/2021
-4. SK Distinguished Research Award, Korea University Business School, 09/2021
-5. SK Distinguished Research Award, Korea University Business School, 03/2021
-6. Prominent Scholar Award, College of Business, Oregon State University, 06/2020
-7. Betty and Forrest Simmons Excellence in Graduate Teaching Award, College of Business, Oregon State University, 06/2019
-8. Best Interdisciplinary Paper Award, DSI 2018 Annual Conference, Chicago, 11/2018
-9. Rising OM Scholar Award, Kenan-Flagler Business School, 08/2016
-10. M. Wayne DeLozier Award, Kenan-Flagler Business School, 04/2016
-11. Kenan-Flagler Business School PhD Financial Award, 2012-2016
-12. Full Scholarship from Korea Sanhak Foundation, 2010-2011
-13. Full Scholarship from Korea University Business School; Alumni Association of Korea University; Cheonman Scholarship Association, 2004-2009
+1. Seok-Top Research Award (i.e., top 3% researcher at the university level), Korea University, 05/202
+2. Excellence in Teaching Award (Business Statistics), Korea University, 04/2022
+3. UTD Distinguished Research Award, Korea University Business School, 03/2022
+4. Excellence in Teaching Award (Service Operations Management), Korea University, 11/2021
+5. SK Distinguished Research Award, Korea University Business School, 09/2021
+6. SK Distinguished Research Award, Korea University Business School, 03/2021
+7. Prominent Scholar Award, College of Business, Oregon State University, 06/2020
+8. Betty and Forrest Simmons Excellence in Graduate Teaching Award, College of Business, Oregon State University, 06/2019
+9. Best Interdisciplinary Paper Award, DSI 2018 Annual Conference, Chicago, 11/2018
+10. Rising OM Scholar Award, Kenan-Flagler Business School, 08/2016
+11. M. Wayne DeLozier Award, Kenan-Flagler Business School, 04/2016
+12. Kenan-Flagler Business School PhD Financial Award, 2012-2016
+13. Full Scholarship from Korea Sanhak Foundation, 2010-2011
+14. Full Scholarship from Korea University Business School; Alumni Association of Korea University; Cheonman Scholarship Association, 2004-2009
 
 <!-- 
 [click here for the most recent version of the paper]({{ BASE_PATH}}/pages/working_papers/sample-working-paper.pdf)
