@@ -6,7 +6,7 @@ description: Hyun Seok ("Huck") Lee's Awards
 
 
 <!-- ### <u>Awards </u>-->
-1. Seok-Top Research Award (i.e., top 3% researcher at the university level), Korea University, 05/202
+1. Seok-Top Research Award (i.e., top 3% researcher at the university level), Korea University, 05/2022
 2. Excellence in Teaching Award (Business Statistics), Korea University, 04/2022
 3. UTD Distinguished Research Award, Korea University Business School, 03/2022
 4. Excellence in Teaching Award (Service Operations Management), Korea University, 11/2021
