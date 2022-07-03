@@ -8,12 +8,14 @@ description: Hyun Seok ("Huck") Lee's Teaching
 ### Korea University Business School
 * Empirical Research in OM (BUS 961), MS and PhD
   * Fall 2021 
+* Special Topics in OM (BUS 819), MS and PhD
+  * Fall 2022 (*Scheduled*) 
 * Service Operations Management (BUSS 376), Undergrad
-  * Spring 2022 (*Scheduled*); Spring 2021
+  * Spring 2022; Spring 2021
 * Operations Management (BUSS 211), Undergrad
-  * Spring 2022 (*Scheduled*); Spring 2021
+  * Spring 2022; Spring 2021
 * Business Statistics (BUSS 154), Undergrad
-  * Spring 2022 (*Scheduled*); Fall 2021; Spring 2021; Fall 2020 
+  * Spring 2022; Fall 2021; Spring 2021; Fall 2020 
 
 
 ### College of Business, Oregon State University
