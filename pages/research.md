@@ -29,8 +29,9 @@ description: Hyun Seok ("Huck") Lee's Research
    * The first two authors contributed equally to this paper.
 
 **4. Lee, H., Kesavan, S., and Kuhnen, C. (2022) "*When Do Group Incentives for Retail Store Managers Work?*" [Link: [*Wiley*](https://onlinelibrary.wiley.com/doi/epdf/10.1111/poms.13740)]**
-   * Article in Advance at ***Production and Operations Management (POM)***
+   * ***Production and Operations Management (POM)*** 31(8): 3077-3095.
    * Best Interdisciplinary Paper Award at DSI 2018 Annual Conference, Chicago
+   * Lead article
 
 ### <u>Working Papers (under review or revision)</u>
 
