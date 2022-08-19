@@ -6,7 +6,7 @@ description: Hyun Seok ("Huck") Lee's Awards
 
 
 <!-- ### <u>Awards </u>-->
-1. MK Emerging Scholar Paper Award, Maeil Business Newspress, 08/2022 [Link: [media](https://biz.korea.ac.kr/eng/professor/professor_view?major=607&no=222&refer=%2Fprofessor%2Flsom.html)]
+1. MK Emerging Scholar Paper Award, Maeil Business Newspress, 08/2022 [[Media link](https://www.mk.co.kr/news/economy/view/2022/08/732544/)]
 2. UTD Distinguished Research Award, Korea University Business School, 06/2022
 3. Seok-Top Research Award (i.e., top 3% researcher at the university level), Korea University, 05/2022
 4. Excellence in Teaching Award (Business Statistics), Korea University, 04/2022
