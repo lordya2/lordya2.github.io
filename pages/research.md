@@ -39,7 +39,7 @@ description: Hyun Seok ("Huck") Lee's Research
    * Under 2nd round review (Reject and Resubmit) at *Production and Operations Management (POM)*
    * MK Emerging Scholar Paper Award Award at KASBA 2022 Convergence Conference, Yeosu, Korea
    * <u>Media</u>
-    * [*"온라인 고객 만족은 '배송'에 달렸다"*](https://www.mk.co.kr/news/business/view/2022/08/750469/) Maeil Business Newspaper, August 25, 2022
+     * [*"온라인 고객 만족은 '배송'에 달렸다"*](https://www.mk.co.kr/news/business/view/2022/08/750469/) Maeil Business Newspaper, August 25, 2022
 
 
 
