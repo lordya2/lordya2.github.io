@@ -36,7 +36,7 @@ description: Hyun Seok ("Huck") Lee's Research
 ### <u>Working Papers (under review or revision)</u>
 
 **5. Lee, H., Kim, Y., and Son, J. (2022) "*Platform Owner Interventions in Online Order Fulfillment: Performance Effects and Customer Perceptions*"**
-   * Under 2nd round review (Reject and Resubmit) at *Production and Operations Management (POM)*
+   * Under review at *Journal of Operations Management (JOM)*
    * MK Emerging Scholar Paper Award at KASBA 2022 Convergence Conference, Yeosu, Korea
    * <u>Media</u>
      * [*"온라인 고객 만족은 '배송'에 달렸다"*](https://www.mk.co.kr/news/business/view/2022/08/750469/) Maeil Business Newspaper, August 25, 2022
