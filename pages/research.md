@@ -44,10 +44,12 @@ description: Hyun Seok ("Huck") Lee's Research
 **6. Lee, H., Lee, J., Noh, I., and Staats, B. (2023) "*Learning in Recovery from Disruption: Empirical Evidence from the U.S. Drug Shortages*"**
    * Under review at *Management Science (MS)*
 
+**7. Lee, H., Park, E., and Rainer, T. (2023) "*The Impact of Increasing Entry on Emergency Department Demand: A Territory-Wide*"**
+   * Under review at *Management Science (MS)*
 
 
 ### <u>Book Chapters</u>
-**7. Lee, H. and Kesavan, S. (2019) "*Determinants of Excess Inventory Announcement and Stock Market Reaction in the Retail Sector*"**
+**8. Lee, H. and Kesavan, S. (2019) "*Determinants of Excess Inventory Announcement and Stock Market Reaction in the Retail Sector*"**
    * Book Chapter, in *Operations in an Omnichannel World*, Gallino S, Moreno A edt., Springer Series on Supply Chain Management, vol. 8, Springer, Cham.
 
 <!-- 
