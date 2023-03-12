@@ -49,7 +49,7 @@ description: Hyun Seok ("Huck") Lee's Research
 
 
 ### <u>Book Chapters</u>
-**8. Lee, H. and Kesavan, S. (2019) "*Determinants of Excess Inventory Announcement and Stock Market Reaction in the Retail Sector*''**
+**8. Lee, H. and Kesavan, S. (2019) "*Determinants of Excess Inventory Announcement and Stock Market Reaction in the Retail Sector*"**
    * Book Chapter, in *Operations in an Omnichannel World*, Gallino S, Moreno A edt., Springer Series on Supply Chain Management, vol. 8, Springer, Cham.
 
 <!-- 
