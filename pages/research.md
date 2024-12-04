@@ -35,17 +35,17 @@ description: Hyun Seok ("Huck") Lee's Research
 
 ### <u>Working Papers (under review or revision)</u>
 
-**5. Lee, H., Kim, Y., and Son, J. (2023) "*Fulfillment-By-Platform in B2C E-tailing: Overall Positive Customer Responses, yet Diminishing End Effect*"**
+**5. Lee, H., Kim, Y., and Son, J. (2024) "*Fulfillment-By-Platform in B2C E-tailing: Overall Positive Customer Responses, yet Diminishing End Effect*"**
    * Under revision at *Journal of Operations Management (JOM)*
    * MK Emerging Scholar Paper Award at KASBA 2022 Convergence Conference, Yeosu, Korea
    * <u>Media</u>
      * [*"온라인 고객 만족은 '배송'에 달렸다"*](https://www.mk.co.kr/news/business/view/2022/08/750469/) Maeil Business Newspaper, August 25, 2022
 
-**6. Lee, H., Lee, J., Noh, I., and Staats, B. (2023) "*Learning in Recovery from Disruption: Empirical Evidence from the U.S. Drug Shortages*"**
-   * Under revision at *Management Science (MS)*
+**6. Lee, H., Lee, J., Noh, I., and Staats, B. (2024) "*Learning in Recovery from Disruption: Empirical Evidence from the U.S. Drug Shortages*"**
+   * Under 2nd review at *Management Science (MS)*
 
-**7. Lee, H., Park, E., and Rainer, T. (2023) "*The Impact of Increasing Entry on Emergency Department Demand: A Territory-Wide*"**
-   * Under review at *Management Science (MS)*
+**7. Lee, H., Park, E., and Rainer, T. (2024) "*The Impact of Increasing Entry on Emergency Department Demand: A Territory-Wide*"**
+   * Under revision 
 
 
 ### <u>Book Chapters</u>
