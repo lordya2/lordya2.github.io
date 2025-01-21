@@ -41,11 +41,11 @@ description: Hyun Seok ("Huck") Lee's Research
    * <u>Media</u>
      * [*"온라인 고객 만족은 '배송'에 달렸다"*](https://www.mk.co.kr/news/business/view/2022/08/750469/) Maeil Business Newspaper, August 25, 2022
 
-**6. Lee, H., Lee, J., Noh, I., and Staats, B. (2024) "*Learning in Recovery from Disruption: Empirical Evidence from the U.S. Drug Shortages*"**
-   * Under 2nd review at *Management Science (MS)*
+**6. Lee, H., Lee, J., Noh, I., and Staats, B. (2025) "*Learning in Recovery from Disruption: Empirical Evidence from the U.S. Drug Shortages*"**
+   * Under 2nd revisiont (Major Revision) at *Management Science (MS)*
 
-**7. Lee, H., Park, E., and Rainer, T. (2024) "*The Impact of Increasing Entry on Emergency Department Demand: A Territory-Wide*"**
-   * Under revision 
+**7. Lee, H., Park, E., and Rainer, T. (2025) "*The Impact of Increasing Entry on Emergency Department Demand: A Territory-Wide*"**
+   * Under review at *Manufacturing & Service Operations Management (M&SOM)*
 
 
 ### <u>Book Chapters</u>
