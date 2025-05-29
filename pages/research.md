@@ -44,8 +44,8 @@ description: Hyun Seok ("Huck") Lee's Research
 **6. Lee, H., Lee, J., Noh, I., and Staats, B. (2025) "*Learning in Recovery from Disruption: Empirical Evidence from the U.S. Drug Shortages*"**
    * Under 2nd revision (Major Revision) at *Management Science (MS)*
 
-**7. Lee, H., Park, E., and Rainer, T. (2025) "*The Impact of Increasing Entry on Emergency Department Demand: A Territory-Wide*"**
-   * Under review at *Manufacturing & Service Operations Management (M&SOM)*
+**7. Lee, H., Park, E., and Rainer, T. (2025) "*Heterogeneous Patient Response to Uniform Increase in Emergency Department Attendance Fees: A Territory-Wide Study.*"**
+   * Under revision (Major Revision) at *Manufacturing & Service Operations Management (M&SOM)*
 
 
 ### <u>Book Chapters</u>
