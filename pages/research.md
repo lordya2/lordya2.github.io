@@ -35,7 +35,7 @@ description: Hyun Seok ("Huck") Lee's Research
 
 ### <u>Working Papers (under review or revision)</u>
 
-**5. Lee, H., Kim, Y., and Son, J. (2024) "*Fulfillment-By-Platform in B2C E-tailing: Overall Positive Customer Responses, yet Diminishing End Effect*"**
+**5. Lee, H., Kim, Y., and Son, J. (2025) "*Fulfillment-By-Platform in B2C E-tailing: Overall Positive Customer Responses, yet Diminishing End Effect*"**
    * Under revision at *Journal of Operations Management (JOM)*
    * MK Emerging Scholar Paper Award at KASBA 2022 Convergence Conference, Yeosu, Korea
    * <u>Media</u>
