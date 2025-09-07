@@ -19,9 +19,9 @@ description: Hyun Seok ("Huck") Lee's Teaching
 * Service Operations Management (BUSS 376), Undergrad
   * Spring 2022; Spring 2021
 * Intro to Operations Management (BUSS 211), Undergrad
-  * Spring 2025; Fall 2024; Fall 2023; Spring 2023; Spring 2022; Spring 2021
+  * Fall 2025; Spring 2025; Fall 2024; Fall 2023; Spring 2023; Spring 2022; Spring 2021
 * Business Statistics (BUSS 154), Undergrad
-  * Spring 2025; Spring 2022; Fall 2021; Spring 2021; Fall 2020 
+  * Fall 2025; Spring 2025; Spring 2022; Fall 2021; Spring 2021; Fall 2020 
 
 
 ### College of Business, Oregon State University
