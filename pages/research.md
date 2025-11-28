@@ -42,7 +42,7 @@ description: Hyun Seok ("Huck") Lee's Research
      * [*"온라인 고객 만족은 '배송'에 달렸다"*](https://www.mk.co.kr/news/business/view/2022/08/750469/) Maeil Business Newspaper, August 25, 2022
 
 **6. Lee, H., Lee, J., Noh, I., and Staats, B. (2025) "*Learning in Recovery from Disruption: Empirical Evidence from the U.S. Drug Shortages*"**
-   * Under 3rd review (Major Revision) at *Management Science (MS)*
+   * Under 3rd revision (Minor Revision) at *Management Science (MS)*
 
 **7. Lee, H., Park, E., and Rainer, T. (2025) "*Heterogeneous Patient Response to Uniform Increase in Emergency Department Attendance Fees: A Territory-Wide Study.*"**
    * Under revision (Major Revision) at *Manufacturing & Service Operations Management (M&SOM)*
