@@ -5,9 +5,9 @@ description: Hyun Seok ("Huck") Lee's Research
 ---
 
 ### <u>Research Interest </u>
-* Empirical research in service operations with an emphasis on retail operations (both brick-and-mortar and online retailing) and healthcare operations.
-* Empirical research in people-centric operations with an emphasis on incentives and labor scheduling.
-* Empirical research in matching capacity and demand with an emphasis on drug shortages.
+* Retail operations, focusing on consumer behavior, labor incentives, and product variety.
+* Healthcare and pharmaceutical operations, emphasizing supply chain resilience, capacity design, and equity of access.
+* Causal inference: field experiments, difference-in-differences, instrumental variables (two-stage least squares, two-stage residual inclusion), matching (propensity score matching, coarsened exact matching)
 
 ### <u>Publications (forthcoming, accepted) </u>
 **1. Lee, H., Kesavan, S., and Deshpande V. (2021) "*Managing the Impact of Fitting-Room Traffic on Retail Sales: Using Labor to Reduce Phantom Stockouts*" [Link: [*SSRN*](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2523680), [*INFORMS*](https://pubsonline.informs.org/doi/10.1287/msom.2020.0884)]**
