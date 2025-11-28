@@ -14,8 +14,10 @@ description: Hyun Seok ("Huck") Lee's Teaching
   * Fall 2022 
 * Operations Analytics I, II (BUS 947, 948), MSBA
   * Fall 2023
-* Empirical Approach for BA I, II (BUS 976, 977, MSBA
+* Empirical Approach for BA I, II (BUS 976, 977), MSBA
   * Spring 2025; Spring 2026
+* Operations Management (Korea MBA)
+  * Spring 2026
 * Operations Management (Global MBA)
   * M2 2025; M2 2023 
 * Service Operations Management (BUSS 376), Undergrad
