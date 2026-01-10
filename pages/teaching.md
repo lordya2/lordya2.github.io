@@ -6,16 +6,16 @@ description: Hyun Seok ("Huck") Lee's Teaching
 
 
 ### Korea University Business School
-* Service Operations Management (BUS 660), MS and PhD
-  * Spring 2026
 * Empirical Research in OM (BUS 961), MS and PhD
   * Spring 2025; Fall 2023; Fall 2021
 * Special Topics in OM (BUS 819), MS and PhD
   * Fall 2022 
-* Operations Analytics I, II (BUS 947, 948), MSBA
-  * Fall 2023
+* Service Operations Management (BUS 660), MS and PhD
+  * Spring 2026
 * Empirical Approach for BA I, II (BUS 976, 977), MSBA
   * Spring 2026; Spring 2025
+* Operations Analytics I, II (BUS 947, 948), MSBA
+  * Fall 2023
 * Operations Management (Korea MBA)
   * Spring 2026
 * Operations Management (Global MBA)
