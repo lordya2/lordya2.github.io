@@ -33,16 +33,16 @@ description: Hyun Seok ("Huck") Lee's Research
    * Best Interdisciplinary Paper Award at DSI 2018 Annual Conference, Chicago
    * Lead article
 
+**5. Lee, H., Lee, J., Noh, I., and Staats, B. (2026) "*Learning in Recovery from Disruption: Empirical Evidence from the U.S. Drug Shortages*"**
+   * Accepted at *Management Science (MS)*
+     
 ### <u>Working Papers (under review or revision)</u>
 
-**5. Lee, H., Kim, Y., and Son, J. (2025) "*Fulfillment-By-Platform in B2C E-tailing: Overall Positive Customer Responses, yet Diminishing End Effect*"**
+**6. Lee, H., Kim, Y., and Son, J. (2025) "*Fulfillment-By-Platform in B2C E-tailing: Overall Positive Customer Responses, yet Diminishing End Effect*"**
    * Under revision at *Journal of Operations Management (JOM)*
    * MK Emerging Scholar Paper Award at KASBA 2022 Convergence Conference, Yeosu, Korea
    * <u>Media</u>
      * [*"온라인 고객 만족은 '배송'에 달렸다"*](https://www.mk.co.kr/news/business/view/2022/08/750469/) Maeil Business Newspaper, August 25, 2022
-
-**6. Lee, H., Lee, J., Noh, I., and Staats, B. (2026) "*Learning in Recovery from Disruption: Empirical Evidence from the U.S. Drug Shortages*"**
-   * Under 4th review (Minor Revision) at *Management Science (MS)*
 
 **7. Lee, H., Park, E., and Rainer, T. (2025) "*Heterogeneous Patient Response to Uniform Increase in Emergency Department Attendance Fees: A Territory-Wide Study.*"**
    * Under revision (Major Revision) at *Manufacturing & Service Operations Management (M&SOM)*
