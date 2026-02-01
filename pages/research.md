@@ -34,7 +34,7 @@ description: Hyun Seok ("Huck") Lee's Research
    * Lead article
 
 **5. Lee, H., Lee, J., Noh, I., and Staats, B. (2026) "*Learning in Recovery from Disruption: Empirical Evidence from the U.S. Drug Shortages*"**
-   * Accepted at *Management Science (MS)*
+   * Accepted at ***Management Science (MS)***
      
 ### <u>Working Papers (under review or revision)</u>
 
