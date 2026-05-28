@@ -33,8 +33,8 @@ description: Hyun Seok ("Huck") Lee's Research
    * Best Interdisciplinary Paper Award at DSI 2018 Annual Conference, Chicago
    * Lead article
 
-**5. Lee, H., Lee, J., Noh, I., and Staats, B. (2026) "*Learning in Recovery from Disruption: Empirical Evidence from the U.S. Drug Shortages*"**
-   * Accepted at ***Management Science (MS)***
+**5. Lee, H., Lee, J., Noh, I., and Staats, B. (2026) "*Learning in Recovery from Disruption: Empirical Evidence from the U.S. Drug Shortages*" [Link: [*INFORMS*](https://pubsonline.informs.org/doi/10.1287/mnsc.2024.08337)]**
+   * Published Online Articles in Advance at ***Management Science (MS)***
      
 ### <u>Working Papers (under review or revision)</u>
 
