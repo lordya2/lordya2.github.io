@@ -63,13 +63,16 @@ peer_reviewed:
         url: 'https://pubsonline.informs.org/doi/10.1287/msom.2020.0884'
 working_papers:
   - id: 'fulfillment-by-platform'
+    short_title: 'Fulfillment by Platform'
     citation: 'Lee, H., Kim, Y., and Son, J. (2025) Fulfillment-By-Platform in B2C E-tailing: Overall Positive Customer Responses, yet Diminishing End Effect.'
     status: 'Under revision at Journal of Operations Management.'
     note: 'MK Emerging Scholar Paper Award at KASBA 2022 Convergence Conference, Yeosu, Korea.'
   - id: 'emergency-department-fees'
+    short_title: 'Emergency Department Attendance Fees'
     citation: 'Lee, H., Park, E., and Rainer, T. (2025) Heterogeneous Patient Response to Uniform Increase in Emergency Department Attendance Fees: A Territory-Wide Study.'
     status: 'Under revision (Major Revision) at Manufacturing & Service Operations Management.'
   - id: 'self-service-kiosks'
+    short_title: 'Self-Service Kiosks'
     citation: 'Kim, J., Kwon, H., Lee, D., Lee, H., and Lee, K. (2026) An Empirical Analysis of Technology-Driven Service Automation: The Impact of Self-Service Kiosks on Sales, Labor and Customers.'
     status: 'Under review at Manufacturing & Service Operations Management.'
 book_chapter:
