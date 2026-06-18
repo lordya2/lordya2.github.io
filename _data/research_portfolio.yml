@@ -48,8 +48,8 @@ peer_reviewed:
       - label: INFORMS
         url: 'https://pubsonline.informs.org/doi/10.1287/mnsc.2020.3857'
   - id: 'product-variety'
-    citation: 'Lu, G., Lee, H., and Son, J. (2022) Product Variety in Grocery Stores: Its Differential Effects on Stock-Keeping Unit Level Sales. Journal of Operations Management, 68(1): 33-54.'
-    short_title: 'Product Variety in Grocery Stores'
+    citation: 'Lu, G., Lee, H., and Son, J. (2022) Product Variety in Local Grocery Stores: Differential Effects on Stock-Keeping Unit Level Sales. Journal of Operations Management, 68(1): 33-54.'
+    short_title: 'Product Variety'
     note: 'The first two authors contributed equally to this paper.'
     links:
       - label: Wiley

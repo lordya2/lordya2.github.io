@@ -63,7 +63,7 @@
     - label: Wiley
       url: 'https://onlinelibrary.wiley.com/doi/epdf/10.1111/poms.13740'
 - short_title: 'Product Variety'
-  title: 'Product Variety in Grocery Stores: Its Differential Effects on Stock-Keeping Unit Level Sales'
+  title: 'Product Variety in Local Grocery Stores: Differential Effects on Stock-Keeping Unit Level Sales'
   authors: 'Lu, G., Lee, H., and Son, J.'
   year: 2022
   venue: 'Journal of Operations Management, 68(1): 33-54'
@@ -73,7 +73,7 @@
   finding_ko: '브랜드 내부 다양성은 같은 브랜드 SKU 매출을 증가시키지만, 다른 브랜드들의 평균 브랜드 내부 다양성은 해당 매출을 감소시킨다. 다양성 효과는 수익성 수준과 제품 범주에 따라 달라지며, 고마진 제품에서 가장 큰 양의 효과가 나타나고 범주별 효과는 약 11%에서 거의 없음까지 다양하다.'
   impact: 'The paper helps retailers evaluate assortment changes at the SKU and brand level rather than treating variety as a single aggregate count.'
   impact_ko: '제품 다양성을 단순한 총 SKU 수로 보지 않고 SKU 및 브랜드 수준에서 구색 변경을 평가해야 함을 보여준다.'
-  citation: 'Lu, G., Lee, H., and Son, J. (2022) Product Variety in Grocery Stores: Its Differential Effects on Stock-Keeping Unit Level Sales. Journal of Operations Management, 68(1): 33-54.'
+  citation: 'Lu, G., Lee, H., and Son, J. (2022) Product Variety in Local Grocery Stores: Differential Effects on Stock-Keeping Unit Level Sales. Journal of Operations Management, 68(1): 33-54.'
   links:
     - label: Wiley
       url: 'https://onlinelibrary.wiley.com/doi/epdf/10.1002/joom.1158'
