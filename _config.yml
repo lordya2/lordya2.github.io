@@ -21,7 +21,7 @@ production_url : https://lordya2.github.io
 markdown: kramdown
 
 # Optional Google Analytics 4 measurement ID. Leave blank to disable analytics.
-google_analytics_id: ""
+google_analytics_id: "G-FKX2HDTLNX"
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
