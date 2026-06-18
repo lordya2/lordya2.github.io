@@ -1,12 +1,16 @@
-- title: Retail operations
-  title_ko: 소매 운영
-  summary: Consumer behavior, labor incentives, product variety, and data-driven operational decisions in retail settings.
-  summary_ko: 소매 환경에서의 소비자 행동, 인센티브, 제품 다양성, 데이터 기반 운영 의사결정을 연구합니다.
-- title: Healthcare and pharmaceutical operations
-  title_ko: 헬스케어 및 제약 운영
-  summary: Supply chain resilience, capacity design, disruption recovery, drug shortages, and equity of access.
-  summary_ko: 공급망 회복탄력성, 용량 설계, 운영 중단 이후 회복, 의약품 부족, 접근성의 형평성을 연구합니다.
-- title: Causal inference for operations
-  title_ko: 운영관리를 위한 인과추론
-  summary: Field experiments, difference-in-differences, instrumental variables, two-stage residual inclusion, and matching methods.
-  summary_ko: 현장 실험, 이중차분법, 도구변수, 2단계 잔차 포함법, 매칭 방법론을 활용한 운영관리 연구를 수행합니다.
+- title: Healthcare & Pharmaceutical Supply Chains
+  title_ko: 헬스케어 및 제약 공급망
+  summary: Disruption recovery, resilience, capacity design, drug shortages, operational transparency, and equitable access.
+  summary_ko: 운영 중단 이후 회복, 회복탄력성, 용량 설계, 의약품 부족, 운영 투명성, 접근 형평성을 연구합니다.
+- title: Retail & Service Operations
+  title_ko: 리테일 및 서비스 운영
+  summary: Store labor, incentives, customer congestion, fitting-room traffic, product variety, and service productivity.
+  summary_ko: 매장 인력, 인센티브, 고객 혼잡, 피팅룸 트래픽, 제품 다양성, 서비스 생산성을 연구합니다.
+- title: Platforms & Digital Operations
+  title_ko: 플랫폼 및 디지털 운영
+  summary: E-commerce fulfillment, platform-provided logistics, technology-enabled services, kiosks, and digital customer responses.
+  summary_ko: 이커머스 풀필먼트, 플랫폼 물류, 기술 기반 서비스, 키오스크, 디지털 고객 반응을 연구합니다.
+- title: Empirical OM & Causal Inference
+  title_ko: 실증 운영관리 및 인과추론
+  summary: Field experiments, difference-in-differences, instrumental variables, matching designs, and quasi-experimental methods.
+  summary_ko: 현장 실험, 이중차분법, 도구변수, 매칭 설계, 준실험 방법론을 활용합니다.

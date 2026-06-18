@@ -1,37 +1,64 @@
-- title: 'Learning in Recovery from Disruption: Empirical Evidence from the U.S. Drug Shortages'
+- short_title: 'Recovery from Disruption'
+  title: 'Learning in Recovery from Disruption: Empirical Evidence from the U.S. Drug Shortages'
   authors: 'Lee, H., Lee, J., Noh, I., and Staats, B.'
   year: 2026
   venue: 'Management Science, Articles in Advance'
-  research_question: 'How do organizations learn while recovering from operational disruptions?'
-  key_finding: ''
-  why_it_matters: 'Drug shortages affect healthcare delivery and supply-chain resilience, making disruption recovery important for organizations, policy, and society.'
-  why_it_matters_ko: '의약품 부족은 의료 전달과 공급망 회복탄력성에 영향을 미치므로, 중단 이후의 회복 과정은 조직·정책·사회적으로 중요합니다.'
+  question: 'How do organizations learn while recovering from operational disruptions in U.S. drug shortages?'
+  finding: 'The paper studies learning during recovery from drug shortages using empirical evidence from the U.S. pharmaceutical supply chain.'
+  impact: 'The setting speaks to supply-chain resilience and healthcare access during shortage recovery.'
+  citation: 'Lee, H., Lee, J., Noh, I., and Staats, B. (2026) Learning in Recovery from Disruption: Empirical Evidence from the U.S. Drug Shortages. Management Science (UTD & FT), Published Online Articles in Advance.'
   links:
     - label: INFORMS
       url: 'https://pubsonline.informs.org/doi/10.1287/mnsc.2024.08337'
-- title: 'Alleviating Drug Shortages: The Role of Mandated Reporting-Induced Operational Transparency'
+- short_title: 'Drug Shortages'
+  title: 'Alleviating Drug Shortages: The Role of Mandated Reporting-Induced Operational Transparency'
   authors: 'Lee, J., Lee, H., Shin, H., and Krishnan, V.'
   year: 2021
   venue: 'Management Science, 67(4): 2326-2339'
-  research_question: 'Can mandated reporting and operational transparency help alleviate drug shortages?'
-  key_finding: ''
-  why_it_matters: 'Operational transparency in pharmaceutical supply chains can matter for regulators, healthcare organizations, and patients.'
-  why_it_matters_ko: '제약 공급망의 운영 투명성은 규제기관, 의료기관, 환자에게 중요한 의미를 가질 수 있습니다.'
+  question: 'Can mandated reporting-induced operational transparency help alleviate drug shortages?'
+  finding: 'The study evaluates mandated reporting as an operational-transparency intervention in pharmaceutical supply chains.'
+  impact: 'The paper is relevant for regulators and healthcare supply-chain participants addressing drug shortages.'
+  citation: 'Lee, J., Lee, H., Shin, H., and Krishnan, V. (2021) Alleviating Drug Shortages: The Role of Mandated Reporting-Induced Operational Transparency. Management Science, 67(4): 2326-2339.'
   links:
     - label: SSRN
       url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3565467'
     - label: INFORMS
       url: 'https://pubsonline.informs.org/doi/10.1287/mnsc.2020.3857'
-- title: 'Managing the Impact of Fitting-Room Traffic on Retail Sales: Using Labor to Reduce Phantom Stockouts'
-  authors: 'Lee, H., Kesavan, S., and Deshpande V.'
+- short_title: 'Fitting-Room Traffic'
+  title: 'Managing the Impact of Fitting-Room Traffic on Retail Sales: Using Labor to Reduce Phantom Stockouts'
+  authors: 'Lee, H., Kesavan, S., and Deshpande, V.'
   year: 2021
   venue: 'Manufacturing & Service Operations Management, 23(6): 1580-1596'
-  research_question: 'How does fitting-room traffic affect retail sales, and can labor reduce phantom stockouts?'
-  key_finding: ''
-  why_it_matters: 'The findings are relevant for retailers balancing staffing, customer experience, inventory accuracy, and sales performance.'
-  why_it_matters_ko: '이 연구는 인력 배치, 고객 경험, 재고 정확성, 매출 성과를 함께 고려해야 하는 소매기업에 시사점을 제공합니다.'
+  question: 'How does fitting-room traffic affect retail sales, and can labor reduce phantom stockouts?'
+  finding: 'The paper links fitting-room traffic, labor, and phantom stockouts in apparel retail operations.'
+  impact: 'The findings are useful for retailers balancing staffing, customer experience, inventory accuracy, and sales.'
+  citation: 'Lee, H., Kesavan, S., and Deshpande, V. (2021) Managing the Impact of Fitting-Room Traffic on Retail Sales: Using Labor to Reduce Phantom Stockouts. Manufacturing & Service Operations Management, 23(6): 1580-1596.'
   links:
     - label: SSRN
       url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2523680'
     - label: INFORMS
       url: 'https://pubsonline.informs.org/doi/10.1287/msom.2020.0884'
+- short_title: 'Group Incentives'
+  title: 'When Do Group Incentives for Retail Store Managers Work?'
+  authors: 'Lee, H., Kesavan, S., and Kuhnen, C.'
+  year: 2022
+  venue: 'Production and Operations Management, 31(8): 3077-3095'
+  question: 'When do group incentives for retail store managers improve outcomes?'
+  finding: 'The paper examines managerial incentives, operational decisions, and firm outcomes in a retail chain.'
+  impact: 'The study informs incentive design and retail operations management.'
+  citation: 'Lee, H., Kesavan, S., and Kuhnen, C. (2022) When Do Group Incentives for Retail Store Managers Work? Production and Operations Management, 31(8): 3077-3095.'
+  links:
+    - label: Wiley
+      url: 'https://onlinelibrary.wiley.com/doi/epdf/10.1111/poms.13740'
+- short_title: 'Grocery Variety'
+  title: 'Product Variety in Grocery Stores: Its Differential Effects on Stock-Keeping Unit Level Sales'
+  authors: 'Lu, G., Lee, H., and Son, J.'
+  year: 2022
+  venue: 'Journal of Operations Management, 68(1): 33-54'
+  question: 'How does product variety affect SKU-level sales in grocery stores?'
+  finding: 'The paper studies differential effects of product variety on SKU-level grocery sales.'
+  impact: 'The results are relevant for assortment and product-variety decisions in grocery retail.'
+  citation: 'Lu, G., Lee, H., and Son, J. (2022) Product Variety in Grocery Stores: Its Differential Effects on Stock-Keeping Unit Level Sales. Journal of Operations Management, 68(1): 33-54.'
+  links:
+    - label: Wiley
+      url: 'https://onlinelibrary.wiley.com/doi/epdf/10.1002/joom.1158'
