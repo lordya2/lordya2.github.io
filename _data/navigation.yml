@@ -1,0 +1,15 @@
+- label: Research
+  url: /pages/research.html
+- label: Students
+  url: /#students
+- label: Awards & Service
+  url: /#awards-service
+- label: Teaching
+  url: /pages/teaching.html
+- label: CV
+  url: /assets/CV.pdf
+  event: cv_download
+- label: Contact
+  url: /#contact
+- label: 한국어
+  url: /ko/

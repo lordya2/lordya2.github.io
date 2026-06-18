@@ -14,11 +14,14 @@ author :
   email : hyunseoklee@korea.ac.kr
   github : lordya2
   
-production_url : http://lordya2.github.io
+production_url : https://lordya2.github.io
 
 # Tell Github to use the kramdown markdown interpreter
 # (see https://help.github.com/articles/migrating-your-pages-site-from-maruku)
 markdown: kramdown
+
+# Optional Google Analytics 4 measurement ID. Leave blank to disable analytics.
+google_analytics_id: ""
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #

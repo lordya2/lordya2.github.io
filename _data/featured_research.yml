@@ -1,0 +1,37 @@
+- title: 'Learning in Recovery from Disruption: Empirical Evidence from the U.S. Drug Shortages'
+  authors: 'Lee, H., Lee, J., Noh, I., and Staats, B.'
+  year: 2026
+  venue: 'Management Science, Articles in Advance'
+  research_question: 'How do organizations learn while recovering from operational disruptions?'
+  key_finding: ''
+  why_it_matters: 'Drug shortages affect healthcare delivery and supply-chain resilience, making disruption recovery important for organizations, policy, and society.'
+  why_it_matters_ko: '의약품 부족은 의료 전달과 공급망 회복탄력성에 영향을 미치므로, 중단 이후의 회복 과정은 조직·정책·사회적으로 중요합니다.'
+  links:
+    - label: INFORMS
+      url: 'https://pubsonline.informs.org/doi/10.1287/mnsc.2024.08337'
+- title: 'Alleviating Drug Shortages: The Role of Mandated Reporting-Induced Operational Transparency'
+  authors: 'Lee, J., Lee, H., Shin, H., and Krishnan, V.'
+  year: 2021
+  venue: 'Management Science, 67(4): 2326-2339'
+  research_question: 'Can mandated reporting and operational transparency help alleviate drug shortages?'
+  key_finding: ''
+  why_it_matters: 'Operational transparency in pharmaceutical supply chains can matter for regulators, healthcare organizations, and patients.'
+  why_it_matters_ko: '제약 공급망의 운영 투명성은 규제기관, 의료기관, 환자에게 중요한 의미를 가질 수 있습니다.'
+  links:
+    - label: SSRN
+      url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3565467'
+    - label: INFORMS
+      url: 'https://pubsonline.informs.org/doi/10.1287/mnsc.2020.3857'
+- title: 'Managing the Impact of Fitting-Room Traffic on Retail Sales: Using Labor to Reduce Phantom Stockouts'
+  authors: 'Lee, H., Kesavan, S., and Deshpande V.'
+  year: 2021
+  venue: 'Manufacturing & Service Operations Management, 23(6): 1580-1596'
+  research_question: 'How does fitting-room traffic affect retail sales, and can labor reduce phantom stockouts?'
+  key_finding: ''
+  why_it_matters: 'The findings are relevant for retailers balancing staffing, customer experience, inventory accuracy, and sales performance.'
+  why_it_matters_ko: '이 연구는 인력 배치, 고객 경험, 재고 정확성, 매출 성과를 함께 고려해야 하는 소매기업에 시사점을 제공합니다.'
+  links:
+    - label: SSRN
+      url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2523680'
+    - label: INFORMS
+      url: 'https://pubsonline.informs.org/doi/10.1287/msom.2020.0884'
