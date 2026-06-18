@@ -12,12 +12,12 @@ lang: ko
   <h1 id="ko-title">{{ profile.name_ko }} · {{ profile.name }}</h1>
   <p><strong>{{ profile.title_ko }}</strong></p>
   <p>{{ profile.positioning_ko }}</p>
-  <p><span class="review-note">검토 필요:</span> 아래 내용은 전체 이중언어 사이트가 아니라 주요 방문자를 위한 간략 한국어 개요입니다.</p>
+  <p>이 페이지는 주요 방문자를 위한 간략한 한국어 개요입니다. 전체 연구 목록과 세부 정보는 영문 페이지를 함께 참고해 주세요.</p>
 
   <h2>연구 분야</h2>
   <ul>
     {% for area in site.data.research_areas %}
-      <li><span lang="en">{{ area.title }}</span> — {{ area.summary }}</li>
+      <li><strong>{{ area.title_ko }}</strong> <span lang="en">({{ area.title }})</span> — {{ area.summary_ko }}</li>
     {% endfor %}
   </ul>
 

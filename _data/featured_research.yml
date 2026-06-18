@@ -3,7 +3,7 @@
   year: 2026
   venue: 'Management Science, Articles in Advance'
   research_question: 'How do organizations learn while recovering from operational disruptions?'
-  key_finding: 'Published online in Management Science; the homepage summary should be reviewed against the final article before adding more detailed claims.'
+  key_finding: ''
   why_it_matters: 'Drug shortages affect healthcare delivery and supply-chain resilience, making disruption recovery important for organizations, policy, and society.'
   why_it_matters_ko: '의약품 부족은 의료 전달과 공급망 회복탄력성에 영향을 미치므로, 중단 이후의 회복 과정은 조직·정책·사회적으로 중요합니다.'
   links:
@@ -14,7 +14,7 @@
   year: 2021
   venue: 'Management Science, 67(4): 2326-2339'
   research_question: 'Can mandated reporting and operational transparency help alleviate drug shortages?'
-  key_finding: 'The paper studies mandated reporting-induced operational transparency in the context of drug shortages.'
+  key_finding: ''
   why_it_matters: 'Operational transparency in pharmaceutical supply chains can matter for regulators, healthcare organizations, and patients.'
   why_it_matters_ko: '제약 공급망의 운영 투명성은 규제기관, 의료기관, 환자에게 중요한 의미를 가질 수 있습니다.'
   links:
@@ -27,7 +27,7 @@
   year: 2021
   venue: 'Manufacturing & Service Operations Management, 23(6): 1580-1596'
   research_question: 'How does fitting-room traffic affect retail sales, and can labor reduce phantom stockouts?'
-  key_finding: 'The paper examines how labor can be used to manage the sales impact of fitting-room traffic and phantom stockouts.'
+  key_finding: ''
   why_it_matters: 'The findings are relevant for retailers balancing staffing, customer experience, inventory accuracy, and sales performance.'
   why_it_matters_ko: '이 연구는 인력 배치, 고객 경험, 재고 정확성, 매출 성과를 함께 고려해야 하는 소매기업에 시사점을 제공합니다.'
   links:

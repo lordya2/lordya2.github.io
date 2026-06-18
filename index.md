@@ -52,8 +52,10 @@ lang: en
         <dl>
           <dt>Research question</dt>
           <dd>{{ paper.research_question }}</dd>
+          {% if paper.key_finding and paper.key_finding != '' %}
           <dt>Key finding</dt>
           <dd>{{ paper.key_finding }}</dd>
+          {% endif %}
           <dt>Why it matters</dt>
           <dd>{{ paper.why_it_matters }} <span lang="ko">{{ paper.why_it_matters_ko }}</span></dd>
         </dl>

@@ -1,6 +1,12 @@
 - title: Retail operations
+  title_ko: 소매 운영
   summary: Consumer behavior, labor incentives, product variety, and data-driven operational decisions in retail settings.
+  summary_ko: 소매 환경에서의 소비자 행동, 인센티브, 제품 다양성, 데이터 기반 운영 의사결정을 연구합니다.
 - title: Healthcare and pharmaceutical operations
+  title_ko: 헬스케어 및 제약 운영
   summary: Supply chain resilience, capacity design, disruption recovery, drug shortages, and equity of access.
+  summary_ko: 공급망 회복탄력성, 용량 설계, 운영 중단 이후 회복, 의약품 부족, 접근성의 형평성을 연구합니다.
 - title: Causal inference for operations
+  title_ko: 운영관리를 위한 인과추론
   summary: Field experiments, difference-in-differences, instrumental variables, two-stage residual inclusion, and matching methods.
+  summary_ko: 현장 실험, 이중차분법, 도구변수, 2단계 잔차 포함법, 매칭 방법론을 활용한 운영관리 연구를 수행합니다.
