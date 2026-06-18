@@ -11,14 +11,14 @@ lang: en
   <div class="hero__content">
     <p class="eyebrow">{{ profile.affiliation }}</p>
     <h1 id="hero-title">{{ profile.name }} <span lang="ko">{{ profile.name_ko }}</span></h1>
-    <p class="hero__title">{{ profile.title }}</p>
+    <p class="hero__title">{{ profile.display_title }}</p>
     <p class="hero__positioning">{{ profile.positioning }}</p>
     <p class="hero__positioning" lang="ko">{{ profile.positioning_ko }}</p>
     <div class="button-row" aria-label="Primary actions">
       <a class="button" href="{{ BASE_PATH }}/pages/research.html">Research</a>
       <a class="button button--secondary" href="{{ BASE_PATH }}/pages/people.html" data-analytics-event="people_page_click">People</a>
       <a class="button button--ghost" href="{{ profile.cv_url }}" data-analytics-event="cv_download">Download CV</a>
-      <a class="button button--ghost" href="{{ profile.links.google_scholar.url }}" data-analytics-event="google_scholar_click">Google Scholar</a>
+      <a class="button button--ghost" href="{{ profile.links.google_scholar.url }}" target="_blank" rel="noopener noreferrer" data-analytics-event="google_scholar_click">Google Scholar</a>
     </div>
   </div>
   <figure class="hero__portrait"><img src="{{ profile.headshot }}" alt="{{ profile.headshot_alt }}"></figure>
@@ -72,4 +72,36 @@ lang: en
 
 <section class="section" id="teaching" aria-labelledby="teaching-title"><p class="eyebrow">Teaching</p><h2 id="teaching-title">Courses across research graduate programs, MSBA, MBA, and undergraduate education.</h2><div class="card-grid card-grid--four">{% for card in site.data.teaching.homepage_cards %}<article class="card"><h3>{{ card.title }}</h3><p>{{ card.summary }}</p></article>{% endfor %}</div><p><a href="{{ BASE_PATH }}/pages/teaching.html">View teaching history</a></p></section>
 
-<section class="section section--contact" id="contact" aria-labelledby="contact-title"><div><p class="eyebrow">Contact</p><h2 id="contact-title">Get in touch</h2><p><strong>{{ profile.name }}</strong> <span lang="ko">{{ profile.name_ko }}</span></p><p>{{ profile.title }}<br>{{ profile.affiliation }}</p><p lang="ko">{{ profile.title_ko }}<br>{{ profile.affiliation_ko }}</p></div><address><a href="mailto:{{ profile.email }}" data-analytics-event="email_click">{{ profile.email }}</a><br>{{ profile.office_phone }}<br>{{ profile.address }}<br><span lang="ko">{{ profile.address_ko }}</span></address><p class="link-row"><a href="{{ profile.cv_url }}" data-analytics-event="cv_download">CV</a><span aria-hidden="true"> · </span><a href="{{ profile.links.kubs.url }}" data-analytics-event="external_profile_click">{{ profile.links.kubs.label }}</a><span aria-hidden="true"> · </span><a href="{{ profile.links.linkedin.url }}" data-analytics-event="external_profile_click">{{ profile.links.linkedin.label }}</a><span aria-hidden="true"> · </span><a href="{{ profile.links.google_scholar.url }}" data-analytics-event="google_scholar_click">Google Scholar</a></p></section>
+<section class="section section--contact" id="contact" aria-labelledby="contact-title">
+  <div class="contact__intro">
+    <p class="eyebrow">Contact</p>
+    <h2 id="contact-title">Get in touch</h2>
+    <p class="contact__name"><strong>{{ profile.name }}</strong> <span lang="ko">{{ profile.name_ko }}</span></p>
+    <p>{{ profile.full_title }}<br>{{ profile.affiliation }}</p>
+    <p lang="ko">{{ profile.full_title_ko }}<br>{{ profile.affiliation_ko }}</p>
+  </div>
+  <div class="contact__details" aria-label="Contact details">
+    <dl class="contact-card">
+      <div class="contact-card__row">
+        <dt>Email</dt>
+        <dd><a href="mailto:{{ profile.email }}" data-analytics-event="email_click">{{ profile.email }}</a></dd>
+      </div>
+      <div class="contact-card__row">
+        <dt>Phone</dt>
+        <dd><a href="tel:{{ profile.office_phone | replace: '-', '' }}">{{ profile.office_phone }}</a></dd>
+      </div>
+      <div class="contact-card__row">
+        <dt>Office</dt>
+        <dd>{{ profile.office }}</dd>
+      </div>
+      <div class="contact-card__row">
+        <dt>Address</dt>
+        <dd>{{ profile.address }}<br><span lang="ko">{{ profile.address_ko }}</span></dd>
+      </div>
+      <div class="contact-card__row">
+        <dt>Profile links</dt>
+        <dd class="link-row"><a href="{{ profile.cv_url }}" data-analytics-event="cv_download">CV</a><a href="{{ profile.links.kubs.url }}" target="_blank" rel="noopener noreferrer" data-analytics-event="external_profile_click">{{ profile.links.kubs.label }}</a><a href="{{ profile.links.linkedin.url }}" target="_blank" rel="noopener noreferrer" data-analytics-event="external_profile_click">{{ profile.links.linkedin.label }}</a><a href="{{ profile.links.google_scholar.url }}" target="_blank" rel="noopener noreferrer" data-analytics-event="google_scholar_click">{{ profile.links.google_scholar.label }}</a></dd>
+      </div>
+    </dl>
+  </div>
+</section>

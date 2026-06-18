@@ -1,6 +1,7 @@
 ---
 layout: page
 title: People
+hide_page_header: true
 description: Students, alumni, MSBA capstone teams, and research opportunities for Hyun Seok ("Huck") Lee.
 ---
 {% assign people = site.data.people %}

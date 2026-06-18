@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Awards & Service
+hide_page_header: true
 description: Awards, teaching recognition, professional service, editorial boards, reviewing, and memberships.
 ---
 {% assign data = site.data.awards_service %}
