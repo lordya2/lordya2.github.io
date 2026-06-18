@@ -10,7 +10,7 @@ description: Research themes, methods, publications, working papers, and selecte
   <h1 id="research-title">Research portfolio</h1>
 
   <h2>Research Themes</h2>
-  <div class="card-grid card-grid--four">{% for area in site.data.research_areas %}<article class="card"><h3>{{ area.title }}</h3><p>{{ area.summary }}</p></article>{% endfor %}</div>
+  <div class="card-grid card-grid--four">{% for theme in portfolio.themes %}{% assign area = site.data.research_areas | where: "title", theme.title | first %}<article class="card"><h3>{{ theme.title }}</h3>{% if area %}<p>{{ area.summary }}</p>{% endif %}<h4>Representative papers</h4><ul>{% for paper_id in theme.representative_papers %}{% assign paper = portfolio.peer_reviewed | where: "id", paper_id | first %}{% unless paper %}{% assign paper = portfolio.working_papers | where: "id", paper_id | first %}{% endunless %}{% if paper %}<li>{{ paper.short_title | default: paper.citation }}</li>{% endif %}{% endfor %}</ul></article>{% endfor %}</div>
 
   <h2>Methodology</h2>
   <ul class="pill-list">{% for method in portfolio.methodology %}<li>{{ method }}</li>{% endfor %}</ul>

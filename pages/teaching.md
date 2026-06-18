@@ -14,6 +14,6 @@ description: Complete institution, course, audience, language, and semester hist
   <h2>Course History</h2>
   {% for institution in teaching.institutions %}
     <h3>{{ institution.name }}</h3>
-    <div class="table-wrap"><table class="data-table"><thead><tr><th>Course</th><th>Audience</th><th>Language</th><th>Semesters</th></tr></thead><tbody>{% for course in institution.courses %}<tr><td>{{ course.course }}{% if course.code and course.code != '' %} ({{ course.code }}){% endif %}</td><td>{{ course.audience }}</td><td>{{ course.language }}</td><td>{{ course.semesters }}</td></tr>{% endfor %}</tbody></table></div>
+    <div class="table-wrap"><table class="data-table"><thead><tr><th>Course</th><th>Audience</th><th>Language</th><th>Semesters</th></tr></thead><tbody>{% for course in institution.courses %}<tr><td>{{ course.course }}{% if course.code and course.code != '' %} ({{ course.code }}){% endif %}</td><td>{{ course.audience }}</td><td>{{ course.language }}</td><td>{{ course.semesters }}{% if course.session_details %}<br><span class="muted">{% for detail in course.session_details %}{{ detail }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</span>{% endif %}</td></tr>{% endfor %}</tbody></table></div>
   {% endfor %}
 </section>

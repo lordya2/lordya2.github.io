@@ -72,12 +72,22 @@ institutions:
         code: 'BA 459/559'
         audience: 'Undergraduate and MBA'
         language: 'English'
-        semesters: 'Winter 2018; Winter 2019; Winter 2020'
+        semesters: 'Winter 2018; Winter 2019; Winter 2019 E-campus; Winter 2020; Winter 2020 E-campus'
+        session_details:
+          - 'Winter 2018 (17 students; Overall: 5.60/6.00; Lecturer effectiveness: 5.80/6.00)'
+          - 'Winter 2019 (29 students; Overall: 5.60/6.00; Lecturer effectiveness: 5.90/6.00)'
+          - 'Winter 2019 E-campus (12 students; Overall: 6.00/6.00; Lecturer effectiveness: 6.00/6.00)'
+          - 'Winter 2020 (32 students; Overall: 5.80/6.00; Lecturer effectiveness: 5.90/6.00)'
+          - 'Winter 2020 E-campus (35 students; Overall: 5.20/6.00; Lecturer effectiveness: 5.70/6.00)'
       - course: 'Intro to Operations Management'
         code: 'BA 357'
         audience: 'Undergraduate'
         language: 'English'
         semesters: 'Spring 2018; Spring 2019; Spring 2020'
+        session_details:
+          - 'Spring 2018 (3 sections; 130 students; Overall: 5.57/6.00; Lecturer effectiveness: 5.80/6.00)'
+          - 'Spring 2019 (2 sections; 84 students; Overall: 5.45/6.00; Lecturer effectiveness: 5.75/6.00)'
+          - 'Spring 2020 (3 sections; 131 students; NA due to COVID-19)'
   - name: 'Kenan-Flagler Business School, University of North Carolina at Chapel Hill'
     courses:
       - course: 'Business Analytics'
@@ -85,3 +95,5 @@ institutions:
         audience: 'Undergraduate'
         language: 'English'
         semesters: 'Summer 2016'
+        session_details:
+          - 'Summer 2016 (11 students; Overall: 4.76/5.00; Lecturer effectiveness: 4.94/5.00)'

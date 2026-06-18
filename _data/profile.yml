@@ -12,13 +12,12 @@ office: 'LG-POSCO 604'
 address: 'LG-POSCO 604, 145 Anam-ro, Seoul, Korea 02841'
 address_ko: '서울특별시 성북구 안암로 145, 고려대학교 경영대학 엘지 포스코관 604호'
 cv_url: '/assets/CV.pdf'
-google_scholar_url: 'https://scholar.google.com/scholar?q=Hyun+Seok+Huck+Lee+Korea+University+Business+School'
 headshot: '/assets/headshot.jpg'
 headshot_alt: 'Portrait of Hyun Seok Huck Lee'
 links:
   kubs:
     label: 'Official KUBS homepage'
-    url: 'https://biz.korea.ac.kr/eng/professor/lsom'
+    url: 'https://biz.korea.ac.kr/eng/professor/professor_view?major=607&no=222&refer=%2Feng%2Fprofessor%2Flsom.html'
   linkedin:
     label: 'LinkedIn'
     url: 'https://www.linkedin.com/in/hyun-seok-lee-1885083a/'

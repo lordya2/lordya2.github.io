@@ -1,23 +1,29 @@
-- short_title: 'Recovery from Disruption'
+- short_title: 'Drug Shortage Recovery'
   title: 'Learning in Recovery from Disruption: Empirical Evidence from the U.S. Drug Shortages'
   authors: 'Lee, H., Lee, J., Noh, I., and Staats, B.'
   year: 2026
   venue: 'Management Science, Articles in Advance'
-  question: 'How do organizations learn while recovering from operational disruptions in U.S. drug shortages?'
-  finding: 'The paper studies learning during recovery from drug shortages using empirical evidence from the U.S. pharmaceutical supply chain.'
-  impact: 'The setting speaks to supply-chain resilience and healthcare access during shortage recovery.'
+  question: 'How does prior recovery experience affect how quickly pharmaceutical plants resolve current drug shortages?'
+  question_ko: '제약 생산공장의 과거 부족 사태 회복 경험은 현재 의약품 부족의 회복 속도에 어떤 영향을 미치는가?'
+  finding: 'Each additional shortage previously resolved by a plant reduces recovery time for a current shortage. Learning is concentrated in internally caused shortages, benefits from broader experience, and transfers only weakly across plants within the same firm.'
+  finding_ko: '생산공장이 과거에 해결한 부족 사태가 하나 늘어날수록 현재 부족 사태의 회복 시간이 감소한다. 학습 효과는 내부 원인 부족 사태에서 집중적으로 나타나며, 폭넓은 경험에서 이익을 얻고, 같은 기업 내 다른 공장으로는 약하게만 이전된다.'
+  impact: 'The results identify plant-level recovery experience as a measurable source of pharmaceutical supply-chain resilience and point to limits in firm-wide knowledge transfer.'
+  impact_ko: '이 결과는 공장 수준의 회복 경험이 제약 공급망 회복탄력성의 측정 가능한 원천임을 보여주며, 기업 내부 지식 이전에는 한계가 있음을 시사한다.'
   citation: 'Lee, H., Lee, J., Noh, I., and Staats, B. (2026) Learning in Recovery from Disruption: Empirical Evidence from the U.S. Drug Shortages. Management Science (UTD & FT), Published Online Articles in Advance.'
   links:
     - label: INFORMS
       url: 'https://pubsonline.informs.org/doi/10.1287/mnsc.2024.08337'
-- short_title: 'Drug Shortages'
+- short_title: 'Drug Shortage Transparency'
   title: 'Alleviating Drug Shortages: The Role of Mandated Reporting-Induced Operational Transparency'
   authors: 'Lee, J., Lee, H., Shin, H., and Krishnan, V.'
   year: 2021
   venue: 'Management Science, 67(4): 2326-2339'
-  question: 'Can mandated reporting-induced operational transparency help alleviate drug shortages?'
-  finding: 'The study evaluates mandated reporting as an operational-transparency intervention in pharmaceutical supply chains.'
-  impact: 'The paper is relevant for regulators and healthcare supply-chain participants addressing drug shortages.'
+  question: 'When does mandatory interruption reporting alleviate drug shortages?'
+  question_ko: '생산중단 의무 보고는 어떤 시장 조건에서 의약품 부족을 완화하는가?'
+  finding: 'Mandatory interruption reporting alleviates shortages, but its effectiveness depends on product-market competition: the effect is strongest under duopoly, weaker under monopoly, and declines as competition intensifies.'
+  finding_ko: '생산중단 의무 보고는 의약품 부족을 완화하지만 효과는 제품시장 경쟁 정도에 따라 달라진다. 효과는 복점에서 가장 강하고 독점에서는 더 약하며, 경쟁이 심화될수록 감소한다.'
+  impact: 'The findings show that operational-transparency policy can reduce shortages, while market structure shapes where the policy is most effective.'
+  impact_ko: '운영 투명성 정책이 부족 사태를 줄일 수 있음을 보여주지만, 정책 효과가 크게 나타나는 영역은 시장 구조에 의해 달라진다는 점을 제시한다.'
   citation: 'Lee, J., Lee, H., Shin, H., and Krishnan, V. (2021) Alleviating Drug Shortages: The Role of Mandated Reporting-Induced Operational Transparency. Management Science, 67(4): 2326-2339.'
   links:
     - label: SSRN
@@ -29,9 +35,12 @@
   authors: 'Lee, H., Kesavan, S., and Deshpande, V.'
   year: 2021
   venue: 'Manufacturing & Service Operations Management, 23(6): 1580-1596'
-  question: 'How does fitting-room traffic affect retail sales, and can labor reduce phantom stockouts?'
-  finding: 'The paper links fitting-room traffic, labor, and phantom stockouts in apparel retail operations.'
-  impact: 'The findings are useful for retailers balancing staffing, customer experience, inventory accuracy, and sales.'
+  question: 'How does fitting-room congestion affect apparel sales, and can dedicated labor mitigate the operational loss?'
+  question_ko: '피팅룸 혼잡은 의류 매출에 어떤 영향을 미치며, 전담 인력은 운영 손실을 완화할 수 있는가?'
+  finding: 'Fitting-room traffic and sales have an inverted-U relationship. High traffic increases phantom stockouts, and dedicated fitting-room associates reduce phantom stockouts and increase sales by approximately 22.4%-22.7%.'
+  finding_ko: '피팅룸 트래픽과 매출은 역U자 관계를 보인다. 높은 트래픽은 팬텀 품절을 증가시키며, 피팅룸 전담 직원은 팬텀 품절을 줄이고 매출을 약 22.4%-22.7% 증가시킨다.'
+  impact: 'The paper quantifies how service congestion creates hidden inventory-availability problems and how targeted labor can improve sales.'
+  impact_ko: '서비스 혼잡이 숨겨진 재고 가용성 문제를 만든다는 점과 표적화된 인력 배치가 매출 개선으로 이어질 수 있음을 정량화한다.'
   citation: 'Lee, H., Kesavan, S., and Deshpande, V. (2021) Managing the Impact of Fitting-Room Traffic on Retail Sales: Using Labor to Reduce Phantom Stockouts. Manufacturing & Service Operations Management, 23(6): 1580-1596.'
   links:
     - label: SSRN
@@ -43,21 +52,27 @@
   authors: 'Lee, H., Kesavan, S., and Kuhnen, C.'
   year: 2022
   venue: 'Production and Operations Management, 31(8): 3077-3095'
-  question: 'When do group incentives for retail store managers improve outcomes?'
-  finding: 'The paper examines managerial incentives, operational decisions, and firm outcomes in a retail chain.'
-  impact: 'The study informs incentive design and retail operations management.'
+  question: 'Do corporate-goal-based group incentives improve retail store-manager performance, and when do their effects vary?'
+  question_ko: '기업 전체 목표에 연동된 집단 인센티브는 소매점 관리자 성과를 개선하는가, 그리고 그 효과는 언제 달라지는가?'
+  finding: 'Making store manager bonuses depend on corporate goals worsened overall store performance; the effect varied with geographical proximity among stores and focal-store past performance.'
+  finding_ko: '관리자 보너스를 기업 전체 목표에 연동하자 전반적인 매장 성과가 악화되었으며, 이 효과는 매장 간 지리적 근접성과 해당 매장의 과거 성과에 따라 달라졌다.'
+  impact: 'The results caution that group incentives in multi-unit retail organizations can backfire unless incentive design accounts for local store conditions.'
+  impact_ko: '다점포 소매 조직에서 집단 인센티브는 지역적 매장 조건을 반영하지 않으면 역효과를 낼 수 있음을 시사한다.'
   citation: 'Lee, H., Kesavan, S., and Kuhnen, C. (2022) When Do Group Incentives for Retail Store Managers Work? Production and Operations Management, 31(8): 3077-3095.'
   links:
     - label: Wiley
       url: 'https://onlinelibrary.wiley.com/doi/epdf/10.1111/poms.13740'
-- short_title: 'Grocery Variety'
+- short_title: 'Product Variety'
   title: 'Product Variety in Grocery Stores: Its Differential Effects on Stock-Keeping Unit Level Sales'
   authors: 'Lu, G., Lee, H., and Son, J.'
   year: 2022
   venue: 'Journal of Operations Management, 68(1): 33-54'
-  question: 'How does product variety affect SKU-level sales in grocery stores?'
-  finding: 'The paper studies differential effects of product variety on SKU-level grocery sales.'
-  impact: 'The results are relevant for assortment and product-variety decisions in grocery retail.'
+  question: 'How do within-brand and competing-brand product variety affect SKU-level grocery sales?'
+  question_ko: '브랜드 내부 제품 다양성과 경쟁 브랜드의 제품 다양성은 SKU 수준의 식료품 매출에 어떤 영향을 미치는가?'
+  finding: 'Within-brand variety increases same-brand SKU sales, while average within-brand variety of other brands reduces those sales. Variety effects differ across profitability levels and product categories, with the strongest positive effect for high-margin products and category effects ranging from about 11% to negligible.'
+  finding_ko: '브랜드 내부 다양성은 같은 브랜드 SKU 매출을 증가시키지만, 다른 브랜드들의 평균 브랜드 내부 다양성은 해당 매출을 감소시킨다. 다양성 효과는 수익성 수준과 제품 범주에 따라 달라지며, 고마진 제품에서 가장 큰 양의 효과가 나타나고 범주별 효과는 약 11%에서 거의 없음까지 다양하다.'
+  impact: 'The paper helps retailers evaluate assortment changes at the SKU and brand level rather than treating variety as a single aggregate count.'
+  impact_ko: '제품 다양성을 단순한 총 SKU 수로 보지 않고 SKU 및 브랜드 수준에서 구색 변경을 평가해야 함을 보여준다.'
   citation: 'Lu, G., Lee, H., and Son, J. (2022) Product Variety in Grocery Stores: Its Differential Effects on Stock-Keeping Unit Level Sales. Journal of Operations Management, 68(1): 33-54.'
   links:
     - label: Wiley
