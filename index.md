@@ -59,7 +59,7 @@ lang: en
 <section class="section" id="media-impact-preview" aria-labelledby="media-impact-preview-title">
   <p class="eyebrow">Media &amp; Impact</p>
   <h2 id="media-impact-preview-title">Research in the media and public-facing outlets</h2>
-  <div class="card-grid card-grid--three">
+  <div class="media-grid">
     {% for item in site.data.media_impact.featured limit:3 %}
       <article class="card">
         <p class="card-label">{{ item.type }} · {{ item.date }}</p>

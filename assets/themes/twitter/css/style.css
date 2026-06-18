@@ -101,6 +101,7 @@ h3 { margin-top: 0; font-size: 1.22rem; }
 .button--ghost:hover { color: #fff; }
 
 .card-grid { display: grid; gap: 1rem; }
+.media-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 1rem; }
 .card-grid--three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .awards-grid { align-items: stretch; }
 .card, .research-card, .mini-paper { padding: 1.25rem; border: 1px solid var(--border); border-radius: 1rem; background: #fff; box-shadow: 0 8px 28px rgba(23, 32, 51, 0.06); }

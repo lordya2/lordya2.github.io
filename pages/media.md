@@ -13,7 +13,7 @@ description: Media coverage, school news, research impact, and public-facing com
   <p class="muted">Korean media coverage may be represented as a search-result cluster when individual article URLs are not yet curated.</p>
 
   <h2>Featured media and impact</h2>
-  <div class="card-grid card-grid--three">
+  <div class="media-grid">
     {% for item in media.featured %}
       <article class="card">
         <p class="card-label">{{ item.type }} · {{ item.date }}</p>
