@@ -5,5 +5,15 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', '{{ site.google_analytics_id }}');
+
+  document.addEventListener('click', function (event) {
+    var link = event.target.closest('a[data-analytics-event]');
+    if (!link || typeof gtag !== 'function') return;
+    gtag('event', link.getAttribute('data-analytics-event'), {
+      link_url: link.href,
+      link_text: (link.textContent || '').trim(),
+      page_location: window.location.href
+    });
+  });
 </script>
 {% endif %}

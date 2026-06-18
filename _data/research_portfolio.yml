@@ -1,0 +1,83 @@
+themes:
+  - title: 'Healthcare & Pharmaceutical Supply Chains'
+    representative_papers:
+      - drug-shortage-recovery
+      - drug-shortage-transparency
+      - emergency-department-fees
+  - title: 'Retail & Service Operations'
+    representative_papers:
+      - fitting-room-traffic
+      - group-incentives
+      - product-variety
+  - title: 'Platforms & Digital Operations'
+    representative_papers:
+      - fulfillment-by-platform
+      - self-service-kiosks
+  - title: 'Empirical OM & Causal Inference'
+    representative_papers:
+      - drug-shortage-transparency
+      - group-incentives
+      - emergency-department-fees
+methodology:
+  - Field experiments
+  - Difference-in-differences
+  - Instrumental variables
+  - Matching designs
+peer_reviewed:
+  - id: 'drug-shortage-recovery'
+    citation: 'Lee, H., Lee, J., Noh, I., and Staats, B. (2026) Learning in Recovery from Disruption: Empirical Evidence from the U.S. Drug Shortages. Management Science (UTD & FT), Published Online Articles in Advance.'
+    short_title: 'Learning in Recovery from Disruption'
+    links:
+      - label: INFORMS
+        url: 'https://pubsonline.informs.org/doi/10.1287/mnsc.2024.08337'
+  - id: 'fitting-room-traffic'
+    citation: 'Lee, H., Kesavan, S., and Deshpande, V. (2021) Managing the Impact of Fitting-Room Traffic on Retail Sales: Using Labor to Reduce Phantom Stockouts. Manufacturing & Service Operations Management, 23(6): 1580-1596.'
+    short_title: 'Fitting-Room Traffic'
+    links:
+      - label: SSRN
+        url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2523680'
+      - label: INFORMS
+        url: 'https://pubsonline.informs.org/doi/10.1287/msom.2020.0884'
+  - id: 'drug-shortage-transparency'
+    citation: 'Lee, J., Lee, H., Shin, H., and Krishnan, V. (2021) Alleviating Drug Shortages: The Role of Mandated Reporting-Induced Operational Transparency. Management Science, 67(4): 2326-2339.'
+    short_title: 'Alleviating Drug Shortages'
+    note: 'The first two authors contributed equally to this paper.'
+    links:
+      - label: SSRN
+        url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3565467'
+      - label: INFORMS
+        url: 'https://pubsonline.informs.org/doi/10.1287/mnsc.2020.3857'
+  - id: 'product-variety'
+    citation: 'Lu, G., Lee, H., and Son, J. (2022) Product Variety in Local Grocery Stores: Differential Effects on Stock-Keeping Unit Level Sales. Journal of Operations Management, 68(1): 33-54.'
+    short_title: 'Product Variety'
+    note: 'The first two authors contributed equally to this paper.'
+    links:
+      - label: Wiley
+        url: 'https://onlinelibrary.wiley.com/doi/epdf/10.1002/joom.1158'
+  - id: 'group-incentives'
+    citation: 'Lee, H., Kesavan, S., and Kuhnen, C. (2022) When Do Group Incentives for Retail Store Managers Work? Production and Operations Management, 31(8): 3077-3095.'
+    short_title: 'Group Incentives for Store Managers'
+    note: 'Lead article; Best Interdisciplinary Paper Award at DSI 2018 Annual Conference, Chicago.'
+    links:
+      - label: Wiley
+        url: 'https://onlinelibrary.wiley.com/doi/epdf/10.1111/poms.13740'
+working_papers:
+  - id: 'fulfillment-by-platform'
+    citation: 'Lee, H., Kim, Y., and Son, J. (2025) Fulfillment-By-Platform in B2C E-tailing: Overall Positive Customer Responses, yet Diminishing End Effect.'
+    status: 'Under revision at Journal of Operations Management.'
+    note: 'MK Emerging Scholar Paper Award at KASBA 2022 Convergence Conference, Yeosu, Korea.'
+  - id: 'emergency-department-fees'
+    citation: 'Lee, H., Park, E., and Rainer, T. (2025) Heterogeneous Patient Response to Uniform Increase in Emergency Department Attendance Fees: A Territory-Wide Study.'
+    status: 'Under revision (Major Revision) at Manufacturing & Service Operations Management.'
+  - id: 'self-service-kiosks'
+    citation: 'Kim, J., Kwon, H., Lee, D., Lee, H., and Lee, K. (2026) An Empirical Analysis of Technology-Driven Service Automation: The Impact of Self-Service Kiosks on Sales, Labor and Customers.'
+    status: 'Under review at Manufacturing & Service Operations Management.'
+book_chapter:
+  - citation: 'Lee, H. and Kesavan, S. (2019) Determinants of Excess Inventory Announcement and Stock Market Reaction in the Retail Sector. Book chapter in Operations in an Omnichannel World, Gallino S. and Moreno A., eds., Springer Series on Supply Chain Management, vol. 8, Springer, Cham.'
+korean_publications:
+  - 'Oh, K., Lee, H., and Kim, D. (2021) Analysis of the Working Capital Management Strategies of Global Auto Parts and Vehicle Manufacturing Industries in Changing Economies. Journal of Korean Production and Operations Management Society (KCI), 32(3): 299-315.'
+  - 'Lee, S., Lee, J., Lee, H., and Lee, H. (2022) Analysis of Consumer Purchasing Behavior Using Online Images of Fashion Products. Journal of Korean Production and Operations Management Society (KCI), 33(1): 115-138.'
+  - 'Lee, N., and Lee, H. (2023) The Impact of Quantity and Variety of Product Image on Sales in Online Shopping. Journal of Korean Production and Operations Management Society (KCI), 34(special): 1-14.'
+  - "Lim, C., and Lee, H. (2025) Evaluating the Effectiveness of Uiseong County's Population Inflow Policy Using the Difference-in-Differences: Focusing on Neighbor Village Pilot Project. Journal of Korean Production and Operations Management Society (KCI), 36(4): 433-449."
+work_in_progress:
+  - 'Try Before You Buy: How Fitting Room Usage Influences Apparel Sales and Spillover Effects.'

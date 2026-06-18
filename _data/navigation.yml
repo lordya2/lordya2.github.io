@@ -1,9 +1,10 @@
 - label: Research
   url: /pages/research.html
-- label: Students
-  url: /#students
+- label: People
+  url: /pages/people.html
+  event: people_page_click
 - label: Awards & Service
-  url: /#awards-service
+  url: /pages/award.html
 - label: Teaching
   url: /pages/teaching.html
 - label: CV
