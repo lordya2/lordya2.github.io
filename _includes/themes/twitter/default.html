@@ -1,59 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang | default: 'en' }}">
   <head>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
-
-    <!-- Enable responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le styles -->
+    <link rel="canonical" href="{{ site.production_url }}{{ page.url | replace:'index.html','' }}">
     <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
     <link href="{{ ASSET_PATH }}/css/my_custom_css.css" rel="stylesheet" type="text/css" media="all">
-
-    <!-- Le fav and touch icons - this is where you can add a little icon that will show up in the address bar next to the addrss adn in search history next to website name
-    <link rel="SHORTCUT ICON" href="{{ BASE_PATH }}/assets/me.ico"/>
-    -->
-    <!-- atom & rss feed -->
-    <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-    <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
-
+    {% include analytics.html %}
   </head>
 
   <body>
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container-narrow">
-          <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-          <ul class="nav">
-              <li><a href="{{ BASE_PATH }}/assets/CV.pdf">CV</a></li>
-              <li><a href="{{ BASE_PATH }}/pages/research.html">Research</a></li>
-              <li><a href="{{ BASE_PATH }}/pages/award.html">Award</a></li>
-              <li><a href="{{ BASE_PATH }}/pages/teaching.html">Teaching</a></li>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header" role="banner">
+      <div class="site-header__inner">
+        <a class="site-brand" href="{{ HOME_PATH }}" aria-label="{{ site.title }} home">
+          <span class="site-brand__name">{{ site.data.profile.name }}</span>
+          <span class="site-brand__ko" lang="ko">{{ site.data.profile.name_ko }}</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <ul>
+            {% for item in site.data.navigation %}
+              <li><a href="{{ BASE_PATH }}{{ item.url }}"{% if item.event %} data-analytics-event="{{ item.event }}"{% endif %}>{{ item.label }}</a></li>
+            {% endfor %}
           </ul>
-        </div>
+        </nav>
       </div>
-    </div>
+    </header>
 
-    <div class="container-narrow">
+    <main id="main-content" class="site-main" tabindex="-1">
+      {{ content }}
+    </main>
 
-      <div class="content">
-        {{ content }}
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p><strong>{{ site.data.profile.name }}</strong> · {{ site.data.profile.affiliation }}</p>
+        <p><a href="mailto:{{ site.data.profile.email }}" data-analytics-event="email_click">{{ site.data.profile.email }}</a> · <a href="{{ site.data.profile.cv_url }}" data-analytics-event="cv_download">CV</a></p>
       </div>
-
-      <hr>
-
-    </div>
-
-    {% include JB/analytics %}
+    </footer>
   </body>
 </html>

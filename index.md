@@ -1,46 +1,139 @@
 ---
 layout: frontpage
 title: Hyun Seok ("Huck") Lee
-description: Huck Lee is a KUBS Research Fellow, Associate Professor, and Area Chair in Korea University Business School. 
+description: Huck Lee is a KUBS Research Fellow, Associate Professor, and Area Chair in Korea University Business School.
 keywords: Hyun Seok, Huck, Lee, Business Analytics, Service, Retail, Healthcare, KUBS.
+lang: en
 ---
+{% assign profile = site.data.profile %}
 
-Hyun Seok ("Huck") Lee [이현석] is a **KUBS Research Fellow**, **Associate Professor**, and **Area Chair** of Logistics, Service and Operations Management (LSOM) in Korea University Business School (KUBS). His research interests include (1) retail operations, focusing on consumer behavior, labor incentives, and product variety and (2) healthcare and pharmaceutical operations, emphasizing supply chain resilience, capacity design, and equity of access. He performs empirical research using mainly Causal inference such as field experiments, difference-in-differences, instrumental variables (two-stage least squares, two-stage residual inclusion), matching (propensity score matching, coarsened exact matching). His research is published in premier journals including *Management Science*, *Manufacturing & Service Operations Management*, *Journal of Operations Management*, and *Production and Operations Management*. His research has been recognized by various prizes including 2022 MK Emerging Scholar Paper Award, 2022 Seok-Top Award for Research Excellence (i.e., top 3% researcher at the university level), 2022 UTD Distinguished Research Award (two awards), 2021 SK Distinguished Research Award (two awards), 2020 Prominent Scholar Award, 2018 DSI Conference Best Interdisciplinary Paper Award, 2016 Rising OM Scholar Award, and M. Wayne DeLozier Award. His excellence in teaching has also recognized by 2025, 2024, 2022 Seok-Top Award for Teaching Excellence (i.e., top 5% at the university level), 2025, 2023, 2022, 2021 Excellence in Teaching Award and 2019 Betty and Forrest Simmons Excellence in Graduate Teaching Award. He received his Ph.D. from the Kenan-Flagler Business School, University of North Carolina at Chapel Hill, MS and BBA from Korea University Business School.
-
-My [curriculum vitae ![CV as pdf]({{ BASE_PATH }}/pages/icons16/pdf-icon.png)]({{ BASE_PATH }}/assets/CV.pdf)<br/>
-
-If you’re an undergraduate or a prospective Master’s or PhD student interested in working with me, you can arrange a meeting with me. Please send me an email or stop by my office. You may want to think of details about why you want to do research, your research interests, your coursework, and your experience with programming. Others who wish to know more about my research are also welcome. Students outside of the Business School, such as Economics, Engineering, Computer Science, Statistics (or other related fileds) are also very much welcomed!
-
----
-
-
-<div class="container">
-<h4><a name="contact"></a>contact</h4>
-
-    <div class="row-fluid">
-        <div class="span5">
-            Hyun Seok ("Huck") Lee [이현석]<br/>
-            Email: hyunseoklee@korea.ac.kr<br/>
-            Office: +82-2-3290-1915<br/>
-            Address: LG-POSCO 604, 145 Anam-ro, Seoul, Korea 02841<br/>
-            엘지 포스코관 604호, 경영대학, 고려대학교, 서울특별시 성북구 안암로 145<br/>
-            </div>
-
-        <div class="span2">
-        <a href="../assets/headshot.jpg">
-            <img src="../assets/headshot.jpg"
-                  title="Hyun Seok Lee" alt="Lee Hyun Seok"/></a>
-        </div>
+<section class="hero section" aria-labelledby="hero-title">
+  <div class="hero__content">
+    <p class="eyebrow">{{ profile.affiliation }}</p>
+    <h1 id="hero-title">{{ profile.name }} <span lang="ko">{{ profile.name_ko }}</span></h1>
+    <p class="hero__title">{{ profile.title }}</p>
+    <p class="hero__positioning">{{ profile.positioning }}</p>
+    <p class="hero__positioning" lang="ko">{{ profile.positioning_ko }}</p>
+    <div class="button-row" aria-label="Primary actions">
+      <a class="button" href="{{ BASE_PATH }}/pages/research.html">Research</a>
+      <a class="button button--secondary" href="#students" data-analytics-event="student_opportunity_click">Students</a>
+      <a class="button button--ghost" href="{{ profile.cv_url }}" data-analytics-event="cv_download">Download CV</a>
     </div>
-</div>
-
-<div class="navbar">
-  <div class="navbar-inner">
-      <ul class="nav">
-          <li><a href="{{ BASE_PATH }}/assets/CV.pdf">CV</a></li>
-          <li><a href="https://biz.korea.ac.kr/eng/professor/professor_view?major=607&no=222&refer=%2Feng%2Fprofessor%2Flsom.html">Official KUBS homepage</a></li>
-          <li><a href="https://www.facebook.com/hyunseok1">Facebook</a></li>
-          <li><a href="https://www.linkedin.com/in/hyun-seok-lee-1885083a/">LinkedIn</a></li>
-      </ul>
   </div>
-</div>
+  <figure class="hero__portrait">
+    <img src="{{ profile.headshot }}" alt="{{ profile.headshot_alt }}">
+  </figure>
+</section>
+
+<section class="section" id="research-areas" aria-labelledby="research-areas-title">
+  <p class="eyebrow">Research Areas</p>
+  <h2 id="research-areas-title">Empirical operations research for organizations, healthcare, retail, and policy.</h2>
+  <div class="card-grid card-grid--three">
+    {% for area in site.data.research_areas %}
+      <article class="card">
+        <h3>{{ area.title }}</h3>
+        <p>{{ area.summary }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section section--tinted" id="featured-research" aria-labelledby="featured-research-title">
+  <p class="eyebrow">Featured Research</p>
+  <h2 id="featured-research-title">Selected work framed for researchers, editors, organizations, and policy audiences.</h2>
+  <div class="research-list">
+    {% for paper in site.data.featured_research %}
+      <article class="research-card">
+        <div>
+          <p class="research-card__venue">{{ paper.venue }}</p>
+          <h3>{{ paper.title }}</h3>
+          <p>{{ paper.authors }} ({{ paper.year }})</p>
+        </div>
+        <dl>
+          <dt>Research question</dt>
+          <dd>{{ paper.research_question }}</dd>
+          <dt>Key finding</dt>
+          <dd>{{ paper.key_finding }}</dd>
+          <dt>Why it matters</dt>
+          <dd>{{ paper.why_it_matters }} <span lang="ko">{{ paper.why_it_matters_ko }}</span></dd>
+        </dl>
+        <p class="link-row">
+          {% for link in paper.links %}
+            <a href="{{ link.url }}" data-analytics-event="publication_click">{{ link.label }}</a>{% unless forloop.last %}<span aria-hidden="true"> · </span>{% endunless %}
+          {% endfor %}
+        </p>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section" id="students" aria-labelledby="students-title">
+  <p class="eyebrow">Students &amp; Research Opportunities</p>
+  <h2 id="students-title">Research mentoring for PhD, MS, and undergraduate students.</h2>
+  <p>{{ site.data.opportunities.summary }}</p>
+  <p lang="ko">{{ site.data.opportunities.summary_ko }}</p>
+  <div class="split-list">
+    <div>
+      <h3>Who should reach out</h3>
+      <ul>
+        {% for item in site.data.opportunities.audiences %}<li>{{ item }}</li>{% endfor %}
+      </ul>
+    </div>
+    <div>
+      <h3>Helpful details to include</h3>
+      <ul>
+        {% for item in site.data.opportunities.email_guidance %}<li>{{ item }}</li>{% endfor %}
+      </ul>
+    </div>
+  </div>
+  <p><a class="button" href="mailto:{{ profile.email }}?subject=Research%20opportunities" data-analytics-event="student_opportunity_click">Contact about research opportunities</a></p>
+</section>
+
+<section class="section section--compact" id="news" aria-labelledby="news-title">
+  <p class="eyebrow">Recent News</p>
+  <h2 id="news-title">Recent updates</h2>
+  <ul class="timeline-list">
+    {% for item in site.data.news %}
+      <li><time>{{ item.date }}</time><span>{{ item.text }}</span></li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="section section--compact" id="awards-service" aria-labelledby="awards-service-title">
+  <p class="eyebrow">Awards &amp; Service</p>
+  <h2 id="awards-service-title">Selected recognition and service</h2>
+  <ul class="timeline-list">
+    {% for award in site.data.awards_service %}
+      <li><time>{{ award.date }}</time><span>{{ award.label }}</span></li>
+    {% endfor %}
+  </ul>
+  <p><a href="{{ BASE_PATH }}/pages/award.html">View full awards page</a></p>
+</section>
+
+<section class="section" id="teaching" aria-labelledby="teaching-title">
+  <p class="eyebrow">Teaching</p>
+  <h2 id="teaching-title">Courses in operations management, empirical research, business analytics, and statistics.</h2>
+  <p>Teaching includes graduate empirical research in operations management, service operations management, MSBA analytics courses, MBA operations management, undergraduate operations management, and business statistics.</p>
+  <p><a href="{{ BASE_PATH }}/pages/teaching.html">View teaching history</a></p>
+</section>
+
+<section class="section section--contact" id="contact" aria-labelledby="contact-title">
+  <div>
+    <p class="eyebrow">Contact</p>
+    <h2 id="contact-title">Get in touch</h2>
+    <p><strong>{{ profile.name }}</strong> <span lang="ko">{{ profile.name_ko }}</span></p>
+    <p>{{ profile.title }}<br>{{ profile.affiliation }}</p>
+    <p lang="ko">{{ profile.title_ko }}<br>{{ profile.affiliation_ko }}</p>
+  </div>
+  <address>
+    <a href="mailto:{{ profile.email }}" data-analytics-event="email_click">{{ profile.email }}</a><br>
+    {{ profile.office_phone }}<br>
+    {{ profile.address }}<br>
+    <span lang="ko">{{ profile.address_ko }}</span>
+  </address>
+  <p class="link-row">
+    <a href="{{ profile.cv_url }}" data-analytics-event="cv_download">CV</a>
+    <span aria-hidden="true"> · </span><a href="{{ profile.links.kubs.url }}" data-analytics-event="external_profile_click">{{ profile.links.kubs.label }}</a>
+    <span aria-hidden="true"> · </span><a href="{{ profile.links.linkedin.url }}" data-analytics-event="external_profile_click">{{ profile.links.linkedin.label }}</a>
+  </p>
+</section>
