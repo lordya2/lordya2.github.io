@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Research
+hide_page_header: true
 description: Research themes, methods, publications, working papers, and selected work in progress.
 ---
 {% assign portfolio = site.data.research_portfolio %}

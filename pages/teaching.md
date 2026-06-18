@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Teaching
+hide_page_header: true
 description: Complete institution, course, audience, language, and semester history from the CV.
 ---
 {% assign teaching = site.data.teaching %}

@@ -1,7 +1,8 @@
 name: 'Hyun Seok ("Huck") Lee'
 name_ko: '이현석'
-title: 'KUBS Research Fellow, Associate Professor of LSOM, and Area Chair of Logistics, Service and Operations Management'
-title_ko: '고려대학교 경영대학 KUBS Research Fellow, LSOM 분야 Area Chair, 부교수'
+display_title: 'KUBS Research Fellow · Associate Professor, LSOM & Business Analytics · Area Chair, LSOM'
+full_title: 'KUBS Research Fellow; Associate Professor of Logistics, Service and Operations Management and Business Analytics; Area Chair of Logistics, Service and Operations Management'
+full_title_ko: '고려대학교 경영대학 KUBS Research Fellow; LSOM 및 Business Analytics 부교수; LSOM Area Chair'
 affiliation: 'Korea University Business School'
 affiliation_ko: '고려대학교 경영대학'
 positioning: 'Empirical operations and supply chain management scholar studying healthcare and pharmaceutical supply chains, retail and service operations, platform operations, and causal inference.'
@@ -16,11 +17,11 @@ headshot: '/assets/headshot.jpg'
 headshot_alt: 'Portrait of Hyun Seok Huck Lee'
 links:
   kubs:
-    label: 'Official KUBS homepage'
-    url: 'https://biz.korea.ac.kr/eng/professor/professor_view?major=607&no=222&refer=%2Feng%2Fprofessor%2Flsom.html'
+    label: 'Official KUBS Profile'
+    url: 'https://biz.korea.ac.kr/eng/professor/professor_view.html?pinfo=BEkcJR5dlf3gtXpnevPPig&refer=%2Feng%2Fprofessor%2Fprofessor_list1.html%3Fmajor%3DM06'
   linkedin:
     label: 'LinkedIn'
     url: 'https://www.linkedin.com/in/hyun-seok-lee-1885083a/'
   google_scholar:
-    label: 'Google Scholar search'
-    url: 'https://scholar.google.com/scholar?q=Hyun+Seok+Huck+Lee+Korea+University+Business+School'
+    label: 'Google Scholar'
+    url: 'https://scholar.google.com/citations?user=vGy-cTQAAAAJ&hl=en'
