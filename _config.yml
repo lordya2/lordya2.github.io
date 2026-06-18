@@ -22,6 +22,7 @@ markdown: kramdown
 
 # Optional Google Analytics 4 measurement ID. Leave blank to disable analytics.
 google_analytics_id: "G-FKX2HDTLNX"
+google_site_verification: ""
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
