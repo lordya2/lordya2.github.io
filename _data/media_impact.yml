@@ -1,0 +1,14 @@
+featured:
+  - title: 'Korean media coverage of Management Science article on drug-shortage recovery'
+    outlet: 'Naver News search results'
+    date: '2026-06'
+    url: 'https://search.naver.com/search.naver?ssc=tab.news.all&query=%EC%9D%B4%ED%98%84%EC%84%9D%20%EC%9D%98%EC%95%BD%ED%92%88&sm=tab_opt&sort=1&photo=0&field=0&pd=-1&ds=2026.06.19&de=2026.06.19&docid=&related=0&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so%3Add%2Cp%3Aall&is_sug_officeid=0&office_category=0&service_area=0'
+    summary: 'A cluster of Korean news articles covering the online publication of the Management Science article on learning in recovery from U.S. drug shortages.'
+    related_work: 'Learning in Recovery from Disruption'
+    type: 'Media coverage'
+
+archive:
+  school_news: []
+  media_coverage: []
+  research_impact: []
+  awards_and_recognition: []

@@ -1,5 +1,8 @@
 - label: Research
   url: /pages/research.html
+- label: Media & Impact
+  url: /pages/media.html
+  event: media_impact_click
 - label: People
   url: /pages/people.html
   event: people_page_click

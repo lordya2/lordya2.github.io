@@ -1,7 +1,7 @@
 ---
 layout: frontpage
 title: Hyun Seok ("Huck") Lee
-description: Huck Lee is a KUBS Research Fellow, Associate Professor, and LSOM Area Chair at Korea University Business School.
+description: Huck Lee studies empirical operations, healthcare and pharmaceutical supply chains, retail, platforms, and policy-relevant decisions at Korea University Business School.
 keywords: Hyun Seok, Huck, Lee, Operations Management, Supply Chain, Healthcare, Retail, KUBS.
 lang: en
 ---
@@ -56,6 +56,23 @@ lang: en
   </div>
 </section>
 
+<section class="section" id="media-impact-preview" aria-labelledby="media-impact-preview-title">
+  <p class="eyebrow">Media &amp; Impact</p>
+  <h2 id="media-impact-preview-title">Research in the media and public-facing outlets</h2>
+  <div class="media-grid">
+    {% for item in site.data.media_impact.featured limit:3 %}
+      <article class="card">
+        <p class="card-label">{{ item.type }} · {{ item.date }}</p>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.summary }}</p>
+        {% if item.related_work %}<p><span class="status-badge">Related research</span> {{ item.related_work }}</p>{% endif %}
+        <p><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer" data-analytics-event="media_impact_click">View coverage</a></p>
+      </article>
+    {% endfor %}
+  </div>
+  <p><a class="button" href="{{ BASE_PATH }}/pages/media.html" data-analytics-event="media_impact_click">View Media &amp; Impact</a></p>
+</section>
+
 <section class="section" id="people-preview" aria-labelledby="people-preview-title">
   <p class="eyebrow">People</p>
   <h2 id="people-preview-title">Student mentoring, alumni placements, and MSBA capstone outcomes.</h2>
@@ -68,7 +85,7 @@ lang: en
   <p><a class="button" href="{{ BASE_PATH }}/pages/people.html" data-analytics-event="people_page_click">View People page</a></p>
 </section>
 
-<section class="section section--compact" id="news" aria-labelledby="news-title"><p class="eyebrow">Recent News</p><h2 id="news-title">Recent updates</h2><ul class="timeline-list">{% for item in site.data.news %}<li><time>{{ item.date }}</time><span>{{ item.text }}</span></li>{% endfor %}</ul></section>
+<section class="section section--compact" id="news" aria-labelledby="news-title"><p class="eyebrow">Recent News</p><h2 id="news-title">Recent updates</h2><ul class="timeline-list">{% for item in site.data.news limit:4 %}<li><time>{{ item.date }}</time><span>{{ item.text }}</span></li>{% endfor %}</ul><p><a href="{{ BASE_PATH }}/pages/news.html" data-analytics-event="news_archive_click">View all news</a></p></section>
 
 <section class="section section--compact" id="awards-service" aria-labelledby="awards-service-title"><p class="eyebrow">Awards &amp; Service</p><h2 id="awards-service-title">Selected recognition and service</h2><div class="card-grid card-grid--three awards-grid">{% for item in site.data.awards_service.homepage_highlights %}<article class="card award-card"><p class="card-label">{{ item.category }}</p><h3>{{ item.title }}</h3>{% if item.organization %}<p>{{ item.organization }}</p>{% endif %}{% if item.detail %}<p>{{ item.detail }}</p>{% endif %}{% if item.date %}<p class="award-card__date">{{ item.date }}</p>{% endif %}</article>{% endfor %}</div><p><a href="{{ BASE_PATH }}/pages/award.html">View awards and service</a></p></section>
 
@@ -102,7 +119,7 @@ lang: en
       </div>
       <div class="contact-card__row">
         <dt>Profile links</dt>
-        <dd class="link-row"><a href="{{ profile.cv_url }}" data-analytics-event="cv_download">CV</a><a href="{{ profile.links.kubs.url }}" target="_blank" rel="noopener noreferrer" data-analytics-event="external_profile_click">{{ profile.links.kubs.label }}</a><a href="{{ profile.links.linkedin.url }}" target="_blank" rel="noopener noreferrer" data-analytics-event="external_profile_click">{{ profile.links.linkedin.label }}</a><a href="{{ profile.links.google_scholar.url }}" target="_blank" rel="noopener noreferrer" data-analytics-event="google_scholar_click">{{ profile.links.google_scholar.label }}</a></dd>
+        <dd class="link-row"><a href="{{ profile.cv_url }}" data-analytics-event="cv_download">CV</a><a href="{{ profile.links.kubs.url }}" target="_blank" rel="noopener noreferrer" data-analytics-event="external_profile_click">{{ profile.links.kubs.label }}</a><a href="{{ profile.links.linkedin.url }}" target="_blank" rel="noopener noreferrer" data-analytics-event="external_profile_click">{{ profile.links.linkedin.label }}</a><a href="{{ profile.links.google_scholar.url }}" target="_blank" rel="noopener noreferrer" data-analytics-event="google_scholar_click">{{ profile.links.google_scholar.label }}</a><a href="{{ profile.links.orcid.url }}" target="_blank" rel="noopener noreferrer" data-analytics-event="orcid_click">{{ profile.links.orcid.label }}</a></dd>
       </div>
     </dl>
   </div>
