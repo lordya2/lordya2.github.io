@@ -25,7 +25,11 @@
         <nav class="site-nav" aria-label="Primary navigation">
           <ul>
             {% for item in site.data.navigation %}
-              <li><a href="{{ BASE_PATH }}{{ item.url }}"{% if item.event %} data-analytics-event="{{ item.event }}"{% endif %}>{{ item.label }}</a></li>
+              {% assign is_current = false %}
+              {% unless item.url contains '#' or item.url contains '.pdf' %}
+                {% if item.url == page.url %}{% assign is_current = true %}{% endif %}
+              {% endunless %}
+              <li><a href="{{ BASE_PATH }}{{ item.url }}"{% if is_current %} aria-current="page"{% endif %}{% if item.label == 'CV' %} class="site-nav__cv"{% endif %}{% if item.event %} data-analytics-event="{{ item.event }}"{% endif %}>{{ item.label }}</a></li>
             {% endfor %}
           </ul>
         </nav>

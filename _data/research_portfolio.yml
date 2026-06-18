@@ -30,23 +30,6 @@ peer_reviewed:
     links:
       - label: INFORMS
         url: 'https://pubsonline.informs.org/doi/10.1287/mnsc.2024.08337'
-  - id: 'fitting-room-traffic'
-    citation: 'Lee, H., Kesavan, S., and Deshpande, V. (2021) Managing the Impact of Fitting-Room Traffic on Retail Sales: Using Labor to Reduce Phantom Stockouts. Manufacturing & Service Operations Management, 23(6): 1580-1596.'
-    short_title: 'Fitting-Room Traffic'
-    links:
-      - label: SSRN
-        url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2523680'
-      - label: INFORMS
-        url: 'https://pubsonline.informs.org/doi/10.1287/msom.2020.0884'
-  - id: 'drug-shortage-transparency'
-    citation: 'Lee, J., Lee, H., Shin, H., and Krishnan, V. (2021) Alleviating Drug Shortages: The Role of Mandated Reporting-Induced Operational Transparency. Management Science, 67(4): 2326-2339.'
-    short_title: 'Alleviating Drug Shortages'
-    note: 'The first two authors contributed equally to this paper.'
-    links:
-      - label: SSRN
-        url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3565467'
-      - label: INFORMS
-        url: 'https://pubsonline.informs.org/doi/10.1287/mnsc.2020.3857'
   - id: 'product-variety'
     citation: 'Lu, G., Lee, H., and Son, J. (2022) Product Variety in Local Grocery Stores: Differential Effects on Stock-Keeping Unit Level Sales. Journal of Operations Management, 68(1): 33-54.'
     short_title: 'Product Variety'
@@ -61,15 +44,35 @@ peer_reviewed:
     links:
       - label: Wiley
         url: 'https://onlinelibrary.wiley.com/doi/epdf/10.1111/poms.13740'
+  - id: 'drug-shortage-transparency'
+    citation: 'Lee, J., Lee, H., Shin, H., and Krishnan, V. (2021) Alleviating Drug Shortages: The Role of Mandated Reporting-Induced Operational Transparency. Management Science, 67(4): 2326-2339.'
+    short_title: 'Alleviating Drug Shortages'
+    note: 'The first two authors contributed equally to this paper.'
+    links:
+      - label: SSRN
+        url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3565467'
+      - label: INFORMS
+        url: 'https://pubsonline.informs.org/doi/10.1287/mnsc.2020.3857'
+  - id: 'fitting-room-traffic'
+    citation: 'Lee, H., Kesavan, S., and Deshpande, V. (2021) Managing the Impact of Fitting-Room Traffic on Retail Sales: Using Labor to Reduce Phantom Stockouts. Manufacturing & Service Operations Management, 23(6): 1580-1596.'
+    short_title: 'Fitting-Room Traffic'
+    links:
+      - label: SSRN
+        url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2523680'
+      - label: INFORMS
+        url: 'https://pubsonline.informs.org/doi/10.1287/msom.2020.0884'
 working_papers:
   - id: 'fulfillment-by-platform'
+    short_title: 'Fulfillment by Platform'
     citation: 'Lee, H., Kim, Y., and Son, J. (2025) Fulfillment-By-Platform in B2C E-tailing: Overall Positive Customer Responses, yet Diminishing End Effect.'
     status: 'Under revision at Journal of Operations Management.'
     note: 'MK Emerging Scholar Paper Award at KASBA 2022 Convergence Conference, Yeosu, Korea.'
   - id: 'emergency-department-fees'
+    short_title: 'Emergency Department Attendance Fees'
     citation: 'Lee, H., Park, E., and Rainer, T. (2025) Heterogeneous Patient Response to Uniform Increase in Emergency Department Attendance Fees: A Territory-Wide Study.'
     status: 'Under revision (Major Revision) at Manufacturing & Service Operations Management.'
   - id: 'self-service-kiosks'
+    short_title: 'Self-Service Kiosks'
     citation: 'Kim, J., Kwon, H., Lee, D., Lee, H., and Lee, K. (2026) An Empirical Analysis of Technology-Driven Service Automation: The Impact of Self-Service Kiosks on Sales, Labor and Customers.'
     status: 'Under review at Manufacturing & Service Operations Management.'
 book_chapter:

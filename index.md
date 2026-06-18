@@ -38,17 +38,19 @@ lang: en
   <div class="research-list">
     {% for paper in site.data.featured_research %}
       <article class="research-card">
-        <div>
-          <p class="research-card__venue">{{ paper.venue }}</p>
+        <div class="research-card__summary">
+          <p class="research-card__venue">{{ paper.venue }} · {{ paper.year }}</p>
           <h3>{{ paper.short_title }}</h3>
-          <p class="citation">{{ paper.citation }}</p>
         </div>
-        <dl>
-          <dt>Question</dt><dd>{{ paper.question }}</dd>
-          <dt>Finding</dt><dd>{{ paper.finding }}</dd>
-          <dt>Impact</dt><dd>{{ paper.impact }}</dd>
-          <dt>Links</dt><dd>{% for link in paper.links %}<a href="{{ link.url }}" data-analytics-event="publication_click">{{ link.label }}</a>{% unless forloop.last %}<span aria-hidden="true"> · </span>{% endunless %}{% endfor %}</dd>
-        </dl>
+        <div class="research-card__body">
+          <dl>
+            <dt>Question</dt><dd>{{ paper.question }}</dd>
+            <dt>Finding</dt><dd>{{ paper.finding }}</dd>
+            <dt>Impact</dt><dd>{{ paper.impact }}</dd>
+            <dt>Publication links</dt><dd>{% for link in paper.links %}<a href="{{ link.url }}" data-analytics-event="publication_click">{{ link.label }}</a>{% unless forloop.last %}<span aria-hidden="true"> · </span>{% endunless %}{% endfor %}</dd>
+          </dl>
+        </div>
+        <p class="research-card__citation">{{ paper.citation }}</p>
       </article>
     {% endfor %}
   </div>
@@ -68,7 +70,7 @@ lang: en
 
 <section class="section section--compact" id="news" aria-labelledby="news-title"><p class="eyebrow">Recent News</p><h2 id="news-title">Recent updates</h2><ul class="timeline-list">{% for item in site.data.news %}<li><time>{{ item.date }}</time><span>{{ item.text }}</span></li>{% endfor %}</ul></section>
 
-<section class="section section--compact" id="awards-service" aria-labelledby="awards-service-title"><p class="eyebrow">Awards &amp; Service</p><h2 id="awards-service-title">Selected recognition and service</h2><div class="card-grid card-grid--three">{% for item in site.data.awards_service.homepage_highlights %}<article class="card"><h3>{{ item }}</h3></article>{% endfor %}</div><p><a href="{{ BASE_PATH }}/pages/award.html">View awards and service</a></p></section>
+<section class="section section--compact" id="awards-service" aria-labelledby="awards-service-title"><p class="eyebrow">Awards &amp; Service</p><h2 id="awards-service-title">Selected recognition and service</h2><div class="card-grid card-grid--three awards-grid">{% for item in site.data.awards_service.homepage_highlights %}<article class="card award-card"><p class="card-label">{{ item.category }}</p><h3>{{ item.title }}</h3>{% if item.organization %}<p>{{ item.organization }}</p>{% endif %}{% if item.detail %}<p>{{ item.detail }}</p>{% endif %}{% if item.date %}<p class="award-card__date">{{ item.date }}</p>{% endif %}</article>{% endfor %}</div><p><a href="{{ BASE_PATH }}/pages/award.html">View awards and service</a></p></section>
 
 <section class="section" id="teaching" aria-labelledby="teaching-title"><p class="eyebrow">Teaching</p><h2 id="teaching-title">Courses across research graduate programs, MSBA, MBA, and undergraduate education.</h2><div class="card-grid card-grid--four">{% for card in site.data.teaching.homepage_cards %}<article class="card"><h3>{{ card.title }}</h3><p>{{ card.summary }}</p></article>{% endfor %}</div><p><a href="{{ BASE_PATH }}/pages/teaching.html">View teaching history</a></p></section>
 
