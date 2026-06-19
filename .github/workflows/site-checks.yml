@@ -1,0 +1,48 @@
+name: Site checks
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+
+jobs:
+  site-checks:
+    name: Validate and build site
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Validate YAML
+        run: ruby scripts/validate_yaml.rb
+
+      - name: Validate publications
+        run: ruby scripts/validate_publications.rb
+
+      - name: Check Liquid delimiter balance
+        run: ruby scripts/check_liquid_balance.rb
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build --trace
+
+      - name: Check internal links
+        run: ruby scripts/check_internal_links.rb
+
+      - name: Check external links (warning only)
+        run: ruby scripts/check_external_links.rb || true
+
+      - name: Upload generated site artifact
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-site
+          path: _site
+          if-no-files-found: error
