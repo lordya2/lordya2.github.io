@@ -5,6 +5,7 @@ themes:
       - 'drug-shortage-recovery'
       - 'drug-shortage-transparency'
       - 'emergency-department-fees'
+      - 'ed-openings-two-eds'
   - id: 'retail-service-operations'
     title: 'Retail & Service Operations'
     representative_papers:
@@ -22,6 +23,7 @@ themes:
       - 'drug-shortage-transparency'
       - 'group-incentives'
       - 'emergency-department-fees'
+      - 'ed-openings-two-eds'
 methodology:
   - Field experiments
   - Difference-in-differences
