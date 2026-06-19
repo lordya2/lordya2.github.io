@@ -16,6 +16,7 @@ lang: en
     <p class="hero__positioning" lang="ko">{{ profile.positioning_ko }}</p>
     <div class="button-row" aria-label="Primary actions">
       <a class="button" href="{{ '/pages/research.html' | relative_url }}">Research</a>
+      <a class="button button--secondary" href="{{ '/pages/industry.html' | relative_url }}" data-analytics-event="industry_page_click">Industry Collaboration</a>
       <a class="button button--secondary" href="{{ '/pages/people.html' | relative_url }}" data-analytics-event="people_page_click">People</a>
       <a class="button button--ghost" href="{{ profile.cv_url }}" data-analytics-event="cv_download">Download CV</a>
       <a class="button button--ghost" href="{{ profile.links.google_scholar.url }}" target="_blank" rel="noopener noreferrer" data-analytics-event="google_scholar_click">Google Scholar</a>
