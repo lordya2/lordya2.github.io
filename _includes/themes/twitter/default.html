@@ -28,8 +28,8 @@
     <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | prepend: site.production_url }}">
     <link rel="shortcut icon" href="{{ '/assets/favicon.svg' | prepend: site.production_url }}">
     {% include structured-data.html %}
-    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-    <link href="{{ ASSET_PATH }}/css/my_custom_css.css" rel="stylesheet" type="text/css" media="all">
+    <link href="{{ '/assets/themes/twitter/css/style.css' | relative_url }}?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="{{ '/assets/themes/twitter/css/my_custom_css.css' | relative_url }}" rel="stylesheet" type="text/css" media="all">
     {% include analytics.html %}
   </head>
 
@@ -37,7 +37,7 @@
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header" role="banner">
       <div class="site-header__inner">
-        <a class="site-brand" href="{{ HOME_PATH }}" aria-label="{{ site.title }} home">
+        <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
           <span class="site-brand__name">{{ site.data.profile.name }}</span>
           <span class="site-brand__ko" lang="ko">{{ site.data.profile.name_ko }}</span>
         </a>
@@ -48,7 +48,7 @@
               {% unless item.url contains '#' or item.url contains '.pdf' %}
                 {% if item.url == page.url %}{% assign is_current = true %}{% endif %}
               {% endunless %}
-              <li><a href="{{ BASE_PATH }}{{ item.url }}"{% if is_current %} aria-current="page"{% endif %}{% if item.label == 'CV' %} class="site-nav__cv"{% endif %}{% if item.event %} data-analytics-event="{{ item.event }}"{% endif %}>{{ item.label }}</a></li>
+              <li><a href="{{ item.url | relative_url }}"{% if is_current %} aria-current="page"{% endif %}{% if item.label == 'CV' %} class="site-nav__cv"{% endif %}{% if item.event %} data-analytics-event="{{ item.event }}"{% endif %}>{{ item.label }}</a></li>
             {% endfor %}
           </ul>
         </nav>
