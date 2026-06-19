@@ -1,21 +1,51 @@
-headline: Industry Collaboration
-intro: I collaborate with companies, public organizations, and healthcare or retail partners on research-based projects that use data, field evidence, and operational insight to improve decisions.
+headline: '산학협력'
+eyebrow_en: 'Industry Collaboration'
+title: '기업 데이터와 운영 의사결정을 연결하는 연구 기반 산학협력'
+intro: >-
+  기업이 보유한 운영 데이터와 현장의 의사결정 문제를 바탕으로, 리테일, 서비스, 플랫폼, 공급망, 헬스케어 영역의 실질적 개선 기회를 함께 찾습니다. 단순한 분석 보고서보다 “어떤 의사결정을 바꿀 것인가”를 먼저 정의하고, 데이터 분석·현장실험·인과추론·머신러닝을 결합해 실행 가능한 인사이트를 도출하는 것을 목표로 합니다.
 collaboration_areas:
-  - Retail and service operations
-  - Healthcare and pharmaceutical supply chains
-  - Business analytics and causal inference
-  - Platform, channel, and fulfillment decisions
-  - Labor, incentives, and people-centric operations
-  - Demand–capacity matching and operational resilience
+  - title: '데이터 기반 운영진단'
+    description: '판매, 재고, 고객, 물류, 노동, 서비스 데이터를 활용해 병목, 낭비, 수요-공급 불일치, 고객 이탈, 운영 리스크를 진단합니다.'
+  - title: 'A/B 테스트 및 현장실험 설계'
+    description: '프로모션, 추천 알고리즘, 서비스 정책, 매장 운영 방식, 고객 커뮤니케이션의 효과를 현장실험 또는 준실험 설계로 평가합니다.'
+  - title: '인과추론 기반 효과 평가'
+    description: '이중차분, 매칭, 도구변수, 이벤트 스터디 등 인과추론 방법을 활용해 정책·제도·운영 변화가 성과에 미친 영향을 추정합니다.'
+  - title: '수요예측·추천·재고 의사결정'
+    description: '머신러닝과 운영관리 관점을 결합해 판매량 예측, 추천 서비스, 상품 배분, 재고 운영, 수요-공급 매칭 문제를 다룹니다.'
+  - title: '리테일·서비스·플랫폼 운영 분석'
+    description: '온·오프라인 채널, 멤버십, 플랫폼 풀필먼트, 고객 여정, 매장 운영, 서비스 자동화와 관련된 의사결정을 분석합니다.'
+  - title: '공급망 회복탄력성과 리스크 진단'
+    description: '공급중단, 재고 부족, 공급망 구조 변화, 운영 투명성, 회복 경험 학습이 성과에 미치는 영향을 데이터로 평가합니다.'
+project_modes:
+  - title: '공동 연구 프로젝트'
+    description: '기업의 실제 운영 데이터를 바탕으로 학술적 엄밀성과 실무적 함의를 모두 갖춘 연구 프로젝트를 설계합니다.'
+  - title: 'MSBA 캡스톤 및 학생 프로젝트'
+    description: '기업이 제시한 문제를 학생 팀이 분석하고, 교수진이 연구 설계·분석 방향·결과 해석을 지도하는 방식으로 진행합니다.'
+  - title: '단기 운영진단·자문'
+    description: '초기 문제 정의, 데이터 가용성 점검, 분석 설계, 실험 설계, 내부 의사결정 지원을 위한 단기 자문을 진행할 수 있습니다.'
+  - title: '임원·실무자 워크숍'
+    description: '운영관리, 비즈니스 애널리틱스, 인과추론, 현장실험, AI 활용을 주제로 연구 기반 워크숍을 제공합니다.'
+capstone_intro: >-
+  아래는 공개 가능한 범위에서 소개하는 MSBA 캡스톤 및 산학 프로젝트 사례입니다. 학생 프로젝트의 경우 기업 현안, 데이터 분석, 머신러닝, 인과추론, 추천/예측 모델링을 연결해 실무적으로 활용 가능한 결과물을 만드는 것을 목표로 합니다.
+capstone_projects:
+  - partner: 'GS Retail'
+    title: '이미지 데이터 군집 분석을 통한 소비자 구매 행동 분석 및 추천 서비스 개선'
+    description: '이미지 데이터와 소비자 구매 행동을 연결해 상품 이해와 추천 서비스 개선 가능성을 탐색한 캡스톤 프로젝트입니다.'
+    video_url: 'https://www.youtube.com/embed/GLikvwQ0ugA'
+  - partner: 'E-Land / SPAO'
+    title: '국내 SPA 패션 브랜드 SPAO 분배 시스템 재구축: 머신러닝을 이용한 판매량 예측 모델을 활용하여'
+    description: '판매량 예측 모델을 활용해 패션 상품 분배와 재고 운영 의사결정을 개선하는 방향을 탐색한 캡스톤 프로젝트입니다.'
+    video_url: 'https://www.youtube.com/embed/UlAuBOKTvHc'
+  - partner: 'Hyundai Motor Group'
+    title: '블루멤버스 활동이 차량 구매 결정에 미치는 영향: 이중차분 모형과 RFM Cluster에 따른 관계 관리 전략'
+    description: '멤버십 활동과 차량 구매 간 관계를 이중차분 모형과 RFM 클러스터링으로 분석한 프로젝트입니다.'
+  - partner: 'Hyundai Home Shopping'
+    title: 'Hmall 추천 알고리즘 구축'
+    description: '온라인 쇼핑몰 고객 행동 데이터를 바탕으로 추천 알고리즘과 개인화 의사결정의 개선 가능성을 탐색한 프로젝트입니다.'
 selected_collaborators:
-  note: Selected organizations connected to prior research or project collaboration. Listed organizations are not presented as testimonials or endorsements.
+  note: '아래 조직은 공개 가능한 범위에서 기존 연구, 프로젝트, 캡스톤, 또는 산학협력과 연결된 사례입니다. 추천사나 보증으로 제시하는 것은 아닙니다.'
   groups:
-    - geography: United States
-      organizations:
-        - Department store retail chain (similar to Macy's)
-        - Discount store retail chain (similar to TJ Maxx)
-        - Local grocery store chain (similar to Whole Foods)
-    - geography: Korea
+    - geography: '한국'
       organizations:
         - Hyundai Motor Group
         - GS Retail Group
@@ -24,18 +54,18 @@ selected_collaborators:
         - E-Land
         - Hyundai Home Shopping
         - Office Depot
-project_modes:
-  - Research collaboration using operational data
-  - Field experiments or quasi-experimental evaluation
-  - Student capstone or analytics projects
-  - Executive education or research-based workshops
-  - Advisory discussions on operations and analytics problems
+    - geography: '해외/미국'
+      organizations:
+        - Department store retail chain (similar to Macy''s)
+        - Discount store retail chain (similar to TJ Maxx)
+        - Local grocery store chain (similar to Whole Foods)
 principles:
-  - Research-grounded and data-driven
-  - Clear managerial question
-  - Careful attention to confidentiality
-  - Practical implications plus academic rigor
-  - Student learning opportunities where appropriate
+  - '현장 의사결정에서 출발하는 문제 정의'
+  - '데이터 기반 분석과 연구 설계의 엄밀성'
+  - '기업 데이터와 민감 정보에 대한 비밀유지'
+  - '실행 가능한 실무적 함의 도출'
+  - '학생 학습과 기업 가치 창출의 균형'
 contact_cta:
-  text: To discuss a research-based collaboration, please contact me by email with a brief description of the managerial question, available data or context, and desired timeline.
-  subject: Industry collaboration inquiry
+  text: '산학협력 가능성을 논의하고 싶으시면 해결하고 싶은 운영/경영 질문, 활용 가능한 데이터의 범위, 희망 일정 등을 간단히 적어 이메일로 연락해 주세요.'
+  subject: '산학협력 문의'
+  button: '산학협력 문의하기'
