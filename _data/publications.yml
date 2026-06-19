@@ -131,6 +131,15 @@
   research_theme_ids:
     - 'healthcare-pharmaceutical-supply-chains'
     - 'empirical-om-causal-inference'
+- id: 'ed-openings-two-eds'
+  category: 'working_paper'
+  short_title: 'A Tale of Two EDs'
+  citation: 'Lee, H., Batt, R. J., Park, E., and Rainer, T. H. (2026) A Tale of Two EDs: How New Emergency Departments Shape Local Demand for Emergency Care.'
+  status: 'Working paper.'
+  note: 'Using territory-wide emergency department data from Hong Kong, this project examines how new ED openings change local demand, patient mix, and utilization around newly opened facilities.'
+  research_theme_ids:
+    - 'healthcare-pharmaceutical-supply-chains'
+    - 'empirical-om-causal-inference'
 - id: 'self-service-kiosks'
   category: 'working_paper'
   short_title: 'Self-Service Kiosks'
