@@ -57,6 +57,18 @@ lang: en
   </div>
 </section>
 
+<section class="section" id="industry-collaboration-preview" aria-labelledby="industry-collaboration-preview-title">
+  <p class="eyebrow">Industry Collaboration</p>
+  <h2 id="industry-collaboration-preview-title">Research-based collaboration with companies and organizations</h2>
+  <p>I work with industry and organizational partners on data-driven operations problems in retail, healthcare, platforms, supply chains, and people-centric operations.</p>
+  <div class="card-grid card-grid--three">
+    <article class="card"><h3>Data-driven operations projects</h3></article>
+    <article class="card"><h3>Field evidence and causal evaluation</h3></article>
+    <article class="card"><h3>Student capstone and analytics collaboration</h3></article>
+  </div>
+  <p><a class="button" href="{{ '/pages/industry.html' | relative_url }}" data-analytics-event="industry_page_click">Explore Industry Collaboration</a></p>
+</section>
+
 <section class="section" id="media-impact-preview" aria-labelledby="media-impact-preview-title">
   <p class="eyebrow">Media &amp; Impact</p>
   <h2 id="media-impact-preview-title">Research in the media and public-facing outlets</h2>
