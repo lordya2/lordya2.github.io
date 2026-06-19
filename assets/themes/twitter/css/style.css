@@ -140,6 +140,12 @@ address { font-style: normal; }
 .publication-citation { overflow-wrap: anywhere; }
 .publication-links a { font-weight: 800; }
 .status-badge { display: inline-block; max-width: 100%; padding: .28rem .65rem; border: 1px solid #e5cf8e; border-radius: .65rem; background: #fff8e6; color: #684600; font-size: .95rem; font-weight: 800; line-height: 1.45; overflow-wrap: anywhere; }
+.lead-text { max-width: 860px; color: var(--muted); font-size: 1.1rem; }
+.industry-page .card h3 + p { margin-top: .45rem; }
+.capstone-card { display: flex; flex-direction: column; gap: .75rem; }
+.capstone-card p { margin-bottom: 0; }
+.video-embed { position: relative; width: 100%; aspect-ratio: 16 / 9; margin-top: .35rem; overflow: hidden; border: 1px solid var(--border); border-radius: .85rem; background: var(--bg-soft); }
+.video-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 
 .site-footer { border-top: 1px solid var(--border); background: var(--bg-soft); }
 .site-footer__inner { padding: 2rem 0; color: var(--muted); }
