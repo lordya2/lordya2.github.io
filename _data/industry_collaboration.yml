@@ -1,0 +1,39 @@
+headline: Industry Collaboration
+intro: I collaborate with companies, public organizations, and healthcare or retail partners on research-based projects that use data, field evidence, and operational insight to improve decisions.
+collaboration_areas:
+  - Retail and service operations
+  - Healthcare and pharmaceutical supply chains
+  - Business analytics and causal inference
+  - Platform, channel, and fulfillment decisions
+  - Labor, incentives, and people-centric operations
+  - Demand–capacity matching and operational resilience
+selected_collaborators:
+  note: Selected organizations connected to prior research or project collaboration, based on publicly listed KUBS profile information. Listed organizations are not presented as testimonials or endorsements.
+  groups:
+    - geography: United States
+      organizations:
+        - Macy's
+        - TJ Maxx
+        - Whole Foods
+    - geography: Korea
+      organizations:
+        - Hyundai Motor Group
+        - GS Retail Group
+        - Amorepacific
+        - Hanmi Pharmaceutical
+        - E-Land
+project_modes:
+  - Research collaboration using operational data
+  - Field experiments or quasi-experimental evaluation
+  - Student capstone or analytics projects
+  - Executive education or research-based workshops
+  - Advisory discussions on operations and analytics problems
+principles:
+  - Research-grounded and data-driven
+  - Clear managerial question
+  - Careful attention to confidentiality
+  - Practical implications plus academic rigor
+  - Student learning opportunities where appropriate
+contact_cta:
+  text: To discuss a research-based collaboration, please contact me by email with a brief description of the managerial question, available data or context, and desired timeline.
+  subject: Industry collaboration inquiry
