@@ -36,11 +36,12 @@ lang: en
   <p class="eyebrow">Featured Research</p>
   <h2 id="featured-research-title">Selected peer-reviewed publications.</h2>
   <div class="research-list">
-    {% for paper in site.data.featured_research %}
+    {% assign featured_papers = site.data.publications | where: "featured", true | sort: "featured_order" %}
+    {% for paper in featured_papers %}
       <article class="research-card">
         <div class="research-card__summary">
           <p class="research-card__venue">{{ paper.venue }} · {{ paper.year }}</p>
-          <h3>{{ paper.short_title }}</h3>
+          <h3>{{ paper.featured_short_title | default: paper.short_title }}</h3>
         </div>
         <div class="research-card__body">
           <dl>

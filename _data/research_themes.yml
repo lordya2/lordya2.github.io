@@ -1,0 +1,29 @@
+themes:
+  - id: 'healthcare-pharmaceutical-supply-chains'
+    title: 'Healthcare & Pharmaceutical Supply Chains'
+    representative_papers:
+      - 'drug-shortage-recovery'
+      - 'drug-shortage-transparency'
+      - 'emergency-department-fees'
+  - id: 'retail-service-operations'
+    title: 'Retail & Service Operations'
+    representative_papers:
+      - 'fitting-room-traffic'
+      - 'group-incentives'
+      - 'product-variety'
+  - id: 'platforms-digital-operations'
+    title: 'Platforms & Digital Operations'
+    representative_papers:
+      - 'fulfillment-by-platform'
+      - 'self-service-kiosks'
+  - id: 'empirical-om-causal-inference'
+    title: 'Empirical OM & Causal Inference'
+    representative_papers:
+      - 'drug-shortage-transparency'
+      - 'group-incentives'
+      - 'emergency-department-fees'
+methodology:
+  - Field experiments
+  - Difference-in-differences
+  - Instrumental variables
+  - Matching designs
