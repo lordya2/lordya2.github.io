@@ -8,7 +8,7 @@ collaboration_areas:
   - Labor, incentives, and people-centric operations
   - Demand–capacity matching and operational resilience
 selected_collaborators:
-  note: Selected organizations connected to prior research or project collaboration, based on publicly listed KUBS profile information. Listed organizations are not presented as testimonials or endorsements.
+  note: Selected organizations connected to prior research or project collaboration. Listed organizations are not presented as testimonials or endorsements.
   groups:
     - geography: United States
       organizations:
@@ -23,6 +23,7 @@ selected_collaborators:
         - Hanmi Pharmaceutical
         - E-Land
         - Hyundai Home Shopping
+        - Office Depot
 project_modes:
   - Research collaboration using operational data
   - Field experiments or quasi-experimental evaluation
