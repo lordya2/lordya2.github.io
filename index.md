@@ -60,13 +60,31 @@ lang: en
   <p class="eyebrow">Media &amp; Impact</p>
   <h2 id="media-impact-preview-title">Research in the media and public-facing outlets</h2>
   <div class="media-grid">
-    {% for item in site.data.media_impact.featured limit:3 %}
-      <article class="card">
-        <p class="card-label">{{ item.type }} · {{ item.date }}</p>
+    {% for item in site.data.media_impact.featured limit:1 %}
+      <article class="card media-group">
+        <p class="card-label media-meta">{{ item.type }} · {{ item.date }}</p>
         <h3>{{ item.title }}</h3>
         <p>{{ item.summary }}</p>
         {% if item.related_work %}<p><span class="status-badge">Related research</span> {{ item.related_work }}</p>{% endif %}
-        <p><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer" data-analytics-event="media_impact_click">View coverage</a></p>
+        <p><a href="{{ BASE_PATH }}/pages/media.html#drug-shortage-coverage" data-analytics-event="media_impact_click">View grouped coverage</a></p>
+      </article>
+    {% endfor %}
+    {% for item in site.data.media_impact.selected_media limit:1 offset:1 %}
+      <article class="card">
+        <p class="card-label media-meta">{{ item.type }} · {{ item.date }}</p>
+        <h3>{{ item.title }}</h3>
+        <p><strong>{{ item.outlet }}</strong></p>
+        <p>{{ item.summary }}</p>
+        <p><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer" data-analytics-event="media_impact_click">Read article</a></p>
+      </article>
+    {% endfor %}
+    {% for item in site.data.media_impact.essays_and_columns limit:1 offset:2 %}
+      <article class="card">
+        <p class="card-label media-meta">{{ item.type }} · {{ item.date }}</p>
+        <h3>{{ item.title }}</h3>
+        <p><strong>{{ item.outlet }}</strong></p>
+        <p>{{ item.summary }}</p>
+        <p><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer" data-analytics-event="media_impact_click">Read column</a></p>
       </article>
     {% endfor %}
   </div>

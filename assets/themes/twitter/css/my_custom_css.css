@@ -21,3 +21,34 @@ td.right { text-align: right; }
 .success { background-color: #ddffdd; border-left: 6px solid #4CAF50; }
 .info { background-color: #e7f3fe; border-left: 6px solid #2196F3; }
 .warning { background-color: #ffffcc; border-left: 6px solid #ffeb3b; }
+
+.media-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.media-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.media-group details {
+  margin-top: 1rem;
+}
+
+.media-group summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.media-link-list {
+  display: grid;
+  gap: .75rem;
+  margin-top: 1rem;
+}
+
+.media-meta {
+  color: #666;
+  font-size: .9rem;
+}
