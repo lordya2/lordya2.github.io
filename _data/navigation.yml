@@ -3,13 +3,13 @@
 - label: Industry
   url: /pages/industry.html
   event: industry_page_click
-- label: Media & Impact
+- label: Media
   url: /pages/media.html
   event: media_impact_click
 - label: People
   url: /pages/people.html
   event: people_page_click
-- label: Awards & Service
+- label: Awards
   url: /pages/award.html
 - label: Teaching
   url: /pages/teaching.html

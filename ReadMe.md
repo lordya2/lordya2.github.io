@@ -74,6 +74,20 @@ GitHub Actions runs the site checks on pull requests and on pushes to `master` t
 
 The site is served by GitHub Pages, with `master` as the publishing branch. Changes should usually be made on feature branches and reviewed through pull requests before merging to `master`. After a pull request is merged, GitHub Pages may take a short time to rebuild and publish the updated site.
 
+
+### Custom domain transition reminder
+
+When switching from `lordya2.github.io` to a custom domain such as `hyunseoklee.com`, update:
+
+- GitHub Pages custom domain setting,
+- repository `CNAME` file if created by GitHub Pages,
+- DNS records at the domain registrar,
+- `_config.yml` `production_url`,
+- Google Search Console property,
+- Open Graph / structured data should continue to use `site.production_url`.
+
+Do not add a `CNAME` file or change `production_url` until the domain has been purchased and confirmed.
+
 ## Suggested Codex workflow
 
 - Create one small pull request per task.
