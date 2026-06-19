@@ -20,7 +20,7 @@ description: Industry collaboration opportunities in empirical operations, busin
     {% endfor %}
   </div>
 
-  <h2>Selected organizations connected to prior collaboration</h2>
+  <h2>Selected industry contexts and collaborators</h2>
   <p>{{ industry.selected_collaborators.note }}</p>
   <div class="card-grid card-grid--two">
     {% for group in industry.selected_collaborators.groups %}

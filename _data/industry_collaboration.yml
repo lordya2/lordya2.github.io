@@ -12,9 +12,9 @@ selected_collaborators:
   groups:
     - geography: United States
       organizations:
-        - Macy's
-        - TJ Maxx
-        - Whole Foods
+        - Department store retail chain (similar to Macy's)
+        - Discount store retail chain (similar to TJ Maxx)
+        - Local grocery store chain (similar to Whole Foods)
     - geography: Korea
       organizations:
         - Hyundai Motor Group
@@ -22,6 +22,7 @@ selected_collaborators:
         - Amorepacific
         - Hanmi Pharmaceutical
         - E-Land
+        - Hyundai Home Shopping
 project_modes:
   - Research collaboration using operational data
   - Field experiments or quasi-experimental evaluation
