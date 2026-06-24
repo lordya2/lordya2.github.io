@@ -72,11 +72,11 @@ coverage_groups:
         url: 'https://www.lecturernews.com/news/articleView.html?idxno=204391'
 
 selected_media:
-  - title: 'DBR expert article on drug-shortage recovery'
+  - title: '위기 겪은 후 복기·학습하는 조직 다음 위기 때 회복 시간 빨라진다'
     outlet: 'Dong-A Business Review'
-    date: '2026-06'
+    date: '2026-07'
     url: 'https://dbr.donga.com/article/view/1201/article_no/12175'
-    summary: 'Expert article for Dong-A Business Review on learning in recovery from disruption and the operational implications of drug-shortage recovery experience.'
+    summary: 'DBR Journal Watch article on learning in recovery from disruption and the operational implications of drug-shortage recovery experience.'
     related_work: 'Learning in Recovery from Disruption'
     type: 'Essay / Expert article'
   - title: "온라인 고객 만족은 '배송'에 달렸다"
