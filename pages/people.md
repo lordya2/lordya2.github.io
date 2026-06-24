@@ -22,7 +22,7 @@ description: Students, alumni, MSBA capstone teams, and research opportunities f
     {% for alum in people.alumni %}<li><time>{{ alum.year }}</time><span><strong>{{ alum.name }}</strong>: {{ alum.degree }}; {{ alum.placement }}{% if alum.note %}. {{ alum.note }}{% endif %}</span></li>{% endfor %}
   </ul>
 
-  <h2>MSBA capstone mentoring outcomes</h2>
+  <h2>MSBA capstone advising outcomes</h2>
   <div class="table-wrap"><table class="data-table"><thead><tr><th>Graduation year</th><th>Team</th><th>Award</th><th>Placements</th></tr></thead><tbody>{% for team in people.msba_capstone %}<tr><td>{{ team.year }}</td><td>{{ team.team }}<br><span class="muted">{{ team.program }}</span></td><td>{{ team.award }}</td><td>{{ team.placements }}</td></tr>{% endfor %}</tbody></table></div>
 
   <h2>Research opportunities</h2>
