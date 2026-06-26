@@ -67,7 +67,7 @@ coverage_groups:
         date: '2026-06'
         url: 'https://www.cnbnews.com/news/articleView.html?idxno=1004263'
       - outlet: 'Korea Lecturer News'
-        title: "“의약품 부족 사태, '창고'보다 '기억'이 강했다”...고려대학교 이현석"
+        title: '“의약품 부족 사태, ''창고''보다 ''기억''이 강했다”...고려대학교 이현석'
         date: '2026-06'
         url: 'https://www.lecturernews.com/news/articleView.html?idxno=204391'
 
@@ -101,7 +101,7 @@ selected_media:
 essays_and_columns:
   - title: '[탁류세평] 신뢰 없는 사회, 불신의 비용'
     outlet: 'Korea University Newspaper'
-    date: '2026'
+    date: '2026-01'
     url: 'https://www.kunews.ac.kr/news/articleView.html?idxno=45117'
     summary: 'Column.'
     type: 'Column'
@@ -113,13 +113,13 @@ essays_and_columns:
     type: 'Column'
   - title: '[탁류세평] 최선의 의사결정: 후회를 최소화하는 법'
     outlet: 'Korea University Newspaper'
-    date: '2025'
+    date: '2025-10'
     url: 'https://www.kunews.ac.kr/news/articleView.html?idxno=44640'
     summary: 'Column.'
     type: 'Column'
   - title: '[탁류세평] Connecting the Dots: 점과 점이 이어지는 순간'
     outlet: 'Korea University Newspaper'
-    date: '2024'
+    date: '2025-09'
     url: 'https://www.kunews.ac.kr/news/articleView.html?idxno=44257'
     summary: 'Column.'
     type: 'Column'
