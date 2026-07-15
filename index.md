@@ -13,8 +13,8 @@ lang: en
     <p class="eyebrow">{{ profile.affiliation }}</p>
     <h1 id="hero-title">{{ profile.name }} <span lang="ko">{{ profile.name_ko }}</span></h1>
     <p class="hero__title">{{ profile.display_title }}</p>
-    <p class="hero__positioning"><strong class="hero__tagline">{{ profile.positioning_lead }}</strong>{{ profile.positioning }}</p>
-    <p class="hero__positioning" lang="ko"><strong class="hero__tagline">{{ profile.positioning_lead_ko }}</strong>{{ profile.positioning_ko }}</p>
+    <p class="hero__positioning"><strong class="hero__tagline">{{ profile.positioning_lead }}</strong> {{ profile.positioning }}</p>
+    <p class="hero__positioning" lang="ko"><strong class="hero__tagline">{{ profile.positioning_lead_ko }}</strong> {{ profile.positioning_ko }}</p>
     <div class="button-row" aria-label="Primary actions">
       <a class="button" href="{{ '/pages/research.html' | relative_url }}">Research</a>
       <a class="button button--secondary" href="#work-with-organizations" data-analytics-event="organization_pathways_click">기업 협력 · Work with Organizations</a>
