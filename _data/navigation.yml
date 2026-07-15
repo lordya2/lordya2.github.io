@@ -16,7 +16,8 @@
 - label: CV
   url: /assets/CV.pdf
   event: cv_download
-- label: Contact
-  url: /#contact
+- label: 문의
+  url: /pages/inquiry.html?source=navigation
+  event: inquiry_page_click
 - label: 한국어
   url: /ko/
