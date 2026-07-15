@@ -44,10 +44,11 @@ lang: en
       <article class="card engagement-card">
         <h3>{{ mode.title }}</h3>
         <p>{{ mode.description }}</p>
-        <p><a class="button button--ghost" href="{{ '/pages/industry.html' | relative_url }}#{{ mode.id }}" data-analytics-event="{{ mode.event }}">{{ mode.cta }}</a></p>
+        <p><a class="button button--ghost" href="{{ '/pages/inquiry.html' | relative_url }}?type={{ mode.id | uri_escape }}&amp;source=homepage" data-analytics-event="{{ mode.event }}">{{ mode.cta }}</a></p>
       </article>
     {% endfor %}
   </div>
+  <p><a href="{{ '/pages/industry.html' | relative_url }}" data-analytics-event="industry_page_click">협력 분야와 공개 사례 자세히 보기</a></p>
 </section>
 
 <section class="section section--tinted" id="featured-research" aria-labelledby="featured-research-title">
@@ -147,6 +148,11 @@ lang: en
     <p class="contact__name"><strong>{{ profile.name }}</strong> <span lang="ko">{{ profile.name_ko }}</span></p>
     <p>{{ profile.full_title }}<br>{{ profile.affiliation }}</p>
     <p lang="ko">{{ profile.full_title_ko }}<br>{{ profile.affiliation_ko }}</p>
+    <div class="button-row" lang="ko" aria-label="기업 강연 및 협업 문의 자료">
+      <a class="button" href="{{ '/pages/inquiry.html' | relative_url }}?source=homepage" data-analytics-event="inquiry_page_click">기업 강연·협업 문의</a>
+      <a class="button button--ghost" href="{{ '/assets/downloads/hyunseok-lee-speaker-one-pager-ko.pdf' | relative_url }}" data-analytics-event="speaker_onepager_download">Speaker One-pager PDF</a>
+      <a class="button button--ghost" href="{{ '/assets/downloads/hyunseok-lee-collaboration-brief-ko.pdf' | relative_url }}" data-analytics-event="collaboration_brief_download">Collaboration Brief PDF</a>
+    </div>
   </div>
   <div class="contact__details" aria-label="Contact details">
     <dl class="contact-card">

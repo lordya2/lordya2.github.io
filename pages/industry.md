@@ -17,6 +17,10 @@ lang: ko
       <a class="button{% unless forloop.first %} button--ghost{% endunless %}" href="#{{ mode.id }}" data-analytics-event="{{ mode.event }}">{{ mode.title }}</a>
     {% endfor %}
   </div>
+  <p class="button-row" aria-label="기업 협력 소개 자료">
+    <a class="button button--ghost" href="{{ '/assets/downloads/hyunseok-lee-speaker-one-pager-ko.pdf' | relative_url }}" data-analytics-event="speaker_onepager_download">Speaker One-pager PDF</a>
+    <a class="button button--ghost" href="{{ '/assets/downloads/hyunseok-lee-collaboration-brief-ko.pdf' | relative_url }}" data-analytics-event="collaboration_brief_download">Collaboration Brief PDF</a>
+  </p>
 
   <h2>어떤 문제를 함께 다룰 수 있나</h2>
   <div class="card-grid card-grid--three">
@@ -35,7 +39,7 @@ lang: ko
       <article class="card engagement-card" id="{{ mode.id }}">
         <h3>{{ mode.title }}</h3>
         <p>{{ mode.description }}</p>
-        <p><a class="button button--ghost" href="mailto:{{ profile.email }}?subject={{ mode.title | append: ' 문의' | uri_escape }}" data-analytics-event="{{ mode.event }}">{{ mode.cta }}</a></p>
+        <p><a class="button button--ghost" href="{{ '/pages/inquiry.html' | relative_url }}?type={{ mode.id | uri_escape }}&amp;source=industry-page" data-analytics-event="{{ mode.event }}">{{ mode.cta }}</a></p>
       </article>
     {% endfor %}
   </div>
@@ -85,9 +89,10 @@ lang: ko
     {% for principle in industry.principles %}<li>{{ principle }}</li>{% endfor %}
   </ul>
 
-  <h2>문의</h2>
+  <h2 id="inquiry">문의</h2>
   <div class="card">
     <p>{{ industry.contact_cta.text }}</p>
-    <p><a class="button" href="mailto:{{ profile.email }}?subject={{ industry.contact_cta.subject | uri_escape }}" data-analytics-event="industry_email_click">{{ industry.contact_cta.button }}</a></p>
+    <p><a class="button" href="{{ '/pages/inquiry.html' | relative_url }}?source=industry-page" data-analytics-event="inquiry_page_click">{{ industry.contact_cta.button }}</a></p>
+    <p class="muted">이메일로 직접 문의하려면 <a href="mailto:{{ profile.email }}?subject={{ industry.contact_cta.subject | uri_escape }}" data-analytics-event="industry_email_click">{{ profile.email }}</a>로 보내 주세요.</p>
   </div>
 </section>

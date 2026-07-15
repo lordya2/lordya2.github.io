@@ -30,6 +30,7 @@
     {% include structured-data.html %}
     <link href="{{ '/assets/themes/twitter/css/style.css' | relative_url }}?body=1" rel="stylesheet" type="text/css" media="all">
     <link href="{{ '/assets/themes/twitter/css/my_custom_css.css' | relative_url }}" rel="stylesheet" type="text/css" media="all">
+    {% if page.extra_css %}<link href="{{ page.extra_css | relative_url }}" rel="stylesheet" type="text/css" media="all">{% endif %}
     {% include analytics.html %}
   </head>
 
@@ -45,8 +46,9 @@
           <ul>
             {% for item in site.data.navigation %}
               {% assign is_current = false %}
+              {% assign item_path = item.url | split: '?' | first %}
               {% unless item.url contains '#' or item.url contains '.pdf' %}
-                {% if item.url == page.url %}{% assign is_current = true %}{% endif %}
+                {% if item_path == page.url %}{% assign is_current = true %}{% endif %}
               {% endunless %}
               <li><a href="{{ item.url | relative_url }}"{% if is_current %} aria-current="page"{% endif %}{% if item.label == 'CV' %} class="site-nav__cv"{% endif %}{% if item.event %} data-analytics-event="{{ item.event }}"{% endif %}>{{ item.label }}</a></li>
             {% endfor %}
@@ -65,5 +67,6 @@
         <p><a href="mailto:{{ site.data.profile.email }}" data-analytics-event="email_click">{{ site.data.profile.email }}</a> · <a href="{{ site.data.profile.cv_url }}" data-analytics-event="cv_download">CV</a> · <a href="{{ site.data.profile.links.orcid.url }}" target="_blank" rel="noopener noreferrer" data-analytics-event="orcid_click">{{ site.data.profile.links.orcid.label }}</a></p>
       </div>
     </footer>
+    {% if page.extra_js %}<script src="{{ page.extra_js | relative_url }}" defer></script>{% endif %}
   </body>
 </html>
