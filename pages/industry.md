@@ -12,6 +12,11 @@ lang: ko
   <p class="eyebrow">{{ industry.eyebrow_en }} · {{ industry.headline }}</p>
   <h1 id="industry-title">{{ industry.title }}</h1>
   <p class="lead-text">{{ industry.intro }}</p>
+  <div class="button-row" aria-label="기업 협력 경로">
+    {% for mode in industry.project_modes %}
+      <a class="button{% unless forloop.first %} button--ghost{% endunless %}" href="#{{ mode.id }}" data-analytics-event="{{ mode.event }}">{{ mode.title }}</a>
+    {% endfor %}
+  </div>
 
   <h2>어떤 문제를 함께 다룰 수 있나</h2>
   <div class="card-grid card-grid--three">
@@ -23,24 +28,36 @@ lang: ko
     {% endfor %}
   </div>
 
-  <h2>협업 방식</h2>
-  <div class="card-grid card-grid--two">
+  <h2>세 가지 협업 방식</h2>
+  <p>{{ industry.engagement_intro }}</p>
+  <div class="card-grid card-grid--three">
     {% for mode in industry.project_modes %}
-      <article class="card">
+      <article class="card engagement-card" id="{{ mode.id }}">
         <h3>{{ mode.title }}</h3>
         <p>{{ mode.description }}</p>
+        <p><a class="button button--ghost" href="mailto:{{ profile.email }}?subject={{ mode.title | append: ' 문의' | uri_escape }}" data-analytics-event="{{ mode.event }}">{{ mode.cta }}</a></p>
       </article>
     {% endfor %}
   </div>
 
   <h2>MSBA 캡스톤 및 산학 프로젝트 사례</h2>
   <p>{{ industry.capstone_intro }}</p>
+  <p class="muted">{{ industry.case_disclaimer }}</p>
   <div class="card-grid card-grid--two capstone-grid">
     {% for project in industry.capstone_projects %}
       <article class="card capstone-card">
         <p class="card-label">{{ project.partner }}</p>
         <h3>{{ project.title }}</h3>
-        <p>{{ project.description }}</p>
+        {% if project.problem %}
+          <dl class="case-study__details">
+            <dt>문제</dt><dd>{{ project.problem }}</dd>
+            <dt>데이터</dt><dd>{{ project.data }}</dd>
+            <dt>방법</dt><dd>{{ project.method }}</dd>
+            <dt>의사결정 초점</dt><dd>{{ project.decision_relevance }}</dd>
+          </dl>
+        {% else %}
+          <p>{{ project.description }}</p>
+        {% endif %}
         {% if project.video_url %}
           <div class="video-embed">
             <iframe src="{{ project.video_url }}" title="{{ project.title }} 발표 영상" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
