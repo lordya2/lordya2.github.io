@@ -2,7 +2,7 @@
 layout: page
 title: 한국어 개요
 hide_page_header: true
-description: Hyun Seok Huck Lee 교수의 한국어 간략 소개입니다.
+description: 이현석 교수는 현장 데이터, 현장실험, 인과추론을 활용해 기업과 기관의 더 나은 운영 의사결정을 연구합니다.
 permalink: /ko/
 lang: ko
 ---
@@ -10,7 +10,7 @@ lang: ko
 <section class="section korean-overview" lang="ko" aria-labelledby="ko-title">
   <p class="eyebrow">한국어 개요</p>
   <h1 id="ko-title">{{ profile.name_ko }} · {{ profile.name }}</h1>
-  <p><strong>{{ profile.full_title_ko }}</strong></p><p>{{ profile.positioning_ko }}</p>
+  <p><strong>{{ profile.full_title_ko }}</strong></p><p class="lead-text"><strong>{{ profile.positioning_lead_ko }}</strong><br>{{ profile.positioning_ko }}</p>
   <h2>연구 분야</h2><div class="card-grid card-grid--four">{% for area in site.data.research_areas %}<article class="card"><h3>{{ area.title_ko }}</h3><p>{{ area.summary_ko }}</p></article>{% endfor %}</div>
   <h2>대표 연구와 임팩트</h2>{% assign featured_papers = site.data.publications | where: "featured", true | sort: "featured_order" %}{% for paper in featured_papers limit:5 %}<article class="mini-paper"><h3 lang="en">{{ paper.featured_short_title | default: paper.short_title }}</h3><p><strong>질문:</strong> {{ paper.question_ko }}</p><p><strong>결과:</strong> {{ paper.finding_ko }}</p><p><strong>의의:</strong> {{ paper.impact_ko }}</p></article>{% endfor %}
   <h2>People</h2><p>현재 학생과 졸업생 배치, MSBA 캡스톤 멘토링 결과는 <a href="{{ '/pages/people.html' | relative_url }}" data-analytics-event="people_page_click">People page</a>에서 확인할 수 있습니다.</p>

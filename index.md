@@ -1,7 +1,7 @@
 ---
 layout: frontpage
 title: Hyun Seok ("Huck") Lee
-description: Huck Lee studies empirical operations, healthcare and pharmaceutical supply chains, retail, platforms, and policy-relevant decisions at Korea University Business School.
+description: Hyun Seok ("Huck") Lee uses operational data, field experiments, and causal inference to improve decisions in healthcare, supply chains, retail, services, platforms, and AI-enabled work.
 keywords: Hyun Seok, Huck, Lee, Operations Management, Supply Chain, Healthcare, Retail, KUBS.
 lang: en
 ---
@@ -13,12 +13,12 @@ lang: en
     <p class="eyebrow">{{ profile.affiliation }}</p>
     <h1 id="hero-title">{{ profile.name }} <span lang="ko">{{ profile.name_ko }}</span></h1>
     <p class="hero__title">{{ profile.display_title }}</p>
-    <p class="hero__positioning">{{ profile.positioning }}</p>
-    <p class="hero__positioning" lang="ko">{{ profile.positioning_ko }}</p>
+    <p class="hero__positioning"><strong class="hero__tagline">{{ profile.positioning_lead }}</strong> {{ profile.positioning }}</p>
+    <p class="hero__positioning" lang="ko"><strong class="hero__tagline">{{ profile.positioning_lead_ko }}</strong> {{ profile.positioning_ko }}</p>
     <div class="button-row" aria-label="Primary actions">
       <a class="button" href="{{ '/pages/research.html' | relative_url }}">Research</a>
-      <a class="button button--secondary" href="{{ '/pages/industry.html' | relative_url }}" data-analytics-event="industry_page_click">산학협력</a>
-      <a class="button button--secondary" href="{{ '/pages/people.html' | relative_url }}" data-analytics-event="people_page_click">People</a>
+      <a class="button button--secondary" href="#work-with-organizations" data-analytics-event="organization_pathways_click">기업 협력 · Work with Organizations</a>
+      <a class="button button--secondary" href="{{ '/pages/media.html' | relative_url }}" data-analytics-event="media_impact_click">Media &amp; Impact</a>
       <a class="button button--ghost" href="{{ profile.cv_url }}" data-analytics-event="cv_download">Download CV</a>
       <a class="button button--ghost" href="{{ profile.links.google_scholar.url }}" target="_blank" rel="noopener noreferrer" data-analytics-event="google_scholar_click">Google Scholar</a>
     </div>
@@ -31,6 +31,22 @@ lang: en
   <h2 id="research-areas-title">Empirical operations research for healthcare, retail, platforms, and policy-relevant decisions.</h2>
   <div class="card-grid card-grid--four">
     {% for area in site.data.research_areas %}<article class="card"><h3>{{ area.title }}</h3><p>{{ area.summary }}</p></article>{% endfor %}
+  </div>
+</section>
+
+
+<section class="section" id="work-with-organizations" lang="ko" aria-labelledby="work-with-organizations-title">
+  <p class="eyebrow">Work with Organizations · 기업 협력</p>
+  <h2 id="work-with-organizations-title">연구와 현장을 연결하는 세 가지 방식</h2>
+  <p class="lead-text">{{ industry.engagement_intro }}</p>
+  <div class="card-grid card-grid--three">
+    {% for mode in industry.project_modes %}
+      <article class="card engagement-card">
+        <h3>{{ mode.title }}</h3>
+        <p>{{ mode.description }}</p>
+        <p><a class="button button--ghost" href="{{ '/pages/industry.html' | relative_url }}#{{ mode.id }}" data-analytics-event="{{ mode.event }}">{{ mode.cta }}</a></p>
+      </article>
+    {% endfor %}
   </div>
 </section>
 
@@ -61,14 +77,14 @@ lang: en
 
 <section class="section" id="industry-collaboration-preview" lang="ko" aria-labelledby="industry-collaboration-preview-title">
   <p class="eyebrow">Industry Collaboration · 산학협력</p>
-  <h2 id="industry-collaboration-preview-title">기업 데이터와 운영 의사결정을 연결하는 연구 기반 산학협력</h2>
-  <p>국내 기업과 함께 데이터 기반 운영진단, A/B 테스트 및 현장실험, 인과추론 기반 효과 평가, 수요예측·추천·재고 의사결정 프로젝트를 진행합니다.</p>
+  <h2 id="industry-collaboration-preview-title">어떤 운영 문제를 함께 다룰 수 있나</h2>
+  <p>데이터 기반 운영진단부터 현장실험, 효과 평가, 예측·추천·재고 의사결정까지 기업의 질문과 데이터에 맞춰 접근합니다.</p>
   <div class="card-grid card-grid--three">
     <article class="card"><h3>데이터 기반 운영진단</h3><p>판매, 재고, 고객, 물류, 노동, 서비스 데이터를 활용해 운영 병목과 개선 기회를 찾습니다.</p></article>
     <article class="card"><h3>A/B 테스트 및 인과추론</h3><p>정책, 프로모션, 추천, 서비스 변화가 실제 성과에 미친 영향을 엄밀하게 평가합니다.</p></article>
     <article class="card"><h3>MSBA 캡스톤·산학 프로젝트</h3><p>기업 현안을 학생 프로젝트와 연결해 예측, 추천, 군집분석, 효과 평가 결과물을 만듭니다.</p></article>
   </div>
-  <p><a class="button" href="{{ '/pages/industry.html' | relative_url }}" data-analytics-event="industry_page_click">산학협력 사례 보기</a></p>
+  <p><a class="button" href="{{ '/pages/industry.html' | relative_url }}" data-analytics-event="industry_page_click">산학협력 분야와 사례 보기</a></p>
 </section>
 
 <section class="section" id="media-impact-preview" aria-labelledby="media-impact-preview-title">

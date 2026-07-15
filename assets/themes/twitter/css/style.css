@@ -84,7 +84,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid #ffbf47; outline-offs
 .hero h1 { margin: .2rem 0 .8rem; font-size: clamp(2.6rem, 6vw, 5.2rem); line-height: .98; letter-spacing: -.055em; }
 .hero h1 span { display: block; color: var(--brand); font-size: .48em; letter-spacing: 0; margin-top: .45rem; }
 .hero__title { max-width: 780px; color: var(--brand-dark); font-size: clamp(1.05rem, 1.8vw, 1.3rem); font-weight: 800; line-height: 1.35; }
-.hero__positioning { max-width: 760px; font-size: 1.12rem; color: var(--muted); }
+.hero__positioning { max-width: 760px; font-size: 1.08rem; color: var(--muted); }
+.hero__tagline { display: block; margin-bottom: .35rem; color: var(--text); font-size: 1.16rem; line-height: 1.4; }
 .hero__portrait { margin: 0; }
 .hero__portrait img { width: 100%; border-radius: 1.4rem; box-shadow: var(--shadow); aspect-ratio: 4 / 5; object-fit: cover; }
 
@@ -142,6 +143,11 @@ address { font-style: normal; }
 .status-badge { display: inline-block; max-width: 100%; padding: .28rem .65rem; border: 1px solid #e5cf8e; border-radius: .65rem; background: #fff8e6; color: #684600; font-size: .95rem; font-weight: 800; line-height: 1.45; overflow-wrap: anywhere; }
 .lead-text { max-width: 860px; color: var(--muted); font-size: 1.1rem; }
 .industry-page .card h3 + p { margin-top: .45rem; }
+.industry-page [id] { scroll-margin-top: 6.5rem; }
+.engagement-card { display: flex; flex-direction: column; }
+.engagement-card > p:last-child { margin-top: auto; }
+.engagement-card .button { align-self: flex-start; }
+.case-study__details dt:first-child { margin-top: 0; }
 .capstone-card { display: flex; flex-direction: column; gap: .75rem; }
 .capstone-card p { margin-bottom: 0; }
 .video-embed { position: relative; width: 100%; aspect-ratio: 16 / 9; margin-top: .35rem; overflow: hidden; border: 1px solid var(--border); border-radius: .85rem; background: var(--bg-soft); }
