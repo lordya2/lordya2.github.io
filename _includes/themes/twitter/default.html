@@ -3,24 +3,40 @@
   <head>
     <meta charset="utf-8">
     <script>document.documentElement.classList.add('js');</script>
-    {% assign meta_title = page.title | default: site.title %}
+    {% assign is_korean = false %}
+    {% if page.lang == 'ko' %}{% assign is_korean = true %}{% endif %}
+    {% assign meta_title = page.seo_title | default: page.title | default: site.title %}
     {% assign meta_description = page.description | default: site.data.profile.positioning %}
     {% assign canonical_path = page.url | replace:'index.html','' %}
     {% assign canonical_url = canonical_path | prepend: site.production_url %}
     {% assign og_image = site.data.profile.headshot | prepend: site.production_url %}
-    <title>{% if page.url == '/' or page.url == '/index.html' %}{{ site.data.profile.name | escape }} | {{ site.data.profile.affiliation | escape }}{% elsif page.title %}{{ page.title | escape }} | {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <title>{% if page.seo_title %}{{ page.seo_title | escape }}{% elsif page.url == '/' or page.url == '/index.html' %}{{ site.data.profile.name | escape }} | {{ site.data.profile.affiliation | escape }}{% elsif page.title %}{{ page.title | escape }} | {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
     <meta name="description" content="{{ meta_description | escape }}">
     {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
     <meta name="author" content="{{ site.author.name | escape }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="{{ canonical_url }}">
+    {% if page.alternate_url %}
+      {% assign alternate_url = page.alternate_url | prepend: site.production_url %}
+      {% if is_korean %}
+        <link rel="alternate" hreflang="ko" href="{{ canonical_url }}">
+        <link rel="alternate" hreflang="en" href="{{ alternate_url }}">
+        <link rel="alternate" hreflang="x-default" href="{{ alternate_url }}">
+      {% else %}
+        <link rel="alternate" hreflang="en" href="{{ canonical_url }}">
+        <link rel="alternate" hreflang="ko" href="{{ alternate_url }}">
+        <link rel="alternate" hreflang="x-default" href="{{ canonical_url }}">
+      {% endif %}
+    {% endif %}
     <meta property="og:title" content="{{ meta_title | escape }}">
     <meta property="og:description" content="{{ meta_description | escape }}">
-    <meta property="og:type" content="{% if page.url == '/' or page.url == '/index.html' %}profile{% else %}website{% endif %}">
+    <meta property="og:type" content="{% if page.url == '/' or page.url == '/index.html' or page.url == '/ko/' or page.url == '/ko/index.html' %}profile{% else %}website{% endif %}">
     <meta property="og:url" content="{{ canonical_url }}">
     <meta property="og:site_name" content="{{ site.title | escape }}">
+    <meta property="og:locale" content="{% if is_korean %}ko_KR{% else %}en_US{% endif %}">
+    {% if page.alternate_url %}<meta property="og:locale:alternate" content="{% if is_korean %}en_US{% else %}ko_KR{% endif %}">{% endif %}
     <meta property="og:image" content="{{ og_image }}">
-    <meta property="og:image:alt" content="{{ site.data.profile.headshot_alt | escape }}">
+    <meta property="og:image:alt" content="{% if is_korean %}{{ site.data.profile.headshot_alt_ko | escape }}{% else %}{{ site.data.profile.headshot_alt | escape }}{% endif %}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ meta_title | escape }}">
     <meta name="twitter:description" content="{{ meta_description | escape }}">
@@ -35,25 +51,32 @@
     {% include analytics.html %}
   </head>
 
-  <body>
-    <a class="skip-link" href="#main-content">Skip to main content</a>
+  <body{% if page.body_class %} class="{{ page.body_class | escape }}"{% endif %}>
+    <a class="skip-link" href="#main-content">{% if is_korean %}본문 바로가기{% else %}Skip to main content{% endif %}</a>
     <header class="site-header" role="banner">
       <div class="site-header__inner">
-        <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title | append: ' home' | escape }}">
-          <span class="site-brand__name">{{ site.data.profile.name }}</span>
-          <span class="site-brand__ko" lang="ko">{{ site.data.profile.name_ko }}</span>
+        <a class="site-brand" href="{% if is_korean %}{{ '/ko/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}" aria-label="{% if is_korean %}{{ site.data.profile.name_ko | append: ' 한국어 홈' | escape }}{% else %}{{ site.title | append: ' home' | escape }}{% endif %}">
+          {% if is_korean %}
+            <span class="site-brand__name">{{ site.data.profile.name_ko }}</span>
+            <span class="site-brand__ko" lang="en">{{ site.data.profile.name }}</span>
+          {% else %}
+            <span class="site-brand__name">{{ site.data.profile.name }}</span>
+            <span class="site-brand__ko" lang="ko">{{ site.data.profile.name_ko }}</span>
+          {% endif %}
         </a>
-        <nav class="site-nav" aria-label="Primary navigation">
-          <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="primary-navigation-list">Menu</button>
+        <nav class="site-nav" aria-label="{% if is_korean %}주요 메뉴{% else %}Primary navigation{% endif %}">
+          <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="primary-navigation-list">{% if is_korean %}메뉴{% else %}Menu{% endif %}</button>
           <ul id="primary-navigation-list">
             {% assign current_path = page.url | split: '?' | first | replace: 'index.html', '' | replace: '.html', '' %}
             {% for item in site.data.navigation %}
               {% assign is_current = false %}
+              {% assign item_label = item.label %}
+              {% if is_korean and item.label_ko %}{% assign item_label = item.label_ko %}{% endif %}
               {% assign item_path = item.url | split: '?' | first | replace: 'index.html', '' | replace: '.html', '' %}
               {% unless item.url contains '#' or item.url contains '.pdf' %}
                 {% if item_path == current_path %}{% assign is_current = true %}{% endif %}
               {% endunless %}
-              <li><a href="{{ item.url | relative_url }}"{% if is_current %} aria-current="page"{% endif %}{% if item.label == 'CV' %} class="site-nav__cv"{% endif %}{% if item.lang %} lang="{{ item.lang }}"{% endif %}{% if item.event %} data-analytics-event="{{ item.event }}"{% endif %}>{{ item.label }}</a></li>
+              <li><a href="{{ item.url | relative_url }}"{% if is_current %} aria-current="page"{% endif %}{% if item.label == 'CV' %} class="site-nav__cv"{% endif %}{% if item.lang and is_korean == false %} lang="{{ item.lang }}"{% endif %}{% if item.destination_lang %} hreflang="{{ item.destination_lang }}"{% endif %}{% if item.event %} data-analytics-event="{{ item.event }}"{% endif %}>{{ item_label }}</a></li>
             {% endfor %}
           </ul>
         </nav>
@@ -66,7 +89,11 @@
 
     <footer class="site-footer">
       <div class="site-footer__inner">
-        <p><strong>{{ site.data.profile.name }}</strong> · {{ site.data.profile.affiliation }}</p>
+        {% if is_korean %}
+          <p><strong>{{ site.data.profile.name_ko }}</strong> <span lang="en">{{ site.data.profile.name }}</span> · {{ site.data.profile.affiliation_ko }}</p>
+        {% else %}
+          <p><strong>{{ site.data.profile.name }}</strong> · {{ site.data.profile.affiliation }}</p>
+        {% endif %}
         <p><a href="mailto:{{ site.data.profile.email }}" data-analytics-event="email_click">{{ site.data.profile.email }}</a> · <a href="{{ site.data.profile.cv_url }}" data-analytics-event="cv_download">CV</a> · <a href="{{ site.data.profile.links.orcid.url }}" target="_blank" rel="noopener noreferrer" data-analytics-event="orcid_click">{{ site.data.profile.links.orcid.label }}</a></p>
       </div>
     </footer>
