@@ -6,6 +6,7 @@ keywords: Hyun Seok, Huck, Lee, Operations Management, Supply Chain, Healthcare,
 lang: en
 alternate_url: /ko/
 ---
+{% comment %}GitHub Pages deployment refresh{% endcomment %}
 {% assign profile = site.data.profile %}
 {% assign industry = site.data.industry_collaboration %}
 {% assign people = site.data.people %}
