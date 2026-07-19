@@ -1,26 +1,44 @@
 - label: Research
+  label_ko: 연구 EN
   url: /pages/research.html
+  destination_lang: en
 - label: Research Group
+  label_ko: 연구 그룹 EN
   url: /pages/people.html
+  destination_lang: en
   event: people_page_click
 - label: Teaching
+  label_ko: 교육 EN
   url: /pages/teaching.html
+  destination_lang: en
 - label: 산학협력
+  label_ko: 기업 협력
   url: /pages/industry.html
   event: industry_page_click
   lang: ko
+  destination_lang: ko
 - label: Media
+  label_ko: 미디어 EN
   url: /pages/media.html
   event: media_impact_click
+  destination_lang: en
 - label: Awards
+  label_ko: 수상·활동 EN
   url: /pages/award.html
+  destination_lang: en
 - label: CV
+  label_ko: CV
   url: /assets/CV.pdf
   event: cv_download
+  destination_lang: en
 - label: 협업 문의
+  label_ko: 협업 문의
   url: /pages/inquiry.html?source=navigation
   event: inquiry_page_click
   lang: ko
+  destination_lang: ko
 - label: 한국어
+  label_ko: 한국어 홈
   url: /ko/
   lang: ko
+  destination_lang: ko
