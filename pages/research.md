@@ -35,7 +35,7 @@ description: Research themes, methods, publications, working papers, and selecte
   <ol class="publication-list">{% for item in korean_publications %}<li id="publication-{{ item.id }}">{{ item.citation }}</li>{% endfor %}</ol>
 
   <h2>Selected Work in Progress</h2>
-  <ul>{% for item in work_in_progress %}<li id="publication-{{ item.id }}">{{ item.title | default: item.citation }}</li>{% endfor %}</ul>
+  <ol class="publication-list">{% for item in work_in_progress %}<li id="publication-{{ item.id }}" class="publication-item"><p class="publication-citation">{{ item.citation | default: item.title }}</p>{% if item.status or item.target %}<p>{% if item.status %}<span class="status-badge">{{ item.status }}</span>{% endif %}{% if item.target %} <span class="muted">Target: {{ item.target }}.</span>{% endif %}</p>{% endif %}</li>{% endfor %}</ol>
 
   <p><a class="button" href="{{ site.data.profile.cv_url }}" data-analytics-event="cv_download">Download full CV</a></p>
 </section>
