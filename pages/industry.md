@@ -4,6 +4,7 @@ title: 기업 강연·자문·공동연구
 seo_title: 공급망 강연·운영관리 기업 자문 | 이현석 고려대 교수
 hide_page_header: true
 description: 고려대학교 경영대학 이현석 교수의 공급망 리스크·회복탄력성 강연, 데이터 기반 운영관리 자문·공동연구, 헬스케어·제약 공급망 및 산학 프로젝트를 소개합니다.
+permalink: /pages/industry.html
 lang: ko
 body_class: ko-content
 schema_type: Service

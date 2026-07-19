@@ -48,7 +48,10 @@ end
 
 errors << 'Industry page must declare Korean as its document language.' unless industry_html.match?(/<html\s+lang=["']ko["']/i)
 errors << 'Industry page must contain exactly one H1.' unless industry_html.scan(/<h1\b/i).length == 1
-errors << 'Industry page canonical is incorrect.' unless industry_html.include?('<link rel="canonical" href="https://hyunseoklee.com/pages/industry.html">')
+industry_canonical = industry_html[/<link\s+rel="canonical"\s+href="([^"]+)">/i, 1]
+unless industry_canonical == 'https://hyunseoklee.com/pages/industry.html'
+  errors << "Industry page canonical is incorrect (found #{industry_canonical.inspect})."
+end
 errors << 'Industry SEO title is missing supply-chain speaking.' unless industry_html[/<title>(.*?)<\/title>/im, 1].to_s.include?('공급망 강연')
 errors << 'Industry SEO title is missing operations advisory.' unless industry_html[/<title>(.*?)<\/title>/im, 1].to_s.include?('운영관리 기업 자문')
 
