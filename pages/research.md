@@ -23,7 +23,20 @@ description: Research themes, methods, publications, working papers, and selecte
   <ul class="pill-list">{% for method in research_themes.methodology %}<li>{{ method }}</li>{% endfor %}</ul>
 
   <h2>Peer-Reviewed Journal Publications</h2>
-  <ol class="publication-list">{% for paper in peer_reviewed %}<li id="publication-{{ paper.id }}" class="publication-item"><p class="publication-citation">{{ paper.citation | replace: "Management Science", "<strong>Management Science</strong>" | replace: "Manufacturing & Service Operations Management", "<strong>Manufacturing &amp; Service Operations Management</strong>" | replace: "Journal of Operations Management", "<strong>Journal of Operations Management</strong>" | replace: "Production and Operations Management", "<strong>Production and Operations Management</strong>" }}</p>{% if paper.note %}<p class="muted">{{ paper.note }}</p>{% endif %}{% if paper.links %}<p class="link-row publication-links">{% for link in paper.links %}<a href="{{ link.url }}" data-analytics-event="publication_click">{{ link.label }}</a>{% unless forloop.last %}<span aria-hidden="true"> · </span>{% endunless %}{% endfor %}</p>{% endif %}</li>{% endfor %}</ol>
+  <ol class="publication-list">
+    {% for paper in peer_reviewed %}
+      <li id="publication-{{ paper.id }}" class="publication-item">
+        <p class="publication-citation">{{ paper.citation | replace: "Management Science", "<strong>Management Science</strong>" | replace: "Manufacturing & Service Operations Management", "<strong>Manufacturing &amp; Service Operations Management</strong>" | replace: "Journal of Operations Management", "<strong>Journal of Operations Management</strong>" | replace: "Production and Operations Management", "<strong>Production and Operations Management</strong>" }}</p>
+        {% if paper.note %}<p class="muted">{{ paper.note }}</p>{% endif %}
+        {% if paper.links or paper.explainer_url %}
+          <p class="link-row publication-links">
+            {% if paper.explainer_url %}<a href="{{ paper.explainer_url | relative_url }}" lang="ko" data-analytics-event="drug_shortage_explainer_click">Korean research insight</a>{% endif %}
+            {% for link in paper.links %}<a href="{{ link.url }}" data-analytics-event="publication_click">{{ link.label }}</a>{% endfor %}
+          </p>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ol>
 
   <h2>Working Papers</h2>
   <ol class="publication-list">{% for paper in working_papers %}<li id="publication-{{ paper.id }}" class="publication-item"><p class="publication-citation">{{ paper.citation }}</p><p><span class="status-badge">{{ paper.status }}</span></p>{% if paper.note %}<p class="muted">{{ paper.note }}</p>{% endif %}</li>{% endfor %}</ol>

@@ -17,6 +17,7 @@
   links:
     - label: INFORMS
       url: 'https://pubsonline.informs.org/doi/10.1287/mnsc.2024.08337'
+  explainer_url: '/ko/drug-shortage-recovery/'
   featured: true
   featured_order: 1
   research_theme_ids:

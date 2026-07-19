@@ -1,9 +1,8 @@
 ---
 layout: default
-title: 이현석 교수 한국어 허브
-seo_title: 이현석 고려대 교수 | 운영관리·공급망·헬스케어 운영 전문가
-description: 고려대학교 경영대학 이현석 교수의 연구, 학생 지도, 공급망 강연, 운영관리 기업 자문, 산학협력 및 미디어 활동을 소개합니다.
-keywords: 이현석 교수, 고려대학교 경영대학, 공급망 강연 교수, 운영관리 기업 자문, 헬스케어 공급망 전문가, 실증 운영관리, 산학협력
+title: 이현석 교수
+seo_title: 이현석 고려대 경영대 교수 | 운영관리·공급망·헬스케어 연구
+description: 이현석 고려대학교 경영대학 교수는 실증 운영관리 연구자로, 의약품 부족과 제약 공급망 회복탄력성, 리테일·서비스 운영을 연구하며 공급망 강연, 운영관리 기업 자문·공동연구를 수행합니다.
 permalink: /ko/
 lang: ko
 alternate_url: /
@@ -17,10 +16,11 @@ body_class: ko-hub
 <section class="section ko-hero" aria-labelledby="ko-hero-title">
   <div class="ko-hero__content">
     <p class="eyebrow">{{ profile.affiliation_ko }}</p>
-    <h1 id="ko-hero-title">{{ profile.name_ko }} 교수 <span>현장 데이터로 더 나은 운영 의사결정을 설계합니다</span></h1>
-    <p class="ko-hero__title">{{ profile.display_title_ko }}</p>
-    <p class="ko-hero__research">운영관리 · 공급망관리 · 헬스케어 운영 연구</p>
+    <h1 id="ko-hero-title">{{ profile.name_ko }} 교수</h1>
+    <p class="ko-hero__title">{{ profile.positioning_lead_ko }}</p>
+    <p class="ko-hero__research">실증 운영관리 · 공급망관리 · 헬스케어 운영</p>
     <p class="ko-hero__positioning">{{ profile.positioning_ko }}</p>
+    <p class="ko-hero__appointment">{{ profile.display_title_ko }}</p>
     <nav class="button-row" aria-label="한국어 허브 주요 경로">
       <a class="button" href="#research">연구 보기</a>
       <a class="button button--secondary" href="#students">연구 그룹·학생</a>
@@ -54,7 +54,7 @@ body_class: ko-hub
     <a class="ko-path-card" href="#media">
       <span class="ko-path-card__label">언론·행사</span>
       <strong>연구 해설과 인터뷰가 필요하다면</strong>
-      <span>헬스케어 공급망, 리테일, 플랫폼과 데이터 기반 의사결정을 설명합니다.</span>
+      <span>헬스케어 운영과 제약 공급망, 리테일, 플랫폼과 데이터 기반 의사결정을 설명합니다.</span>
     </a>
     <a class="ko-path-card" href="#academic">
       <span class="ko-path-card__label">연구자·학계</span>
@@ -62,6 +62,109 @@ body_class: ko-hub
       <span>대표 연구, 전체 연구 포트폴리오, CV와 학술 프로필로 연결합니다.</span>
     </a>
   </nav>
+</section>
+
+<section class="section" id="research" aria-labelledby="ko-research-title">
+  <p class="eyebrow">연구</p>
+  <h2 id="ko-research-title">운영관리·공급망·헬스케어의 실제 문제를 연구합니다</h2>
+  <p class="lead-text">이현석 교수는 고려대학교 경영대학에서 실증 운영관리(Empirical Operations Management)를 연구합니다. 기업과 공공기관의 운영 데이터, 현장실험과 인과추론을 활용해 정책과 운영 방식이 실제 성과에 미치는 영향을 분석합니다.</p>
+  <div class="card-grid card-grid--four ko-area-grid">
+    {% for area in site.data.research_areas %}
+      <article class="card">
+        <h3>{{ area.title_ko }}</h3>
+        <p>{{ area.summary_ko }}</p>
+        {% if forloop.first %}<p><a href="{{ '/ko/drug-shortage-recovery/' | relative_url }}" data-analytics-event="drug_shortage_explainer_click">의약품 부족과 제약 공급망 연구 해설</a></p>{% endif %}
+      </article>
+    {% endfor %}
+  </div>
+</section>
+<section class="section section--tinted" id="research-impact" aria-labelledby="ko-research-impact-title">
+  <p class="eyebrow">대표 연구와 임팩트</p>
+  <h2 id="ko-research-impact-title">연구 질문, 주요 결과와 실무적 의미</h2>
+  <p class="lead-text">대표적으로 미국 의약품 부족 데이터를 분석해, 생산공장이 과거 위기에서 축적한 회복 경험이 이후 부족 사태의 회복을 어떻게 앞당기는지 연구했습니다. 이 연구는 Management Science에 온라인 게재되었으며, 고려대학교 공식 보도와 국내 언론, DBR을 통해 소개되었습니다.</p>
+  {% assign featured_papers = site.data.publications | where: "featured", true | sort: "featured_order" %}
+  <div class="ko-paper-grid">
+    {% for paper in featured_papers limit:5 %}
+      <article class="mini-paper ko-paper-card">
+        <p class="research-card__venue" lang="en">{{ paper.venue }} · {{ paper.year }}</p>
+        <h3>{{ paper.featured_short_title_ko | default: paper.featured_short_title | default: paper.short_title }}</h3>
+        <p class="ko-paper-card__finding"><strong>핵심 결과</strong> {{ paper.finding_ko }}</p>
+        <details class="ko-paper-card__more">
+          <summary>연구 질문과 실무적 의미 보기</summary>
+          <dl class="ko-paper-card__details">
+            <dt>연구 질문</dt><dd>{{ paper.question_ko }}</dd>
+            <dt>실무적 의미</dt><dd>{{ paper.impact_ko }}</dd>
+          </dl>
+        </details>
+        {% if paper.links or paper.explainer_url %}
+          <p class="link-row ko-paper-card__links">
+            {% if paper.explainer_url %}<a href="{{ paper.explainer_url | relative_url }}" data-analytics-event="drug_shortage_explainer_click">한국어 연구 해설</a>{% endif %}
+            {% for link in paper.links %}<a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" data-analytics-event="publication_click">{{ link.label }}</a>{% endfor %}
+          </p>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
+  <p class="section-actions"><a class="button button--ghost" href="{{ '/pages/research.html' | relative_url }}">전체 연구 포트폴리오 <span class="ko-button-note">(영문)</span></a></p>
+</section>
+
+<section class="section" id="industry" aria-labelledby="ko-industry-title">
+  <p class="eyebrow">기업·기관 협력</p>
+  <h2 id="ko-industry-title">공급망 강연부터 운영관리 자문·공동연구까지</h2>
+  <p class="lead-text">기업·기관과는 공급망 리스크와 회복탄력성에 관한 강연·임원 워크숍, 데이터 기반 운영관리 자문·공동연구, 고려대 MSBA 캡스톤 및 산학 프로젝트 형태로 협력합니다. 문제를 먼저 정의하고, 활용 가능한 데이터와 의사결정 맥락에 맞춰 협업 방식을 설계합니다.</p>
+  <div class="card-grid card-grid--three">
+    {% for mode in industry.project_modes %}
+      <article class="card engagement-card">
+        <h3>{{ mode.title }}</h3>
+        <p>{{ mode.description }}</p>
+        <p><a class="button button--ghost" href="{{ '/pages/inquiry.html' | relative_url }}?type={{ mode.id | uri_escape }}&amp;source=korean-hub" data-analytics-event="{{ mode.event }}">{{ mode.cta }}</a></p>
+      </article>
+    {% endfor %}
+  </div>
+  <p class="collaboration-topics"><strong>주요 협력 주제:</strong> 공급망 중단과 회복탄력성 · 의약품 부족과 제약 공급망 · 수요예측·추천·재고 · 리테일·서비스 운영 · 현장실험과 효과평가 · AI 기반 업무설계</p>
+  <div class="button-row section-actions">
+    <a class="button" href="{{ '/pages/industry.html' | relative_url }}" data-analytics-event="industry_page_click">기업 강연·자문 및 협업 사례</a>
+    <a class="button button--ghost" href="{{ '/ko/drug-shortage-recovery/' | relative_url }}" data-analytics-event="drug_shortage_explainer_click">의약품 부족 연구 해설</a>
+    <a class="button button--ghost" href="{{ '/assets/downloads/hyunseok-lee-speaker-one-pager-ko.pdf' | relative_url }}" data-analytics-event="speaker_onepager_download">강연 소개 PDF</a>
+    <a class="button button--ghost" href="{{ '/assets/downloads/hyunseok-lee-collaboration-brief-ko.pdf' | relative_url }}" data-analytics-event="collaboration_brief_download">산학협력 소개 PDF</a>
+  </div>
+</section>
+
+<section class="section section--tinted" id="media" aria-labelledby="ko-media-title">
+  <p class="eyebrow">미디어와 대외 소통</p>
+  <h2 id="ko-media-title">연구를 기업과 사회의 언어로 설명합니다</h2>
+  <p class="lead-text">의약품 부족과 공급망 회복 연구는 고려대학교 공식 보도, 국내 언론과 DBR 연구 해설을 통해 소개되었습니다. 그 밖에도 리테일 운영, 배송과 고객 경험, 데이터 기반 의사결정에 관한 기고와 대외 소통을 이어가고 있습니다.</p>
+  {% assign latest_selected_media = site.data.media_impact.selected_media | sort: "date" | reverse %}
+  {% assign latest_selected_item = latest_selected_media | first %}
+  {% assign featured_impact = site.data.media_impact.featured | first %}
+  {% assign latest_columns = site.data.media_impact.essays_and_columns | sort: "date" | reverse %}
+  {% assign latest_column = latest_columns | first %}
+  <div class="media-grid">
+    {% if latest_selected_item %}<article class="card">
+      <p class="card-label">{{ latest_selected_item.type_ko }} · {{ latest_selected_item.date }}</p>
+      <h3>{{ latest_selected_item.title }}</h3>
+      <p><strong>{{ latest_selected_item.outlet }}</strong></p>
+      <p>{{ latest_selected_item.summary_ko }}</p>
+      <p><a href="{{ latest_selected_item.url }}" target="_blank" rel="noopener noreferrer" data-analytics-event="media_impact_click">기고문 읽기</a></p>
+    </article>{% endif %}
+    {% if featured_impact %}<article class="card">
+      <p class="card-label">{{ featured_impact.type_ko }} · {{ featured_impact.date }}</p>
+      <h3>의약품 부족 회복 연구 국내 언론 보도</h3>
+      <p>{{ featured_impact.summary_ko }}</p>
+      <p class="link-row"><a href="{{ '/ko/drug-shortage-recovery/' | relative_url }}" data-analytics-event="drug_shortage_explainer_click">연구 해설</a><a href="{{ featured_impact.url | relative_url }}" data-analytics-event="media_impact_click">보도 모음</a></p>
+    </article>{% endif %}
+    {% if latest_column %}<article class="card">
+      <p class="card-label">{{ latest_column.type_ko }} · {{ latest_column.date }}</p>
+      <h3>{{ latest_column.title }}</h3>
+      <p><strong>{{ latest_column.outlet }}</strong></p>
+      <p>{{ latest_column.summary_ko }}</p>
+      <p><a href="{{ latest_column.url }}" target="_blank" rel="noopener noreferrer" data-analytics-event="media_impact_click">칼럼 읽기</a></p>
+    </article>{% endif %}
+  </div>
+  <div class="button-row section-actions">
+    <a class="button button--ghost" href="{{ '/pages/media.html' | relative_url }}" data-analytics-event="media_impact_click">미디어 활동 전체 보기 <span class="ko-button-note">(영문)</span></a>
+    <a class="button button--ghost" href="{{ '/pages/inquiry.html' | relative_url }}?source=korean-hub" data-analytics-event="inquiry_page_click">인터뷰·강연 문의</a>
+  </div>
 </section>
 
 <section class="section section--compact" id="updates" aria-labelledby="ko-updates-title">
@@ -80,21 +183,7 @@ body_class: ko-hub
   <p class="section-actions"><a href="{{ '/pages/news.html' | relative_url }}" data-analytics-event="news_archive_click">전체 소식 보기 <span class="ko-link-note">(영문)</span></a></p>
 </section>
 
-<section class="section section--tinted" id="research" aria-labelledby="ko-research-title">
-  <p class="eyebrow">연구</p>
-  <h2 id="ko-research-title">실제 운영 문제에서 출발하는 연구</h2>
-  <p class="lead-text">기업과 기관의 운영 데이터, 현장실험과 인과추론을 활용해 어떤 정책과 운영 방식이 실제로 효과가 있는지 분석합니다.</p>
-  <div class="card-grid card-grid--four ko-area-grid">
-    {% for area in site.data.research_areas %}
-      <article class="card">
-        <h3>{{ area.title_ko }}</h3>
-        <p>{{ area.summary_ko }}</p>
-      </article>
-    {% endfor %}
-  </div>
-</section>
-
-<section class="section" id="students" aria-labelledby="ko-students-title">
+<section class="section section--tinted" id="students" aria-labelledby="ko-students-title">
   <p class="eyebrow">연구 그룹과 연구 기회</p>
   <h2 id="ko-students-title">학생이 질문을 발전시키고 분석을 주도하는 연구</h2>
   <p class="lead-text">{{ people.group_intro_ko }} {{ people.mentoring_approach_ko }}</p>
@@ -164,90 +253,6 @@ body_class: ko-hub
       <p><a href="https://biz.korea.ac.kr/eng/msphd/intro.html" target="_blank" rel="noopener noreferrer" data-analytics-event="official_admissions_click">KUBS 석·박사과정 공식 안내 <span class="ko-link-note">(영문)</span></a></p>
     </div>
   </aside>
-</section>
-
-<section class="section section--tinted" id="research-impact" aria-labelledby="ko-research-impact-title">
-  <p class="eyebrow">대표 연구와 임팩트</p>
-  <h2 id="ko-research-impact-title">연구 질문, 주요 결과와 실무적 의미</h2>
-  <p class="lead-text">의약품 공급망뿐 아니라 리테일 운영과 서비스 의사결정을 다룬 대표 연구를 소개합니다.</p>
-  {% assign featured_papers = site.data.publications | where: "featured", true | sort: "featured_order" %}
-  <div class="ko-paper-grid">
-    {% for paper in featured_papers limit:5 %}
-      <article class="mini-paper ko-paper-card">
-        <p class="research-card__venue" lang="en">{{ paper.venue }} · {{ paper.year }}</p>
-        <h3>{{ paper.featured_short_title_ko | default: paper.featured_short_title | default: paper.short_title }}</h3>
-        <p class="ko-paper-card__finding"><strong>핵심 결과</strong> {{ paper.finding_ko }}</p>
-        <details class="ko-paper-card__more">
-          <summary>연구 질문과 실무적 의미 보기</summary>
-          <dl class="ko-paper-card__details">
-            <dt>연구 질문</dt><dd>{{ paper.question_ko }}</dd>
-            <dt>실무적 의미</dt><dd>{{ paper.impact_ko }}</dd>
-          </dl>
-        </details>
-        {% if paper.links %}
-          <p class="link-row ko-paper-card__links">{% for link in paper.links %}<a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" data-analytics-event="publication_click">{{ link.label }}</a>{% endfor %}</p>
-        {% endif %}
-      </article>
-    {% endfor %}
-  </div>
-  <p class="section-actions"><a class="button button--ghost" href="{{ '/pages/research.html' | relative_url }}">전체 연구 포트폴리오 <span class="ko-button-note">(영문)</span></a></p>
-</section>
-
-<section class="section" id="industry" aria-labelledby="ko-industry-title">
-  <p class="eyebrow">기업·기관 협력</p>
-  <h2 id="ko-industry-title">공급망 강연부터 운영관리 자문·공동연구까지</h2>
-  <p class="lead-text">{{ industry.intro }}</p>
-  <div class="card-grid card-grid--three">
-    {% for mode in industry.project_modes %}
-      <article class="card engagement-card">
-        <h3>{{ mode.title }}</h3>
-        <p>{{ mode.description }}</p>
-        <p><a class="button button--ghost" href="{{ '/pages/inquiry.html' | relative_url }}?type={{ mode.id | uri_escape }}&amp;source=korean-hub" data-analytics-event="{{ mode.event }}">{{ mode.cta }}</a></p>
-      </article>
-    {% endfor %}
-  </div>
-  <p class="collaboration-topics"><strong>주요 협력 주제:</strong> 수요예측·추천·재고, 현장실험과 효과평가, 공급망 회복탄력성, 헬스케어 운영, AI 기반 업무설계</p>
-  <div class="button-row section-actions">
-    <a class="button" href="{{ '/pages/industry.html' | relative_url }}" data-analytics-event="industry_page_click">협력 분야와 공개 사례</a>
-    <a class="button button--ghost" href="{{ '/assets/downloads/hyunseok-lee-speaker-one-pager-ko.pdf' | relative_url }}" data-analytics-event="speaker_onepager_download">강연 소개 PDF</a>
-    <a class="button button--ghost" href="{{ '/assets/downloads/hyunseok-lee-collaboration-brief-ko.pdf' | relative_url }}" data-analytics-event="collaboration_brief_download">산학협력 소개 PDF</a>
-  </div>
-</section>
-
-<section class="section section--tinted" id="media" aria-labelledby="ko-media-title">
-  <p class="eyebrow">미디어와 대외 소통</p>
-  <h2 id="ko-media-title">연구를 기업과 사회의 언어로 설명합니다</h2>
-  {% assign latest_selected_media = site.data.media_impact.selected_media | sort: "date" | reverse %}
-  {% assign latest_selected_item = latest_selected_media | first %}
-  {% assign featured_impact = site.data.media_impact.featured | first %}
-  {% assign latest_columns = site.data.media_impact.essays_and_columns | sort: "date" | reverse %}
-  {% assign latest_column = latest_columns | first %}
-  <div class="media-grid">
-    {% if latest_selected_item %}<article class="card">
-      <p class="card-label">{{ latest_selected_item.type_ko }} · {{ latest_selected_item.date }}</p>
-      <h3>{{ latest_selected_item.title }}</h3>
-      <p><strong>{{ latest_selected_item.outlet }}</strong></p>
-      <p>{{ latest_selected_item.summary_ko }}</p>
-      <p><a href="{{ latest_selected_item.url }}" target="_blank" rel="noopener noreferrer" data-analytics-event="media_impact_click">기고문 읽기</a></p>
-    </article>{% endif %}
-    {% if featured_impact %}<article class="card">
-      <p class="card-label">{{ featured_impact.type_ko }} · {{ featured_impact.date }}</p>
-      <h3>의약품 부족 회복 연구 국내 언론 보도</h3>
-      <p>{{ featured_impact.summary_ko }}</p>
-      <p><a href="{{ featured_impact.url | relative_url }}" data-analytics-event="media_impact_click">보도 모음 보기</a></p>
-    </article>{% endif %}
-    {% if latest_column %}<article class="card">
-      <p class="card-label">{{ latest_column.type_ko }} · {{ latest_column.date }}</p>
-      <h3>{{ latest_column.title }}</h3>
-      <p><strong>{{ latest_column.outlet }}</strong></p>
-      <p>{{ latest_column.summary_ko }}</p>
-      <p><a href="{{ latest_column.url }}" target="_blank" rel="noopener noreferrer" data-analytics-event="media_impact_click">칼럼 읽기</a></p>
-    </article>{% endif %}
-  </div>
-  <div class="button-row section-actions">
-    <a class="button button--ghost" href="{{ '/pages/media.html' | relative_url }}" data-analytics-event="media_impact_click">미디어 활동 전체 보기 <span class="ko-button-note">(영문)</span></a>
-    <a class="button button--ghost" href="{{ '/pages/inquiry.html' | relative_url }}?type=media-interview&amp;source=korean-hub" data-analytics-event="inquiry_page_click">인터뷰·강연 문의</a>
-  </div>
 </section>
 
 <section class="section" id="academic" aria-labelledby="ko-academic-title">

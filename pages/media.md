@@ -27,11 +27,12 @@ description: Media coverage, school news, research impact, and public-facing com
   <h2>Recent media coverage</h2>
   <div class="media-list">
     {% for group in media.coverage_groups %}
-      <article class="card media-group" id="drug-shortage-coverage">
+      <article class="card media-group"{% if group.id %} id="{{ group.id }}"{% endif %}>
         <p class="card-label media-meta">{{ group.type }} · {{ group.date }}</p>
         <h3>{{ group.title }}</h3>
         <p>{{ group.summary }}</p>
         {% if group.related_work %}<p><span class="status-badge">Related research</span> {{ group.related_work }}</p>{% endif %}
+        <p><a href="{{ '/ko/drug-shortage-recovery/' | relative_url }}" lang="ko" data-analytics-event="drug_shortage_explainer_click">Read the Korean research insight</a></p>
         <details>
           <summary>View article links ({{ group.items | size }})</summary>
           <ul class="media-link-list">

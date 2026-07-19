@@ -116,7 +116,7 @@ alternate_url: /ko/
     {% endfor %}
   </div>
   <p class="collaboration-topics"><strong>주요 협력 주제:</strong> 수요·재고·추천, 현장실험과 효과평가, 공급망 회복탄력성, AI 기반 업무설계</p>
-  <p><a href="{{ '/pages/industry.html' | relative_url }}" data-analytics-event="industry_page_click">협력 분야와 공개 사례 자세히 보기</a></p>
+  <p><a href="{{ '/pages/industry.html' | relative_url }}" data-analytics-event="industry_page_click">기업 강연·자문 및 공개 사례 자세히 보기</a></p>
 </section>
 
 <section class="section" id="media-impact-preview" aria-labelledby="media-impact-preview-title">

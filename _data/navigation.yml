@@ -11,11 +11,10 @@
   label_ko: 교육 EN
   url: /pages/teaching.html
   destination_lang: en
-- label: 산학협력
-  label_ko: 기업 협력
+- label: Speaking & Collaboration
+  label_ko: 기업 강연·자문
   url: /pages/industry.html
   event: industry_page_click
-  lang: ko
   destination_lang: ko
 - label: Media
   label_ko: 미디어 EN

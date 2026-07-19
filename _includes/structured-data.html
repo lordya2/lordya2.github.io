@@ -9,7 +9,7 @@
   "@type": "Person",
   "@id": {{ person_id | jsonify }},
   "name": {{ profile.name | jsonify }},
-  "alternateName": {{ profile.name_ko | jsonify }},
+  "alternateName": [{{ profile.name_ko | jsonify }}, "Hyunseok Lee", "Huck Lee", "이현석 교수"],
   "jobTitle": {{ profile.full_title | jsonify }},
   "worksFor": {
     "@type": "CollegeOrUniversity",
@@ -23,6 +23,9 @@
   "telephone": {{ profile.office_phone | jsonify }},
   "image": {{ absolute_image | jsonify }},
   "url": {{ page_url | jsonify }},
+  "knowsAbout": [
+    {% for topic in profile.knows_about %}{{ topic | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}
+  ],
   "workLocation": {
     "@type": "Place",
     "name": {{ profile.office | jsonify }},
@@ -54,7 +57,7 @@
     "@type": "Person",
     "@id": {{ person_id | jsonify }},
     "name": {{ profile.name_ko | jsonify }},
-    "alternateName": {{ profile.name | jsonify }},
+    "alternateName": [{{ profile.name | jsonify }}, "Hyunseok Lee", "Huck Lee", "이현석 교수"],
     "jobTitle": {{ profile.display_title_ko | jsonify }},
     "worksFor": {
       "@type": "CollegeOrUniversity",
@@ -64,6 +67,9 @@
     "telephone": {{ profile.office_phone | jsonify }},
     "image": {{ absolute_image | jsonify }},
     "url": {{ page_url | jsonify }},
+    "knowsAbout": [
+      {% for topic in profile.knows_about %}{{ topic | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}
+    ],
     "workLocation": {
       "@type": "Place",
       "name": {{ profile.office | jsonify }},
@@ -76,6 +82,88 @@
       {{ profile.links.orcid.url | jsonify }}
     ]
   }
+}
+</script>
+{% elsif page.schema_type == 'Service' %}
+{% assign profile = site.data.profile %}
+{% assign page_url = page.url | replace:'index.html','' | prepend: site.production_url %}
+{% assign person_id = '/#person' | prepend: site.production_url %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": {{ page_url | append: '#webpage' | jsonify }},
+      "url": {{ page_url | jsonify }},
+      "name": {{ page.seo_title | default: page.title | jsonify }},
+      "description": {{ page.description | jsonify }},
+      "inLanguage": "ko-KR",
+      "about": { "@id": {{ person_id | jsonify }} }
+    },
+    {
+      "@type": "Service",
+      "@id": {{ page_url | append: '#service' | jsonify }},
+      "name": {{ page.title | jsonify }},
+      "description": {{ page.description | jsonify }},
+      "url": {{ page_url | jsonify }},
+      "provider": {
+        "@type": "Person",
+        "@id": {{ person_id | jsonify }},
+        "name": {{ profile.name_ko | jsonify }}
+      },
+      "serviceType": [
+        "기업 공급망 강연 및 임원 워크숍",
+        "데이터 기반 운영관리 기업 자문",
+        "산학 공동연구 및 프로젝트"
+      ],
+      "areaServed": {
+        "@type": "Country",
+        "name": "대한민국"
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "기업 경영진, 전략·운영·공급망·데이터 담당자"
+      }
+    }
+  ]
+}
+</script>
+{% elsif page.schema_type == 'Article' %}
+{% assign profile = site.data.profile %}
+{% assign absolute_image = page.og_image | default: profile.headshot | prepend: site.production_url %}
+{% assign page_url = page.url | replace:'index.html','' | prepend: site.production_url %}
+{% assign person_id = '/#person' | prepend: site.production_url %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": {{ page_url | append: '#article' | jsonify }},
+  "headline": {{ page.title | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "url": {{ page_url | jsonify }},
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ page_url | jsonify }}
+  },
+  "inLanguage": "ko-KR",
+  "articleSection": {{ page.article_section | jsonify }},
+  "datePublished": {{ page.date_published | date_to_xmlschema | jsonify }},
+  "dateModified": {{ page.date_modified | date_to_xmlschema | jsonify }},
+  "image": {{ absolute_image | jsonify }},
+  "author": {
+    "@type": "Person",
+    "@id": {{ person_id | jsonify }},
+    "name": {{ profile.name_ko | jsonify }},
+    "url": {{ site.production_url | jsonify }}
+  },
+  "about": [
+    { "@type": "Thing", "name": "의약품 부족" },
+    { "@type": "Thing", "name": "제약 공급망" },
+    { "@type": "Thing", "name": "공급망 회복탄력성" },
+    { "@type": "Thing", "name": "조직 학습" }
+  ],
+  "citation": {{ page.citation_url | jsonify }}
 }
 </script>
 {% endif %}
