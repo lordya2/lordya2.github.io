@@ -10,7 +10,8 @@ featured:
     type_ko: '언론 보도'
 
 coverage_groups:
-  - title: 'Korean media coverage of Management Science article on drug-shortage recovery'
+  - id: 'drug-shortage-coverage'
+    title: 'Korean media coverage of Management Science article on drug-shortage recovery'
     date: '2026-06'
     summary: 'Korean media coverage of the online publication and implications of the Management Science article on learning in recovery from U.S. drug shortages.'
     related_work: 'Learning in Recovery from Disruption'

@@ -14,6 +14,7 @@
     'collaboration-brief',
     'homepage',
     'industry-page',
+    'drug-shortage-explainer',
     'korean-hub',
     'navigation',
     'direct'

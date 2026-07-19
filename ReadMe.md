@@ -9,6 +9,7 @@ The site is a Jekyll/GitHub Pages site. Most homepage content is data-driven: Ma
 - `_config.yml` — Jekyll configuration, site title/author metadata, production URL, Markdown settings, excludes, and optional analytics/search verification settings.
 - `index.md` — English homepage entry point. It uses Liquid includes/layouts and `_data/` content to render the main faculty homepage.
 - `ko/index.md` — Korean homepage entry point. Preserve Korean wording when editing localized content.
+- `ko/drug-shortage-recovery.md` — Korean research explainer on drug-shortage recovery and pharmaceutical supply-chain resilience.
 - `pages/` — Secondary Markdown pages for news, research, media, people, teaching, awards, and related static files.
 - `_data/` — Structured YAML content used by pages and templates. Prefer editing these files for content updates instead of changing layouts.
 - `_data/profile.yml` — Profile, contact, appointment, CV/headshot, external profiles, SEO/social, and navigation-related profile content.
@@ -51,6 +52,8 @@ ruby scripts/validate_publications.rb
 ruby scripts/check_liquid_balance.rb
 bundle exec jekyll build --trace
 ruby scripts/check_internal_links.rb
+ruby scripts/validate_korean_hub.rb
+ruby scripts/validate_expertise_pages.rb
 ruby scripts/check_external_links.rb || true
 git diff --check
 ```

@@ -39,6 +39,9 @@ jobs:
       - name: Validate Korean hub
         run: ruby scripts/validate_korean_hub.rb
 
+      - name: Validate expertise pages
+        run: ruby scripts/validate_expertise_pages.rb
+
       - name: Check external links (warning only)
         run: ruby scripts/check_external_links.rb || true
 

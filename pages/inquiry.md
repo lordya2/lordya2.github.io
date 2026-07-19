@@ -1,8 +1,9 @@
 ---
 layout: page
-title: 기업 강연·협업 문의
+title: 기업 강연·운영관리 자문 문의
+seo_title: 기업 강연·운영관리 자문 문의 | 이현석 교수
 hide_page_header: true
-description: 기업 강연, 임원 워크숍, 자문, 공동연구, 산학 프로젝트 문의를 위한 안내 페이지.
+description: 이현석 교수의 공급망 기업 강연, 임원 워크숍, 운영관리 자문·공동연구와 산학 프로젝트 문의를 위한 안내 페이지입니다.
 lang: ko
 extra_css: /assets/themes/twitter/css/inquiry-form.css
 extra_js: /assets/js/inquiry-form.js
@@ -11,13 +12,13 @@ extra_js: /assets/js/inquiry-form.js
 
 <section class="section page-section inquiry-page" lang="ko" aria-labelledby="inquiry-title">
   <p class="eyebrow">Speaking &amp; Collaboration Inquiry</p>
-  <h1 id="inquiry-title">기업 강연·협업 문의</h1>
+  <h1 id="inquiry-title">기업 강연·운영관리 자문·공동연구 문의</h1>
   <p class="lead-text">관심 주제, 참석 대상, 희망 일정, 활용 가능한 데이터의 범위를 알려주시면 적합한 협력 방식을 검토하는 데 도움이 됩니다.</p>
 
   <div class="inquiry-notice" role="note" aria-labelledby="inquiry-privacy-title">
     <h2 id="inquiry-privacy-title">입력 전 확인해 주세요</h2>
     <p><strong>이 페이지는 입력 내용을 서버에 저장하거나 전송하지 않습니다.</strong> 아래 버튼을 누르면 사용 중인 이메일 앱에 문의 초안이 열립니다.</p>
-    <p>활용 가능한 데이터의 <strong>종류와 범위만</strong> 간략히 적어 주세요. 개인정보, 영업비밀, 민감정보 또는 원자료는 입력하거나 첨부하지 마십시오.</p>
+    <p>활용 가능한 데이터의 <strong>종류와 범위만</strong> 간략히 적어 주세요. 연락에 필요한 본인의 성명·업무용 이메일·전화번호 외에, 제3자의 개인정보, 영업비밀, 민감정보 또는 원자료는 입력하거나 첨부하지 마십시오.</p>
   </div>
 
   <form class="inquiry-form" id="inquiry-form" action="mailto:{{ profile.email }}" method="post" enctype="text/plain" data-recipient="{{ profile.email }}">
@@ -107,7 +108,7 @@ extra_js: /assets/js/inquiry-form.js
     <input id="inquiry-source" name="source" type="hidden" value="direct">
     <div class="form-confirmation">
       <input id="privacy-confirm" name="privacy_confirm" type="checkbox" required>
-      <label for="privacy-confirm">개인정보, 영업비밀, 민감정보 또는 원자료를 입력하지 않았음을 확인합니다. <span aria-hidden="true">*</span></label>
+      <label for="privacy-confirm">연락처 항목 외에 제3자의 개인정보, 영업비밀, 민감정보 또는 원자료를 입력하지 않았음을 확인합니다. <span aria-hidden="true">*</span></label>
     </div>
 
     <div class="button-row inquiry-form__actions">
@@ -127,4 +128,3 @@ extra_js: /assets/js/inquiry-form.js
     </div>
   </aside>
 </section>
-

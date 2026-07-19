@@ -9,7 +9,11 @@
     {% assign meta_description = page.description | default: site.data.profile.positioning %}
     {% assign canonical_path = page.url | replace:'index.html','' %}
     {% assign canonical_url = canonical_path | prepend: site.production_url %}
-    {% assign og_image = site.data.profile.headshot | prepend: site.production_url %}
+    {% if page.og_image %}
+      {% assign og_image = page.og_image | prepend: site.production_url %}
+    {% else %}
+      {% assign og_image = site.data.profile.headshot | prepend: site.production_url %}
+    {% endif %}
     <title>{% if page.seo_title %}{{ page.seo_title | escape }}{% elsif page.url == '/' or page.url == '/index.html' %}{{ site.data.profile.name | escape }} | {{ site.data.profile.affiliation | escape }}{% elsif page.title %}{{ page.title | escape }} | {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
     <meta name="description" content="{{ meta_description | escape }}">
     {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
@@ -30,13 +34,16 @@
     {% endif %}
     <meta property="og:title" content="{{ meta_title | escape }}">
     <meta property="og:description" content="{{ meta_description | escape }}">
-    <meta property="og:type" content="{% if page.url == '/' or page.url == '/index.html' or page.url == '/ko/' or page.url == '/ko/index.html' %}profile{% else %}website{% endif %}">
+    <meta property="og:type" content="{% if page.schema_type == 'Article' %}article{% elsif page.url == '/' or page.url == '/index.html' or page.url == '/ko/' or page.url == '/ko/index.html' %}profile{% else %}website{% endif %}">
     <meta property="og:url" content="{{ canonical_url }}">
     <meta property="og:site_name" content="{{ site.title | escape }}">
     <meta property="og:locale" content="{% if is_korean %}ko_KR{% else %}en_US{% endif %}">
     {% if page.alternate_url %}<meta property="og:locale:alternate" content="{% if is_korean %}en_US{% else %}ko_KR{% endif %}">{% endif %}
     <meta property="og:image" content="{{ og_image }}">
     <meta property="og:image:alt" content="{% if is_korean %}{{ site.data.profile.headshot_alt_ko | escape }}{% else %}{{ site.data.profile.headshot_alt | escape }}{% endif %}">
+    {% if page.schema_type == 'Article' and page.date_published %}<meta property="article:published_time" content="{{ page.date_published | date_to_xmlschema }}">{% endif %}
+    {% if page.schema_type == 'Article' and page.date_modified %}<meta property="article:modified_time" content="{{ page.date_modified | date_to_xmlschema }}">{% endif %}
+    {% if page.schema_type == 'Article' and page.article_section %}<meta property="article:section" content="{{ page.article_section | escape }}">{% endif %}
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ meta_title | escape }}">
     <meta name="twitter:description" content="{{ meta_description | escape }}">
