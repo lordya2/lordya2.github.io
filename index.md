@@ -4,6 +4,7 @@ title: Hyun Seok ("Huck") Lee
 description: Hyun Seok ("Huck") Lee uses operational data, field experiments, and causal inference to improve decisions in healthcare, supply chains, retail, services, platforms, and AI-enabled work.
 keywords: Hyun Seok, Huck, Lee, Operations Management, Supply Chain, Healthcare, Retail, KUBS.
 lang: en
+alternate_url: /ko/
 ---
 {% assign profile = site.data.profile %}
 {% assign industry = site.data.industry_collaboration %}
