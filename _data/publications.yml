@@ -189,21 +189,3 @@
   target: 'Manufacturing & Service Operations Management'
   research_theme_ids:
     - 'retail-service-operations'
-- id: 'grocery-checkout-peer-effects'
-  category: 'work_in_progress'
-  short_title: 'Peer Effects on Grocery Store Check-out Productivity'
-  citation: 'Lee, H., Lu, G., and Son, J. An Investigation of Peer Effects on Grocery Store Check-out Productivity.'
-  research_theme_ids:
-    - 'retail-service-operations'
-- id: 'managerial-incentive-labor-scheduling'
-  category: 'work_in_progress'
-  short_title: 'Managerial Incentive and Labor Scheduling'
-  citation: 'Lee, H., and Kesavan, S. Managerial Incentive and Labor Scheduling.'
-  research_theme_ids:
-    - 'retail-service-operations'
-- id: 'shopping-impeding-behavior'
-  category: 'work_in_progress'
-  short_title: 'Impeding Behavior in Shopping and Product Trial'
-  citation: 'Lee, H., and Reynolds-Mcilnay, R. Impeding Behavior in Shopping and Product Trial.'
-  research_theme_ids:
-    - 'retail-service-operations'
