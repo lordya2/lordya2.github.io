@@ -51,7 +51,26 @@ alternate_url: /ko/
   <p><a href="{{ '/pages/research.html' | relative_url }}">Explore research themes and methods</a></p>
 </section>
 
-<section class="section section--tinted" id="research-group" aria-labelledby="research-group-title">
+<section class="section section--tinted" id="featured-research" aria-labelledby="featured-research-title">
+  <p class="eyebrow">Featured Research</p>
+  <h2 id="featured-research-title">Selected research and its operational implications</h2>
+  {% assign featured_papers = site.data.publications | where: "featured", true | sort: "featured_order" %}
+  <div class="card-grid card-grid--three research-highlight-grid">
+    {% for paper in featured_papers limit:3 %}
+      <article class="card research-highlight-card">
+        <p class="research-card__venue">{{ paper.venue }} · {{ paper.year }}</p>
+        <h3>{{ paper.featured_short_title | default: paper.short_title }}</h3>
+        <p>{{ paper.finding }}</p>
+        {% if paper.links %}
+          <p class="link-row research-highlight-card__links">{% for link in paper.links %}<a href="{{ link.url }}" data-analytics-event="publication_click">{{ link.label }}</a>{% unless forloop.last %}<span aria-hidden="true"> · </span>{% endunless %}{% endfor %}</p>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
+  <p><a class="button button--ghost" href="{{ '/pages/research.html' | relative_url }}">View the full research portfolio</a></p>
+</section>
+
+<section class="section" id="research-group" aria-labelledby="research-group-title">
   <p class="eyebrow">Research Group &amp; Opportunities</p>
   <h2 id="research-group-title">Students working on consequential operations questions</h2>
   <p class="lead-text">{{ people.group_intro }}</p>
@@ -81,25 +100,6 @@ alternate_url: /ko/
     <a class="button" href="{{ '/pages/people.html' | relative_url }}" data-analytics-event="people_page_click">Meet the research group</a>
     <a class="button button--ghost" href="{{ '/pages/people.html#research-opportunities' | relative_url }}" data-analytics-event="student_opportunity_click">Research opportunities</a>
   </div>
-</section>
-
-<section class="section" id="featured-research" aria-labelledby="featured-research-title">
-  <p class="eyebrow">Featured Research</p>
-  <h2 id="featured-research-title">Selected research and its operational implications</h2>
-  {% assign featured_papers = site.data.publications | where: "featured", true | sort: "featured_order" %}
-  <div class="card-grid card-grid--three research-highlight-grid">
-    {% for paper in featured_papers limit:3 %}
-      <article class="card research-highlight-card">
-        <p class="research-card__venue">{{ paper.venue }} · {{ paper.year }}</p>
-        <h3>{{ paper.featured_short_title | default: paper.short_title }}</h3>
-        <p>{{ paper.finding }}</p>
-        {% if paper.links %}
-          <p class="link-row research-highlight-card__links">{% for link in paper.links %}<a href="{{ link.url }}" data-analytics-event="publication_click">{{ link.label }}</a>{% unless forloop.last %}<span aria-hidden="true"> · </span>{% endunless %}{% endfor %}</p>
-        {% endif %}
-      </article>
-    {% endfor %}
-  </div>
-  <p><a class="button button--ghost" href="{{ '/pages/research.html' | relative_url }}">View the full research portfolio</a></p>
 </section>
 
 <section class="section section--tinted" id="work-with-organizations" lang="ko" aria-labelledby="work-with-organizations-title">
