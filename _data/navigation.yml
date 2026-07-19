@@ -1,23 +1,26 @@
 - label: Research
   url: /pages/research.html
-- label: 산학협력
-  url: /pages/industry.html
-  event: industry_page_click
-- label: Media
-  url: /pages/media.html
-  event: media_impact_click
 - label: Research Group
   url: /pages/people.html
   event: people_page_click
-- label: Awards
-  url: /pages/award.html
 - label: Teaching
   url: /pages/teaching.html
+- label: 산학협력
+  url: /pages/industry.html
+  event: industry_page_click
+  lang: ko
+- label: Media
+  url: /pages/media.html
+  event: media_impact_click
+- label: Awards
+  url: /pages/award.html
 - label: CV
   url: /assets/CV.pdf
   event: cv_download
-- label: 문의
+- label: 협업 문의
   url: /pages/inquiry.html?source=navigation
   event: inquiry_page_click
+  lang: ko
 - label: 한국어
   url: /ko/
+  lang: ko
