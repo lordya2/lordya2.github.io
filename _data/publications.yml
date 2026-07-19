@@ -7,7 +7,7 @@
   authors: 'Lee, H., Lee, J., Noh, I., and Staats, B.'
   year: 2026
   venue: 'Management Science, Articles in Advance'
-  citation: 'Lee, H., Lee, J., Noh, I., and Staats, B. (2026) Learning in Recovery from Disruption: Empirical Evidence from the U.S. Drug Shortages. Management Science (UTD & FT), Published Online Articles in Advance.'
+  citation: 'Lee, H., Lee, J., Noh, I., and Staats, B. (2026) Learning in Recovery from Disruption: Empirical Evidence from the U.S. Drug Shortages. Management Science, Published Online Articles in Advance.'
   question: 'How does prior recovery experience affect how quickly pharmaceutical plants resolve current drug shortages?'
   question_ko: '제약 생산공장의 과거 부족 사태 회복 경험은 현재 의약품 부족의 회복 속도에 어떤 영향을 미치는가?'
   finding: 'Each additional shortage previously resolved by a plant reduces recovery time for a current shortage. Learning is concentrated in internally caused shortages, benefits from broader experience, and transfers only weakly across plants within the same firm.'
@@ -131,8 +131,8 @@
 - id: 'emergency-department-fees'
   category: 'working_paper'
   short_title: 'Emergency Department Attendance Fees'
-  citation: 'Lee, H., Park, E., and Rainer, T. (2025) Heterogeneous Patient Response to Uniform Increase in Emergency Department Attendance Fees: A Territory-Wide Study.'
-  status: 'Under revision (Major Revision) at Manufacturing & Service Operations Management.'
+  citation: 'Lee, H., Park, E., and Rainer, T. (2026) Heterogeneous Patient Response to Uniform Increase in Emergency Department Attendance Fees: A Territory-Wide Study.'
+  status: 'Under review (previous decision: Major Revision).'
   research_theme_ids:
     - 'healthcare-pharmaceutical-supply-chains'
     - 'empirical-om-causal-inference'
