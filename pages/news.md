@@ -11,7 +11,7 @@ description: Archive of recent news, awards, publications, teaching recognition,
   <p>Recent updates on publications, awards, teaching recognition, service, and other professional activities.</p>
   <ul class="timeline-list">
     {% for item in site.data.news %}
-      <li><time>{{ item.date }}</time><span>{{ item.text }}</span></li>
+      <li><time datetime="{{ item.date }}">{{ item.date }}</time><span>{% if item.url %}<a href="{{ item.url | relative_url }}">{{ item.text }}</a>{% else %}{{ item.text }}{% endif %}</span></li>
     {% endfor %}
   </ul>
 </section>
