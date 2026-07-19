@@ -80,6 +80,16 @@ student_achievements:
 conference_presentations:
   - presenter: 'Saeyoung Yoon'
     role: 'Current student'
+    conference: 'EurOMA 2025'
+    location: 'Milan, Italy'
+    year: 2025
+  - presenter: 'Saeyoung Yoon'
+    role: 'Current student'
+    conference: 'ICEC 2025'
+    location: 'Tianjin, China'
+    year: 2025
+  - presenter: 'Saeyoung Yoon'
+    role: 'Current student'
     conference: 'POMS 2024'
     location: 'Minneapolis, USA'
     year: 2024
@@ -89,16 +99,6 @@ conference_presentations:
     conference: 'POMS 2024'
     location: 'Minneapolis, USA'
     year: 2024
-  - presenter: 'Saeyoung Yoon'
-    role: 'Current student'
-    conference: 'EurOMA 2025'
-    location: 'Milan, Italy'
-    year: 2025
-  - presenter: 'Saeyoung Yoon'
-    role: 'Current student'
-    conference: 'ICEC 2025'
-    location: 'Tianjin, China'
-    year: 2025
 alumni:
   - name: 'Gyumin Kim'
     name_ko: '김규민'
