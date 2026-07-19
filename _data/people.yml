@@ -1,20 +1,117 @@
 mentoring_approach: 'Research mentoring emphasizes empirical operations and supply chain management, careful causal identification, institutional knowledge of operational settings, and student-led projects that connect rigorous methods with consequential operations problems.'
-opportunity_summary: 'Students interested in empirical operations management, healthcare and pharmaceutical supply chains, retail and service operations, platform operations, business analytics, and causal inference are welcome to get in touch.'
+group_intro: 'Current student projects examine retail technology, healthcare delivery, and supply-chain resilience using operational data, field knowledge, and empirical methods.'
+opportunity_summary: 'Prospective PhD, MS, and undergraduate students interested in empirical operations management, healthcare operations, retail operations, supply-chain resilience, business analytics, and causal inference are welcome to get in touch.'
+research_streams:
+  - title: 'Retail Operations'
+    summary: 'How product trials, digital traces, and store processes shape sales and demand across closely related products.'
+    students:
+      - 'Saeyoung Yoon'
+  - title: 'Healthcare Operations'
+    summary: 'How schedule deviations and physician experience shape care processes in operating rooms and emergency departments.'
+    students:
+      - 'Sang Yong Park'
+      - 'Claire Shin'
+  - title: 'Supply Chain Management & Resilience'
+    summary: 'How supplier-base pruning before major disruptions shapes firms’ inventory responses and financial outcomes.'
+    students:
+      - 'Jongcheol Won'
 current_students:
-  - name: 'Saeyoung Yoon'
-    program: 'MS/PhD in LSOM'
-  - name: 'Sangyong Park'
-    program: 'MS in LSOM'
+  - id: 'saeyoung-yoon'
+    name: 'Saeyoung Yoon'
+    name_ko: '윤세영'
+    program: 'Integrated MS–PhD Student in LSOM'
+    entry_year: 2022
+    area: 'Retail Operations'
+    project_title: 'Fitting-room product trials and sales'
+    working_paper_title: 'Try Before You Buy: How Fitting Room Usage Influences Apparel Sales and Spillover Effects'
+    project_summary: 'Uses RFID fitting-room try-on logs and SKU-level sales data to examine how product trials translate into purchases and demand spillovers across variants of the same style.'
+    topics:
+      - 'Fitting-room RFID data'
+      - 'Product trial and sales conversion'
+      - 'Within-style demand spillovers'
+  - id: 'sang-yong-park'
+    name: 'Sang Yong Park'
+    name_ko: '박상용'
+    program: 'MS Student in LSOM'
+    entry_year: 2025
+    area: 'Healthcare Operations'
+    project_title: 'Operating-room scheduling'
+    project_summary: 'Uses a decade of operating-room records from a South Korean tertiary hospital to examine how schedule deviations change pacing during anesthesia and surgery and relate to reoperations and postoperative complications.'
+    topics:
+      - 'Operating-room scheduling'
+      - 'Schedule deviations'
+      - 'Phase-specific pacing'
+  - id: 'jongcheol-won'
+    name: 'Jongcheol Won'
+    name_ko: '원종철'
+    program: 'MS Student in LSOM'
+    entry_year: 2025
+    area: 'Supply Chain Management & Resilience'
+    project_title: 'Supply-base de-scaling and resilience'
+    project_summary: 'Uses Korean VAT-based firm-to-firm transaction and financial data to examine how persistent pre-COVID supplier-base de-scaling relates to firms’ inventory responses and financial outcomes during the pandemic.'
+    topics:
+      - 'Supply-base de-scaling'
+      - 'Korean VAT network data'
+      - 'Disruption outcomes'
+  - id: 'claire-shin'
+    name: 'Claire Shin'
+    name_ko: '신재아'
+    program: 'Undergraduate Researcher'
+    area: 'Healthcare Operations'
+    project_title: 'Physician learning in emergency departments'
+    project_summary: 'Uses Hong Kong emergency-department visit data to examine whether physicians reduce service times as experience accumulates and how learning transfers across patient triage levels.'
+    topics:
+      - 'Physician learning'
+      - 'Service time'
+      - 'Triage-specific experience'
+student_achievements:
+  - id: 'saeyoung-yoon-nrf-2026'
+    year: 2026
+    category: 'Research Funding'
+    student: 'Saeyoung Yoon'
+    title: 'Selected for 2026 NRF doctoral student research funding'
+    organization: 'National Research Foundation of Korea'
+    program_ko: '박사과정생연구장려금지원사업'
+    project_title_ko: 'RFID 탈의실 시착 로그를 활용한 의류 리테일의 SKU 판매 전환과 동일 스타일 내 수요 파급효과 분석'
+    project_summary: 'The 24-month project uses RFID fitting-room try-on logs to study conversion to SKU-level sales and demand spillovers within the same apparel style.'
+    duration: '24 months'
+    lookup_note: 'On the lookup page, search “윤세영” in the 연구책임자 field.'
+    url: 'https://ernd.nrf.re.kr/websquare/websquarepop.do?w2xPath=/wsq/sl/slc/LastSlcSbjtListRM.xml&bizYr=2026&bizCd=S1A5B5A19&sbjtStepNgr=1&sbjtAnuNgr=1&sbjtNgr=1'
+conference_presentations:
+  - presenter: 'Saeyoung Yoon'
+    role: 'Current student'
+    conference: 'POMS 2024'
+    location: 'Minneapolis, USA'
+    year: 2024
+  - presenter: 'Gyumin Kim'
+    presenter_ko: '김규민'
+    role: 'Alumnus'
+    conference: 'POMS 2024'
+    location: 'Minneapolis, USA'
+    year: 2024
+  - presenter: 'Saeyoung Yoon'
+    role: 'Current student'
+    conference: 'EurOMA 2025'
+    location: 'Milan, Italy'
+    year: 2025
+  - presenter: 'Saeyoung Yoon'
+    role: 'Current student'
+    conference: 'ICEC 2025'
+    location: 'Tianjin, China'
+    year: 2025
 alumni:
   - name: 'Gyumin Kim'
+    name_ko: '김규민'
     degree: 'MS in LSOM'
     year: 2025
     placement: 'PhD student at the Darla Moore School of Business, University of South Carolina'
   - name: 'Cheng Wang'
+    name_ko: '왕정'
     degree: 'MS in LSOM'
     year: 2022
     placement: 'TCL China Star Optoelectronic Technology'
   - name: 'Keontaek Oh'
+    name_ko: '오건택'
     degree: 'PhD in LSOM'
     year: 2021
     placement: 'Assistant Professor at Keimyung University'
