@@ -36,6 +36,9 @@ jobs:
       - name: Check internal links
         run: ruby scripts/check_internal_links.rb
 
+      - name: Validate Korean hub
+        run: ruby scripts/validate_korean_hub.rb
+
       - name: Check external links (warning only)
         run: ruby scripts/check_external_links.rb || true
 

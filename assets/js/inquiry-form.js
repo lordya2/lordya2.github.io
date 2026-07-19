@@ -14,6 +14,7 @@
     'collaboration-brief',
     'homepage',
     'industry-page',
+    'korean-hub',
     'navigation',
     'direct'
   ];

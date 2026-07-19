@@ -2,6 +2,7 @@
   category: 'peer_reviewed'
   short_title: 'Learning in Recovery from Disruption'
   featured_short_title: 'Drug Shortage Recovery'
+  featured_short_title_ko: '의약품 부족 회복과 조직 학습'
   title: 'Learning in Recovery from Disruption: Empirical Evidence from the U.S. Drug Shortages'
   authors: 'Lee, H., Lee, J., Noh, I., and Staats, B.'
   year: 2026
@@ -23,6 +24,7 @@
 - id: 'product-variety'
   category: 'peer_reviewed'
   short_title: 'Product Variety'
+  featured_short_title_ko: '상품 다양성과 SKU 매출'
   title: 'Product Variety in Local Grocery Stores: Differential Effects on Stock-Keeping Unit Level Sales'
   authors: 'Lu, G., Lee, H., and Son, J.'
   year: 2022
@@ -46,6 +48,7 @@
   category: 'peer_reviewed'
   short_title: 'Group Incentives for Store Managers'
   featured_short_title: 'Group Incentives'
+  featured_short_title_ko: '리테일 매장관리자 집단 인센티브'
   title: 'When Do Group Incentives for Retail Store Managers Work?'
   authors: 'Lee, H., Kesavan, S., and Kuhnen, C.'
   year: 2022
@@ -70,6 +73,7 @@
   category: 'peer_reviewed'
   short_title: 'Alleviating Drug Shortages'
   featured_short_title: 'Drug Shortage Transparency'
+  featured_short_title_ko: '의약품 부족과 운영 투명성'
   title: 'Alleviating Drug Shortages: The Role of Mandated Reporting-Induced Operational Transparency'
   authors: 'Lee, J., Lee, H., Shin, H., and Krishnan, V.'
   year: 2021
@@ -95,6 +99,7 @@
 - id: 'fitting-room-traffic'
   category: 'peer_reviewed'
   short_title: 'Fitting-Room Traffic'
+  featured_short_title_ko: '피팅룸 혼잡과 매장 운영'
   title: 'Managing the Impact of Fitting-Room Traffic on Retail Sales: Using Labor to Reduce Phantom Stockouts'
   authors: 'Lee, H., Kesavan, S., and Deshpande, V.'
   year: 2021

@@ -1,6 +1,7 @@
 name: 'Hyun Seok ("Huck") Lee'
 name_ko: '이현석'
 display_title: 'KUBS Research Fellow · Associate Professor, LSOM & Business Analytics · Area Chair, LSOM'
+display_title_ko: 'KUBS Research Fellow · LSOM 및 Business Analytics 부교수 · LSOM Area Chair'
 full_title: 'KUBS Research Fellow; Associate Professor of Logistics, Service and Operations Management and Business Analytics; Area Chair of Logistics, Service and Operations Management'
 full_title_ko: '고려대학교 경영대학 KUBS Research Fellow; LSOM 및 Business Analytics 부교수; LSOM Area Chair'
 affiliation: 'Korea University Business School'
@@ -17,6 +18,7 @@ address_ko: '서울특별시 성북구 안암로 145, 고려대학교 경영대�
 cv_url: '/assets/CV.pdf'
 headshot: '/assets/headshot.jpg'
 headshot_alt: 'Portrait of Hyun Seok Huck Lee'
+headshot_alt_ko: '고려대학교 경영대학 이현석 교수'
 orcid: '0000-0003-3400-3472'
 links:
   kubs:

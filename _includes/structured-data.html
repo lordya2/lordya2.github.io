@@ -2,10 +2,12 @@
 {% assign profile = site.data.profile %}
 {% assign absolute_image = profile.headshot | prepend: site.production_url %}
 {% assign page_url = page.url | replace:'index.html','' | prepend: site.production_url %}
+{% assign person_id = '/#person' | prepend: site.production_url %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
+  "@id": {{ person_id | jsonify }},
   "name": {{ profile.name | jsonify }},
   "alternateName": {{ profile.name_ko | jsonify }},
   "jobTitle": {{ profile.full_title | jsonify }},
@@ -32,6 +34,48 @@
     {{ profile.links.google_scholar.url | jsonify }},
     {{ profile.links.orcid.url | jsonify }}
   ]
+}
+</script>
+{% elsif page.url == '/ko/' or page.url == '/ko/index.html' %}
+{% assign profile = site.data.profile %}
+{% assign absolute_image = profile.headshot | prepend: site.production_url %}
+{% assign page_url = page.url | replace:'index.html','' | prepend: site.production_url %}
+{% assign person_id = '/#person' | prepend: site.production_url %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": {{ page_url | append: '#profile-page' | jsonify }},
+  "url": {{ page_url | jsonify }},
+  "name": {{ page.seo_title | default: page.title | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "inLanguage": "ko-KR",
+  "mainEntity": {
+    "@type": "Person",
+    "@id": {{ person_id | jsonify }},
+    "name": {{ profile.name_ko | jsonify }},
+    "alternateName": {{ profile.name | jsonify }},
+    "jobTitle": {{ profile.display_title_ko | jsonify }},
+    "worksFor": {
+      "@type": "CollegeOrUniversity",
+      "name": {{ profile.affiliation_ko | jsonify }}
+    },
+    "email": {{ profile.email | prepend: 'mailto:' | jsonify }},
+    "telephone": {{ profile.office_phone | jsonify }},
+    "image": {{ absolute_image | jsonify }},
+    "url": {{ page_url | jsonify }},
+    "workLocation": {
+      "@type": "Place",
+      "name": {{ profile.office | jsonify }},
+      "address": {{ profile.address_ko | jsonify }}
+    },
+    "sameAs": [
+      {{ profile.links.kubs.url | jsonify }},
+      {{ profile.links.linkedin.url | jsonify }},
+      {{ profile.links.google_scholar.url | jsonify }},
+      {{ profile.links.orcid.url | jsonify }}
+    ]
+  }
 }
 </script>
 {% endif %}
