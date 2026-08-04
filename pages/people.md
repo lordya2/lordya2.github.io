@@ -47,7 +47,7 @@ keywords: Empirical Operations Management, LSOM, Korea University, Graduate Rese
         <article class="student-card" id="{{ student.id }}">
           <header class="student-card__header">
             <p class="student-card__area">{{ student.area }}</p>
-            <h3>{{ student.name }} <span lang="ko">{{ student.name_ko }}</span></h3>
+            <h3>{{ student.name }}{% if student.name_ko %} <span lang="ko">{{ student.name_ko }}</span>{% endif %}</h3>
             <p class="student-card__meta">{{ student.program }}{% if student.entry_year %} · Entered in {{ student.entry_year }}{% endif %}</p>
           </header>
           <div class="student-card__project">

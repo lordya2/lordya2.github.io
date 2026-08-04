@@ -78,7 +78,7 @@ alternate_url: /ko/
     {% for student in people.current_students %}
       <article class="card home-student-card">
         <p class="home-student-card__area">{{ student.area }}</p>
-        <h3><a href="{{ '/pages/people.html#' | append: student.id | relative_url }}">{{ student.name }}</a> <span lang="ko">{{ student.name_ko }}</span></h3>
+        <h3><a href="{{ '/pages/people.html#' | append: student.id | relative_url }}">{{ student.name }}</a>{% if student.name_ko %} <span lang="ko">{{ student.name_ko }}</span>{% endif %}</h3>
         <p class="home-student-card__meta">{{ student.program }}{% if student.entry_year %} · Entered {{ student.entry_year }}{% endif %}</p>
         <p><strong>{{ student.project_title }}</strong></p>
         <p>{{ student.project_summary }}</p>

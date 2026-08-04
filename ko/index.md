@@ -191,7 +191,7 @@ body_class: ko-hub
     {% for student in people.current_students %}
       <article class="card ko-student-card">
         <p class="ko-student-card__area">{{ student.area_ko }}</p>
-        <h3>{{ student.name_ko }} <span lang="en">{{ student.name }}</span></h3>
+        <h3{% unless student.name_ko %} lang="en"{% endunless %}>{% if student.name_ko %}{{ student.name_ko }} <span lang="en">{{ student.name }}</span>{% else %}{{ student.name }}{% endif %}</h3>
         <p class="ko-student-card__meta">{{ student.program_ko }}{% if student.entry_year %} · {{ student.entry_year }}년 입학{% endif %}</p>
         <p><strong>{{ student.project_title_ko }}</strong></p>
         <p>{{ student.project_summary_ko }}</p>
