@@ -6,9 +6,10 @@ opportunity_summary: 'Prospective PhD, MS, and undergraduate students interested
 opportunity_summary_ko: '실증 운영관리, 헬스케어·제약 공급망, 리테일·서비스 운영, 공급망 회복탄력성, 비즈니스 애널리틱스와 인과추론에 관심 있는 석·박사과정 지원자와 학부연구생의 연락을 환영합니다.'
 research_streams:
   - title: 'Retail Operations'
-    summary: 'How product trials, digital traces, and store processes shape sales and demand across closely related products.'
+    summary: 'How product trials, workforce composition, digital traces, and store processes shape sales, transaction throughput, and demand.'
     students:
       - 'Saeyoung Yoon'
+      - 'Dzung Do Thuy'
   - title: 'Healthcare Operations'
     summary: 'How schedule deviations and physician experience shape care processes in operating rooms and emergency departments.'
     students:
@@ -39,8 +40,8 @@ current_students:
   - id: 'sang-yong-park'
     name: 'Sang Yong Park'
     name_ko: '박상용'
-    program: 'MS Student in LSOM'
-    program_ko: 'LSOM 석사과정'
+    program: 'Integrated MS–PhD Student in LSOM'
+    program_ko: 'LSOM 석·박사통합과정'
     entry_year: 2025
     area: 'Healthcare Operations'
     area_ko: '헬스케어 운영'
@@ -52,6 +53,21 @@ current_students:
       - 'Operating-room scheduling'
       - 'Schedule deviations'
       - 'Phase-specific pacing'
+  - id: 'dzung-do-thuy'
+    name: 'Dzung Do Thuy'
+    program: 'PhD Student in LSOM'
+    program_ko: 'LSOM 박사과정'
+    entry_year: 2025
+    area: 'Retail Operations'
+    area_ko: '리테일 운영'
+    project_title: 'Retail workforce mix and store performance'
+    project_title_ko: '리테일 인력 구성과 매장 성과'
+    project_summary: 'Uses store-hour operational data to examine how part-time and full-time frontline labor contribute to transaction throughput and basket outcomes under different levels of customer traffic.'
+    project_summary_ko: '매장·시간대별 운영자료를 활용해 고객 트래픽 수준에 따라 파트타임 및 풀타임 현장 인력이 거래 처리량과 장바구니 성과에 어떻게 기여하는지 연구합니다.'
+    topics:
+      - 'Retail workforce mix'
+      - 'Customer traffic'
+      - 'Throughput and basket outcomes'
   - id: 'jongcheol-won'
     name: 'Jongcheol Won'
     name_ko: '원종철'

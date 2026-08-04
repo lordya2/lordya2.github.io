@@ -96,7 +96,7 @@ errors << 'English home is missing x-default hreflang.' unless home_html.include
   errors << "profile.yml is missing #{field}." if profile[field].to_s.strip.empty?
 end
 
-required_student_fields = %w[name_ko program_ko area_ko project_title_ko project_summary_ko]
+required_student_fields = %w[program_ko area_ko project_title_ko project_summary_ko]
 students.each_with_index do |student, index|
   required_student_fields.each do |field|
     errors << "Current student #{index + 1} is missing #{field}." if student[field].to_s.strip.empty?
