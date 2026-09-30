@@ -2,14 +2,14 @@
 layout: page
 title: Media & Impact
 hide_page_header: true
-description: Media coverage, school news, research impact, and public-facing communication about empirical operations research.
+description: Media coverage, research impact, and public essays on operations, university life, learning, and career choices.
 ---
 {% assign media = site.data.media_impact %}
 
 <section class="section page-section" aria-labelledby="media-title">
   <p class="eyebrow">Media &amp; Impact</p>
-  <h1 id="media-title">Research in the media and public-facing outlets</h1>
-  <p>Selected media coverage, school news, research impact, and public-facing communication related to empirical operations, healthcare and pharmaceutical supply chains, retail, platforms, and policy-relevant decisions.</p>
+  <h1 id="media-title">Research, essays, and public engagement</h1>
+  <p>Selected media coverage and expert articles on operations research, alongside public essays on university life, learning, and career choices.</p>
 
   <h2>Featured impact</h2>
   <div class="media-grid">
@@ -61,12 +61,12 @@ description: Media coverage, school news, research impact, and public-facing com
   <h2>Essays and columns</h2>
   <div class="media-grid">
     {% for item in media.essays_and_columns %}
-      <article class="card">
+      <article class="card"{% if item.id %} id="{{ item.id }}"{% endif %}>
         <p class="card-label media-meta">{{ item.type }} · {{ item.date }}</p>
         <h3>{{ item.title }}</h3>
         <p><strong>{{ item.outlet }}</strong></p>
         <p>{{ item.summary }}</p>
-        <p><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer" data-analytics-event="media_impact_click">Read column</a></p>
+        <p class="link-row"><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer" data-analytics-event="media_impact_click">{{ item.link_label | default: 'Read column' }}</a>{% if item.first_article_url %}<a href="{{ item.first_article_url }}" target="_blank" rel="noopener noreferrer" data-analytics-event="media_impact_click">Read the first essay</a>{% endif %}</p>
       </article>
     {% endfor %}
   </div>

@@ -133,7 +133,7 @@
   category: 'working_paper'
   short_title: 'Coupons, Multihoming, and Phantom Demand'
   citation: 'Li, Y., Wang, X., Lee, H., Cao, Z., and Zhou, J. (2026) When Coupons Drive Multihoming and Phantom Demand: Evidence from a Ride-Hailing Platform.'
-  status: 'Under review at Manufacturing & Service Operations Management.'
+  status: 'Under revision.'
   research_theme_ids:
     - 'platforms-digital-operations'
 - id: 'self-service-kiosks'
@@ -153,7 +153,7 @@
 - id: 'fulfillment-by-platform'
   category: 'working_paper'
   short_title: 'Fulfillment by Platform'
-  citation: 'Lee, H., Kim, Y., and Son, J. (2025) Fulfillment-By-Platform in B2C E-tailing: Overall Positive Customer Responses, yet Diminishing End Effect.'
+  citation: 'Lee, H., Kim, Y., and Son, J. (2026) Fulfillment-By-Platform in B2C E-tailing: Overall Positive Customer Responses, yet Diminishing End Effect.'
   status: 'Under revision at Journal of Operations Management (previous decision: Reject & Resubmit).'
   note: 'MK Emerging Scholar Paper Award at KASBA 2022 Convergence Conference, Yeosu, Korea.'
   research_theme_ids:
