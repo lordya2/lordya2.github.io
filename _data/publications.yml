@@ -129,6 +129,11 @@
   research_theme_ids:
     - 'healthcare-pharmaceutical-supply-chains'
     - 'empirical-om-causal-inference'
+- id: 'supply-base-de-scaling'
+  category: 'working_paper'
+  short_title: 'Lean but Fragile?'
+  citation: 'Lee, H., Lu, G., and Won, J. (2026) Lean but Fragile? How Supply-Base De-scaling Shapes Performance under Disruption.'
+  status: 'Under revision at Journal of Operations Management (first decision: Major Revision).'
 - id: 'coupons-multihoming-phantom-demand'
   category: 'working_paper'
   short_title: 'Coupons, Multihoming, and Phantom Demand'
