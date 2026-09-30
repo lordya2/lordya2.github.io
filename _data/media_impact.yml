@@ -104,6 +104,18 @@ selected_media:
     type: 'Media coverage'
 
 essays_and_columns:
+  - id: 'brunch-office-hours'
+    title: '교수님, 이런 질문 해도 되나요?'
+    outlet: 'Brunch Story'
+    date: '2026-09'
+    url: 'https://brunch.co.kr/brunchbook/officehours'
+    first_article_url: 'https://brunch.co.kr/@hyunseoklee/1'
+    summary: 'A Korean-language essay series inspired by office-hour conversations, exploring questions, learning, teamwork, and career choices with prospective and current university students.'
+    summary_ko: '교수의 오피스아워에서 출발해, 예비대학생과 대학생의 질문·공부·팀플·진로 고민을 함께 생각하는 연재입니다.'
+    type: 'Essay series'
+    type_ko: '에세이 연재'
+    link_label: 'Read series'
+    link_label_ko: '연재 읽기'
   - title: '[탁류세평] 신뢰 없는 사회, 불신의 비용'
     outlet: 'Korea University Newspaper'
     date: '2026-01'

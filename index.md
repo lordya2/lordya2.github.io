@@ -32,7 +32,7 @@ alternate_url: /ko/
 
 <section class="section section--compact section--tinted" id="news" aria-labelledby="news-title">
   <p class="eyebrow">Recent Updates</p>
-  <h2 id="news-title">Research, student achievements, and recognition</h2>
+  <h2 id="news-title">Research, student achievements, and recent activities</h2>
   {% assign recent_news = site.data.news | sort: "date" | reverse %}
   <ul class="timeline-list">
     {% for item in recent_news limit:3 %}
@@ -121,7 +121,7 @@ alternate_url: /ko/
 
 <section class="section" id="media-impact-preview" aria-labelledby="media-impact-preview-title">
   <p class="eyebrow">Media &amp; Impact</p>
-  <h2 id="media-impact-preview-title">Research beyond academic journals</h2>
+  <h2 id="media-impact-preview-title">Research and ideas beyond academic journals</h2>
   {% assign latest_selected_media = site.data.media_impact.selected_media | sort: "date" | reverse %}
   {% assign latest_selected_item = latest_selected_media | first %}
   {% assign featured_impact = site.data.media_impact.featured | first %}
@@ -152,7 +152,7 @@ alternate_url: /ko/
         <h3>{{ latest_column.title }}</h3>
         <p><strong>{{ latest_column.outlet }}</strong></p>
         <p>{{ latest_column.summary }}</p>
-        <p><a href="{{ latest_column.url }}" target="_blank" rel="noopener noreferrer" data-analytics-event="media_impact_click">Read column</a></p>
+        <p><a href="{{ latest_column.url }}" target="_blank" rel="noopener noreferrer" data-analytics-event="media_impact_click">{{ latest_column.link_label | default: 'Read column' }}</a></p>
       </article>
     {% endif %}
   </div>

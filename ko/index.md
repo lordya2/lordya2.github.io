@@ -132,8 +132,8 @@ body_class: ko-hub
 
 <section class="section section--tinted" id="media" aria-labelledby="ko-media-title">
   <p class="eyebrow">미디어와 대외 소통</p>
-  <h2 id="ko-media-title">연구를 기업과 사회의 언어로 설명합니다</h2>
-  <p class="lead-text">의약품 부족과 공급망 회복 연구는 고려대학교 공식 보도, 국내 언론과 DBR 연구 해설을 통해 소개되었습니다. 그 밖에도 리테일 운영, 배송과 고객 경험, 데이터 기반 의사결정에 관한 기고와 대외 소통을 이어가고 있습니다.</p>
+  <h2 id="ko-media-title">연구와 생각을 기업, 학생, 사회와 나눕니다</h2>
+  <p class="lead-text">의약품 부족과 공급망 회복 연구는 고려대학교 공식 보도, 국내 언론과 DBR 연구 해설을 통해 소개되었습니다. 리테일 운영과 데이터 기반 의사결정에 관한 기고를 이어가는 한편, 브런치 연재 「교수님, 이런 질문 해도 되나요?」에서는 예비대학생과 대학생의 공부·팀플·진로 고민을 함께 생각합니다.</p>
   {% assign latest_selected_media = site.data.media_impact.selected_media | sort: "date" | reverse %}
   {% assign latest_selected_item = latest_selected_media | first %}
   {% assign featured_impact = site.data.media_impact.featured | first %}
@@ -158,7 +158,7 @@ body_class: ko-hub
       <h3>{{ latest_column.title }}</h3>
       <p><strong>{{ latest_column.outlet }}</strong></p>
       <p>{{ latest_column.summary_ko }}</p>
-      <p><a href="{{ latest_column.url }}" target="_blank" rel="noopener noreferrer" data-analytics-event="media_impact_click">칼럼 읽기</a></p>
+      <p><a href="{{ latest_column.url }}" target="_blank" rel="noopener noreferrer" data-analytics-event="media_impact_click">{{ latest_column.link_label_ko | default: '칼럼 읽기' }}</a></p>
     </article>{% endif %}
   </div>
   <div class="button-row section-actions">
