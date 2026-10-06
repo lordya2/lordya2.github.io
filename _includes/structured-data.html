@@ -1,4 +1,22 @@
-{% if page.url == '/' or page.url == '/index.html' %}
+{% if page.schema_type == 'Book' %}
+{% assign book = site.data.book %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": {{ book.title | jsonify }},
+  "description": {{ book.description_ko | jsonify }},
+  "author": {"@type": "Person", "name": {{ book.author | jsonify }}, "url": {{ '/ko/' | prepend: site.production_url | jsonify }}},
+  "publisher": {"@type": "Organization", "name": {{ book.publisher | jsonify }}},
+  "inLanguage": "ko",
+  "isbn": {{ book.isbn | jsonify }},
+  "numberOfPages": {{ book.pages }},
+  "bookFormat": "https://schema.org/Paperback",
+  "url": {{ book.url | prepend: site.production_url | jsonify }},
+  "image": {{ book.cover | prepend: site.production_url | jsonify }}
+}
+</script>
+{% elsif page.url == '/' or page.url == '/index.html' %}
 {% assign profile = site.data.profile %}
 {% assign absolute_image = profile.headshot | prepend: site.production_url %}
 {% assign page_url = page.url | replace:'index.html','' | prepend: site.production_url %}

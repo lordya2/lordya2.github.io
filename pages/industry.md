@@ -11,6 +11,7 @@ schema_type: Service
 ---
 {% assign industry = site.data.industry_collaboration %}
 {% assign profile = site.data.profile %}
+{% assign book = site.data.book %}
 
 <section class="section page-section industry-page" lang="ko" aria-labelledby="industry-title">
   <header class="industry-hero">
@@ -49,6 +50,12 @@ schema_type: Service
         <p class="muted">기업 특강, 리더 세미나, 임원 워크숍 등 목적과 시간에 맞춰 구성하며, 구체적인 사례와 강조점은 사전에 협의합니다.</p>
       </aside>
     </div>
+    <article class="card book-workshop-card">
+      <p class="card-label">신간 연계 강연·워크숍</p>
+      <h3>AI를 성과로 연결하는 운영관리</h3>
+      <p>『{{ book.title }}』의 사례를 바탕으로, AI의 예측과 분석을 수요·재고·서비스 운영의 의사결정에 연결하고 도입 효과를 평가하는 방법을 함께 살펴봅니다.</p>
+      <p><a href="{{ book.url | relative_url }}" data-analytics-event="book_detail_click">책 소개와 목차 보기</a></p>
+    </article>
     <p class="section-actions"><a class="button" href="{{ '/pages/inquiry.html' | relative_url }}?type=executive-workshops&amp;source=industry-page" data-analytics-event="corporate_speaking_click">강연·임원 워크숍 문의</a></p>
   </section>
 

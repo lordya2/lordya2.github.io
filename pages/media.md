@@ -2,14 +2,27 @@
 layout: page
 title: Media & Impact
 hide_page_header: true
-description: Media coverage, research impact, and public essays on operations, university life, learning, and career choices.
+description: Books, media coverage, research impact, and public essays on AI, operations, university life, learning, and career choices.
 ---
 {% assign media = site.data.media_impact %}
+{% assign book = site.data.book %}
 
 <section class="section page-section" aria-labelledby="media-title">
   <p class="eyebrow">Media &amp; Impact</p>
-  <h1 id="media-title">Research, essays, and public engagement</h1>
-  <p>Selected media coverage and expert articles on operations research, alongside public essays on university life, learning, and career choices.</p>
+  <h1 id="media-title">Research, books, essays, and public engagement</h1>
+  <p>Books, selected media coverage, and expert articles on operations, alongside public essays on university life, learning, and career choices.</p>
+
+  <h2 id="books">Books</h2>
+  <article class="card book-media-card">
+    <a class="book-media-card__cover" href="{{ book.url | append: '#english' | relative_url }}" aria-label="Read about {{ book.title | escape }}"><img src="{{ book.cover | relative_url }}" alt="{{ book.title | escape }} book cover" width="862" height="1271" loading="lazy"></a>
+    <div>
+      <p class="card-label media-meta">New book · October 2026 · Published in Korean</p>
+      <h3 lang="ko">{{ book.title }}</h3>
+      <p lang="ko">{{ book.subtitle }}</p>
+      <p>{{ book.description_en }}</p>
+      <p><a href="{{ book.url | append: '#english' | relative_url }}" data-analytics-event="book_detail_click">About the book and where to buy it</a></p>
+    </div>
+  </article>
 
   <h2>Featured impact</h2>
   <div class="media-grid">
