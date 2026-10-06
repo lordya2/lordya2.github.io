@@ -33,7 +33,7 @@ body_class: ko-hub
     </nav>
   </div>
   <figure class="ko-hero__portrait">
-    <img src="{{ profile.homepage_portrait | relative_url }}" alt="{{ profile.homepage_portrait_alt_ko }}" width="592" height="740" fetchpriority="high">
+    <img src="{{ profile.headshot | relative_url }}" alt="{{ profile.headshot_alt_ko }}" width="1122" height="1402" fetchpriority="high">
   </figure>
 </section>
 
