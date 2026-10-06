@@ -28,6 +28,9 @@ cv_url: '/assets/CV.pdf'
 headshot: '/assets/headshot.jpg'
 headshot_alt: 'Portrait of Hyun Seok Huck Lee'
 headshot_alt_ko: '고려대학교 경영대학 이현석 교수'
+homepage_portrait: '/assets/homepage-speaking-2026.jpg'
+homepage_portrait_alt: 'Hyun Seok Huck Lee speaking with a microphone at Korea University'
+homepage_portrait_alt_ko: '고려대학교에서 마이크를 들고 강연하는 이현석 교수'
 orcid: '0000-0003-3400-3472'
 links:
   kubs:

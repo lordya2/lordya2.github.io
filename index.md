@@ -27,7 +27,7 @@ alternate_url: /ko/
       <a href="{{ '/ko/' | relative_url }}" lang="ko">한국어 소개</a>
     </nav>
   </div>
-  <figure class="hero__portrait"><img src="{{ profile.headshot }}" alt="{{ profile.headshot_alt }}" width="1122" height="1402" fetchpriority="high"></figure>
+  <figure class="hero__portrait"><img src="{{ profile.homepage_portrait | relative_url }}" alt="{{ profile.homepage_portrait_alt }}" width="592" height="740" fetchpriority="high"></figure>
 </section>
 
 {% include book-feature.html lang='en' %}
