@@ -30,6 +30,8 @@ alternate_url: /ko/
   <figure class="hero__portrait"><img src="{{ profile.headshot }}" alt="{{ profile.headshot_alt }}" width="1122" height="1402" fetchpriority="high"></figure>
 </section>
 
+{% include book-feature.html lang='en' %}
+
 <section class="section section--compact section--tinted" id="news" aria-labelledby="news-title">
   <p class="eyebrow">Recent Updates</p>
   <h2 id="news-title">Research, student achievements, and recent activities</h2>

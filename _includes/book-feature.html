@@ -1,0 +1,15 @@
+{% assign book = site.data.book %}
+<section class="section section--compact book-feature" aria-labelledby="book-feature-title">
+  <a class="book-feature__cover" href="{{ book.url | relative_url }}{% if include.lang == 'en' %}#english{% endif %}" data-analytics-event="book_page_click">
+    <img src="{{ book.cover | relative_url }}" alt="{{ book.title }} — {{ book.subtitle }} 표지" width="862" height="1271" loading="lazy">
+  </a>
+  <div class="book-feature__content">
+    <p class="eyebrow">{% if include.lang == 'ko' %}신간 · 2026년 10월{% else %}New Book · October 2026 · In Korean{% endif %}</p>
+    <h2 id="book-feature-title" lang="ko">{{ book.title }}</h2>
+    <p class="book-feature__subtitle" lang="ko">{{ book.subtitle }}</p>
+    <p>{% if include.lang == 'ko' %}{{ book.description_ko }}{% else %}{{ book.description_en }}{% endif %}</p>
+    <div class="button-row">
+      <a class="button" href="{{ book.url | relative_url }}{% if include.lang == 'en' %}#english{% endif %}" data-analytics-event="book_page_click">{% if include.lang == 'ko' %}책 소개·구매 안내{% else %}About the book &amp; where to buy{% endif %}</a>
+    </div>
+  </div>
+</section>

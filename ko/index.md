@@ -37,6 +37,8 @@ body_class: ko-hub
   </figure>
 </section>
 
+{% include book-feature.html lang='ko' %}
+
 <section class="section section--compact section--tinted" aria-labelledby="ko-paths-title">
   <p class="eyebrow">빠른 안내</p>
   <h2 id="ko-paths-title">방문 목적에 맞는 정보를 바로 찾으세요</h2>

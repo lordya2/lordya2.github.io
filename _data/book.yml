@@ -1,0 +1,49 @@
+title: AI는 어떻게 회사를 움직이는가
+subtitle: AI를 성과로 바꾸는 운영관리의 힘
+author: 이현석
+publisher: 한경사
+publication_month: 2026-10
+isbn: '9788968445903'
+pages: 280
+url: /books/ai-operations/
+cover: /assets/books/ai-operations-cover.jpg
+description_ko: AI의 예측과 분석을 현장의 결정과 실행으로 연결하는 운영관리의 관점. 수요예측·재고·배송부터 고객센터·병원·플랫폼까지, 다양한 산업의 사례를 통해 AI가 성과로 이어지는 조건을 살펴봅니다.
+description_en: A Korean-language book on connecting AI predictions and analysis to operating decisions, implementation, and measurable outcomes, with examples from inventory, delivery, retail, healthcare, and platforms.
+retailers:
+  - name: 교보문고
+    id: kyobo
+    url: https://product.kyobobook.co.kr/detail/S000221518861
+  - name: 알라딘
+    id: aladin
+    url: https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=8968445907
+  - name: YES24
+    id: yes24
+    url: https://www.yes24.com/product/goods/197315165
+parts:
+  - title: AI는 왜 회사 안에서 길을 잃는가
+    summary: 예측을 좋은 결정으로 바꾸고, AI 프로젝트를 현장의 실행으로 이어가는 조건을 살펴봅니다.
+    chapters:
+      - 예측은 답이 아니다
+      - 좋은 모델보다 어려운 것은 좋은 결정이다
+      - AI 프로젝트는 왜 현장에서 멈추는가
+  - title: AI가 바꾸는 운영의 핵심
+    summary: 수요예측·재고·배송·추천이 서로 연결될 때 어떤 운영 문제가 생기는지 다룹니다.
+    chapters:
+      - '수요 예측: 내일 얼마나 팔릴까'
+      - '재고: 모자라도 문제, 남아도 문제'
+      - '배송: 빠른 배송은 누가 비용을 치르는가'
+      - '추천: 알고리즘이 물류센터를 흔든다'
+  - title: 서비스는 AI를 만나 어떻게 달라지는가
+    summary: 고객센터·병원·매장·플랫폼에서 AI, 사람, 서비스 설계의 관계를 살펴봅니다.
+    chapters:
+      - '고객센터: 챗봇은 사람을 대체하는가'
+      - '병원: AI가 환자를 먼저 볼 수 있을까'
+      - '매장: 보이지 않는 운영이 고객 경험을 만든다'
+      - '플랫폼: 매칭의 품질이 시장의 품질이다'
+  - title: AI 시대의 좋은 기업은 무엇이 다른가
+    summary: 도입 효과의 검증, 설명과 책임, 공급망의 회복력을 통해 AI 시대의 운영 감각을 정리합니다.
+    chapters:
+      - 비교 설계 없는 AI 도입은 위험하다
+      - 설명 가능한 AI는 누구를 위한 설명인가
+      - 공급망은 예측보다 회복력이 중요하다
+      - AI 시대의 운영 감각
