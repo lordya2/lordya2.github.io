@@ -399,6 +399,18 @@ address { font-style: normal; }
 .people-page .conference-list time { color: var(--brand); font-size: 1.1rem; font-weight: 900; }
 .people-page .conference-list h3, .people-page .conference-list p { margin: 0; }
 .people-page .conference-list__location { color: var(--muted); font-weight: 700; }
+.people-page .conference-list__feature-photo { display: block; max-width: 520px; margin-top: .9rem; }
+.people-page .conference-list__feature-photo img { display: block; width: 100%; height: auto; border-radius: .85rem; }
+.conference-update > .section:not(.section--tinted) { width: min(var(--max), calc(100% - 2rem)); margin-inline: auto; }
+.conference-update__intro { max-width: 790px; }
+.conference-update__hero { max-width: 880px; margin: 2rem 0 0; }
+.conference-update__hero img, .conference-update__gallery img { display: block; width: 100%; height: auto; border-radius: 1rem; }
+.conference-update figcaption { margin-top: .55rem; color: var(--muted); font-size: .92rem; }
+.conference-update__talks { max-width: 950px; padding-left: 1.5rem; }
+.conference-update__talks li { padding: .42rem 0; }
+.conference-update__gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+.conference-update__gallery figure { margin: 0; }
+@media (max-width: 650px) { .conference-update__gallery { grid-template-columns: 1fr; } }
 .people-page .alumni-name-ko { color: var(--muted); font-size: .92em; }
 
 .people-page .expandable-section { margin-top: 1.5rem; border: 1px solid var(--border); border-radius: 1rem; background: var(--bg-soft); }
