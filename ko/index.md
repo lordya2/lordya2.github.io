@@ -218,7 +218,7 @@ body_class: ko-hub
 
   <div class="ko-evidence-grid">
     <article class="card ko-evidence-card" aria-labelledby="ko-conferences-title">
-      <p class="eyebrow">국제학회 발표</p>
+      <p class="eyebrow">학회 발표</p>
       <h3 id="ko-conferences-title">학생과 졸업생의 연구 발표</h3>
       <ul>
         {% for presentation in people.conference_presentations %}
@@ -285,7 +285,7 @@ body_class: ko-hub
       <ul class="compact-list compact-list--stacked">
         <li><span lang="en">Journal of Operations Management</span> Editorial Review Board</li>
         <li><span lang="en">Decision Sciences</span> Editorial Review Board</li>
-        <li>한국생산관리학회 이사 및 편집위원</li>
+        <li>한국생산운영관리학회 이사 및 편집위원</li>
       </ul>
       <p><a href="{{ '/pages/award.html' | relative_url }}">학술봉사 보기 <span class="ko-link-note">(영문)</span></a></p>
     </article>
