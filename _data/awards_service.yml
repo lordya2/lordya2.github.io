@@ -1,4 +1,12 @@
 selected_awards:
+  - date: '10/2026'
+    label: 'Best Paper Award (최우수논문상), KOPOMS Fall Conference — with Dzung Do Thuy'
+    paper_title: 'Part-Time and Full-Time Labor in Retail: Customer Traffic, Transactions, and Basket Value'
+    url: '/updates/2026-kopoms-fall-conference/#kopoms-2026-best-paper'
+  - date: '10/2026'
+    label: 'Excellent Paper Award (우수논문상), KOPOMS Fall Conference — with Guanyi Lu and Jongcheol Won'
+    paper_title: 'Lean but Fragile? How Supply-Base De-scaling Shapes Performance under Disruption'
+    url: '/updates/2026-kopoms-fall-conference/#kopoms-2026-excellent-paper'
   - date: '09/2025-present'
     label: 'KUBS Research Fellow, Korea University Business School'
   - date: '06/2026'

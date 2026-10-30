@@ -1,8 +1,8 @@
 ---
 layout: default
-title: '2026 KOPOMS Fall Conference'
-seo_title: 'Five Student Presentations at the 2026 KOPOMS Fall Conference | Hyun Seok Lee'
-description: 'Five student researchers presented coauthored work in healthcare, retail, and supply-chain operations at the 2026 KOPOMS Fall Conference in Seoul.'
+title: '2026 KOPOMS Fall Conference: Presentations and Paper Awards'
+seo_title: 'Five Student Presentations and Two Paper Awards at the 2026 KOPOMS Fall Conference | Hyun Seok Lee'
+description: 'Five student researchers presented coauthored work at the 2026 KOPOMS Fall Conference in Seoul, where two of the papers received awards.'
 keywords: KOPOMS, Operations Management, Healthcare Operations, Retail Operations, Supply Chain Resilience, Student Research
 permalink: /updates/2026-kopoms-fall-conference/
 body_class: conference-update-page
@@ -15,8 +15,8 @@ og_image_alt: 'Hyun Seok Lee and five student presenters making K hand gestures 
   <section class="section" aria-labelledby="conference-update-title">
     <div class="conference-update__intro">
       <p class="eyebrow">Research Group · October 23, 2026</p>
-      <h1 id="conference-update-title">Five student presentations at the 2026 KOPOMS Fall Conference</h1>
-      <p class="lead-text">Our students shared five ongoing projects at Sookmyung Women’s University in Seoul, spanning healthcare, retail, and supply-chain operations.</p>
+      <h1 id="conference-update-title">Five student presentations and two paper awards at the 2026 KOPOMS Fall Conference</h1>
+      <p class="lead-text">Our students shared five ongoing projects at Sookmyung Women’s University in Seoul, spanning healthcare, retail, and supply-chain operations. Two of these coauthored papers received paper awards.</p>
       <p>All five studies were presented by students and coauthored with Hyun Seok (Huck) Lee. The discussions offered valuable feedback as the research continues to develop.</p>
     </div>
     <figure class="conference-update__hero">
@@ -24,6 +24,24 @@ og_image_alt: 'Hyun Seok Lee and five student presenters making K hand gestures 
       <figcaption>Student presenters and Huck Lee making K hand gestures at the conference.</figcaption>
     </figure>
   </section>
+
+  {% if conference.awards %}
+  <section class="section" id="conference-awards" aria-labelledby="conference-awards-title">
+    <p class="eyebrow">Paper Awards · October 23, 2026</p>
+    <h2 id="conference-awards-title">Recognition for student-presented, coauthored research</h2>
+    <div class="card-grid card-grid--two">
+      {% for award in conference.awards %}
+        <article class="card" id="{{ award.id }}">
+          <p class="card-label" lang="ko">{{ award.label_ko }}</p>
+          <h3>{{ award.label_en }}</h3>
+          <p><strong>{{ award.title }}</strong></p>
+          <p><strong>Coauthors:</strong> {{ award.authors }}</p>
+          <p><strong>Student presenter:</strong> {{ award.presenter }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
 
   <section class="section section--tinted" aria-labelledby="conference-talks-title">
     <p class="eyebrow">Conference Presentations</p>
