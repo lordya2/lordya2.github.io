@@ -122,6 +122,21 @@ conference_presentations:
     location_ko: '숙명여자대학교, 서울 · 2026년 10월 23일'
     year: 2026
     url: '/updates/2026-kopoms-fall-conference/'
+    awards:
+      - id: 'kopoms-2026-best-paper'
+        label_en: 'Best Paper Award'
+        label_ko: '최우수논문상'
+        title: 'Part-Time and Full-Time Labor in Retail: Customer Traffic, Transactions, and Basket Value'
+        authors: 'Dzung Do Thuy and Hyun Seok (Huck) Lee'
+        presenter: 'Dzung Do Thuy'
+        presenter_ko: 'Dzung Do Thuy'
+      - id: 'kopoms-2026-excellent-paper'
+        label_en: 'Excellent Paper Award'
+        label_ko: '우수논문상'
+        title: 'Lean but Fragile? How Supply-Base De-scaling Shapes Performance under Disruption'
+        authors: 'Hyun Seok (Huck) Lee, Guanyi Lu, and Jongcheol Won'
+        presenter: 'Jongcheol Won'
+        presenter_ko: '원종철'
     talks:
       - presenter: 'Saeyoung Yoon'
         title: 'Seeing Beyond Sales: Prepurchase Fitting-Room Activity and Demand Information Across Apparel Variants'

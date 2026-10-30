@@ -100,6 +100,12 @@ keywords: Empirical Operations Management, LSOM, Korea University, Graduate Rese
             <p class="conference-list__location">{{ presentation.location }}</p>
             {% if presentation.talks %}
               <p><strong>{{ presentation.presenter }}</strong> · {{ presentation.role }}</p>
+              {% if presentation.awards %}
+                {% for award in presentation.awards %}
+                  <p>The coauthored paper presented by <strong>{{ award.presenter }}</strong> received the {{ award.label_en }} <span lang="ko">({{ award.label_ko }})</span>.</p>
+                {% endfor %}
+                <p><a href="{{ presentation.url | append: '#conference-awards' | relative_url }}">View the award-winning papers and all coauthors</a></p>
+              {% endif %}
               <p><a href="{{ presentation.url | relative_url }}">View the five talks and conference photos</a></p>
               <a class="conference-list__feature-photo" href="{{ presentation.url | relative_url }}" aria-label="View the 2026 KOPOMS conference update and photos">
                 <img src="{{ '/assets/events/kopoms-2026/group.jpg' | relative_url }}" alt="Huck Lee and five student presenters making K hand gestures at the KOPOMS Fall Conference." width="1536" height="1152" loading="lazy">

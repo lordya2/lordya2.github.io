@@ -9,7 +9,15 @@ description: Awards, teaching recognition, professional service, editorial board
   <p class="eyebrow">Awards &amp; Service</p>
   <h1 id="awards-title">Recognition and professional service</h1>
 
-  <h2>Selected Awards</h2><ul class="timeline-list">{% for item in data.selected_awards %}<li><time>{{ item.date }}</time><span>{{ item.label }}</span></li>{% endfor %}</ul>
+  <h2>Selected Awards</h2>
+  <ul class="timeline-list">
+    {% for item in data.selected_awards %}
+      <li>
+        <time>{{ item.date }}</time>
+        <span>{{ item.label }}{% if item.paper_title %}<br><em>{{ item.paper_title }}</em>{% endif %}{% if item.url %}<br><a href="{{ item.url | relative_url }}">View award details</a>{% endif %}</span>
+      </li>
+    {% endfor %}
+  </ul>
   <h2>Teaching Recognition</h2><ul class="timeline-list">{% for item in data.teaching_recognition %}<li><time>{{ item.date }}</time><span>{{ item.label }}</span></li>{% endfor %}</ul>
   <h2>Professional Service</h2><ul>{% for item in data.professional_service %}<li>{{ item }}</li>{% endfor %}</ul>
   <h2>Editorial Review Boards</h2><ul>{% for item in data.editorial_review_boards %}<li>{{ item }}</li>{% endfor %}</ul>

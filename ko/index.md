@@ -222,7 +222,16 @@ body_class: ko-hub
       <h3 id="ko-conferences-title">학생과 졸업생의 연구 발표</h3>
       <ul>
         {% for presentation in people.conference_presentations %}
-          <li><strong><span lang="en">{{ presentation.conference }}</span> · {{ presentation.year }}</strong><span>{{ presentation.presenter_ko }} · {{ presentation.location_ko }}</span></li>
+          <li>
+            <strong><span lang="en">{{ presentation.conference }}</span> · {{ presentation.year }}</strong>
+            <span>{{ presentation.presenter_ko }} · {{ presentation.location_ko }}</span>
+            {% if presentation.awards %}
+              {% for award in presentation.awards %}
+                <span><strong>{{ award.presenter_ko }}</strong> 학생이 발표한 공동연구: {{ award.label_ko }}</span>
+              {% endfor %}
+              <span><a href="{{ presentation.url | append: '#conference-awards' | relative_url }}">수상 논문과 공동저자 보기 <span class="ko-link-note">(영문)</span></a></span>
+            {% endif %}
+          </li>
         {% endfor %}
       </ul>
       <p><a href="{{ '/pages/people.html#conference-presentations' | relative_url }}">발표 이력 보기 <span class="ko-link-note">(영문)</span></a></p>
@@ -265,6 +274,7 @@ body_class: ko-hub
       <p class="card-label">연구와 수상</p>
       <h3>최근 연구 성과와 인정</h3>
       <ul class="compact-list compact-list--stacked">
+        <li><strong>2026</strong> 한국생산운영관리학회 추계학술대회 최우수논문상·우수논문상 (공동연구)</li>
         <li><strong>2026</strong> 한국기업경영학회 최우수논문상</li>
         <li><strong>2026</strong> SK Distinguished Research Award</li>
         <li><strong>2025–현재</strong> KUBS Research Fellow</li>
