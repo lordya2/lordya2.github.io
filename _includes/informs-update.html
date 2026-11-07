@@ -1,0 +1,55 @@
+{% assign conference = site.data.people.conference_presentations | where: 'id', 'informs-2026' | first %}
+{% assign ko = false %}{% if page.lang == 'ko' %}{% assign ko = true %}{% endif %}
+<article class="conference-update">
+  <section class="section" aria-labelledby="informs-title">
+    <div class="informs-meta">
+      <p class="eyebrow">{% if ko %}연구 그룹 · 2026년 11월{% else %}Research Group · November 2026{% endif %}</p>
+      <a class="informs-language" href="{{ page.alternate_url | relative_url }}" lang="{% if ko %}en{% else %}ko{% endif %}">{% if ko %}English{% else %}한국어{% endif %} ↗</a>
+    </div>
+    <div class="conference-update__intro">
+      <h1 id="informs-title">{{ page.title }}</h1>
+      {% if ko %}
+      <p class="lead-text">한국생산운영관리학회에서 한 차례 발표를 다듬고, 이번에는 국제학회 무대로. 원종철·윤세영·박상용·신재아 네 학생이 샌프란시스코에서 열린 INFORMS 2026에서 연구를 발표했습니다.</p>
+      <p>10월 23일 한국생산운영관리학회(KOPOMS) 추계학술대회에서 쌓은 발표 경험을 바탕으로, 11월에는 공급망, 리테일, 헬스케어 운영 연구를 국제 연구자들에게 소개했습니다.</p>
+      {% else %}
+      <p class="lead-text">Building on the group’s recent presentations at KOPOMS in Korea, four students brought their research to INFORMS 2026 in San Francisco.</p>
+      <p>Jongcheol Won, Saeyoung Yoon, Sang Yong Park, and Claire Shin presented work on supply-chain, retail, and healthcare operations in early November. Their preparation built on the experience of presenting at the KOPOMS Fall Conference on October 23.</p>
+      {% endif %}
+    </div>
+    <figure class="conference-update__hero">
+      <img src="{{ conference.photo | relative_url }}" alt="{{ page.og_image_alt | escape }}" width="2000" height="1500" fetchpriority="high">
+      <figcaption>{% if ko %}학회 마지막 날, INFORMS 조형물 앞에서 함께한 이현석 교수와 발표 학생 네 명.{% else %}Huck Lee and the four student presenters on the final day of the conference.{% endif %}</figcaption>
+    </figure>
+  </section>
+
+  <section class="section section--tinted" aria-labelledby="informs-presentations">
+    <p class="eyebrow">{% if ko %}학생 연구 발표{% else %}Student Presentations{% endif %}</p>
+    <h2 id="informs-presentations">{% if ko %}공급망, 리테일, 헬스케어 운영의 네 가지 연구{% else %}Supply chains, retail, and healthcare{% endif %}</h2>
+    <div class="informs-talk-grid">
+      {% for talk in conference.talks %}
+      <article class="informs-talk">
+        <img src="{{ talk.photo | relative_url }}" alt="{% if ko %}{{ talk.photo_alt_ko | escape }}{% else %}{{ talk.photo_alt | escape }}{% endif %}" width="2000" height="1500" loading="lazy">
+        <div class="informs-talk__body">
+          <p class="eyebrow">{% if ko %}{{ talk.area_ko }}{% else %}{{ talk.area }}{% endif %}</p>
+          <h3>{% if ko %}{{ talk.presenter_ko }} <span lang="en">{{ talk.presenter }}</span>{% else %}{{ talk.presenter }}{% endif %}</h3>
+          <p class="informs-topic">{% if ko %}{{ talk.topic_ko }}{% else %}{{ talk.topic }}{% endif %}</p>
+          <p>{% if ko %}{{ talk.summary_ko }}{% else %}{{ talk.summary }}{% endif %}</p>
+          {% unless talk.title_is_summary %}
+          <p class="informs-talk__title"><span>{% if ko %}발표 제목{% else %}Presentation title{% endif %}</span><br><span lang="en">{{ talk.title }}</span></p>
+          {% endunless %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="section informs-followup" aria-labelledby="informs-next">
+    <p class="eyebrow">{% if ko %}이어지는 연구 활동{% else %}Continuing the Work{% endif %}</p>
+    <h2 id="informs-next">{% if ko %}발표 경험을 다음 연구로{% else %}From one presentation to the next{% endif %}</h2>
+    <p>{% if ko %}국내 학회와 국제학회에서 발표를 이어가며 연구 질문과 설명을 다듬는 경험을 쌓았습니다. 연구 그룹은 이번 발표를 바탕으로 각 프로젝트의 분석과 논문 작업을 계속할 예정입니다.{% else %}The two conferences provided successive opportunities to prepare and communicate the research. The group will continue developing the analyses and manuscripts behind these presentations.{% endif %}</p>
+    <div class="link-row">
+      <a href="{{ '/updates/2026-kopoms-fall-conference/' | relative_url }}">{% if ko %}앞선 KOPOMS 발표 소식 보기 (영문){% else %}Read the KOPOMS conference update{% endif %} →</a>
+      <a href="{{ '/pages/people.html#conference-presentations' | relative_url }}">{% if ko %}연구 그룹의 발표 이력 보기 (영문){% else %}Explore the research group{% endif %} →</a>
+    </div>
+  </section>
+</article>

@@ -106,10 +106,18 @@ keywords: Empirical Operations Management, LSOM, Korea University, Graduate Rese
                 {% endfor %}
                 <p><a href="{{ presentation.url | append: '#conference-awards' | relative_url }}">View the award-winning papers and all coauthors</a></p>
               {% endif %}
-              <p><a href="{{ presentation.url | relative_url }}">View the five talks and conference photos</a></p>
-              <a class="conference-list__feature-photo" href="{{ presentation.url | relative_url }}" aria-label="View the 2026 KOPOMS conference update and photos">
-                <img src="{{ '/assets/events/kopoms-2026/group.jpg' | relative_url }}" alt="Huck Lee and five student presenters making K hand gestures at the KOPOMS Fall Conference." width="1536" height="1152" loading="lazy">
-              </a>
+              <p><a href="{{ presentation.url | relative_url }}">View the {{ presentation.talks.size }} talks and conference photos</a></p>
+              {% assign conference_photo = presentation.photo %}
+              {% assign conference_photo_alt = presentation.photo_alt %}
+              {% if conference_photo == nil and presentation.conference == 'KOPOMS Fall Conference' %}
+                {% assign conference_photo = '/assets/events/kopoms-2026/group.jpg' %}
+                {% assign conference_photo_alt = 'Huck Lee and five student presenters making K hand gestures at the KOPOMS Fall Conference.' %}
+              {% endif %}
+              {% if conference_photo %}
+                <a class="conference-list__feature-photo" href="{{ presentation.url | relative_url }}" aria-label="View the {{ presentation.conference | escape }} update and photos">
+                  <img src="{{ conference_photo | relative_url }}" alt="{{ conference_photo_alt | escape }}" width="1536" height="1152" loading="lazy">
+                </a>
+              {% endif %}
             {% else %}
               <p><strong>{{ presentation.presenter }}{% if presentation.presenter_ko %} <span class="alumni-name-ko" lang="ko">({{ presentation.presenter_ko }})</span>{% endif %}</strong> · {{ presentation.role }}</p>
             {% endif %}

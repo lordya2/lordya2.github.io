@@ -225,6 +225,7 @@ body_class: ko-hub
           <li>
             <strong><span lang="en">{{ presentation.conference }}</span> · {{ presentation.year }}</strong>
             <span>{{ presentation.presenter_ko }} · {{ presentation.location_ko }}</span>
+            {% if presentation.url_ko %}<span><a href="{{ presentation.url_ko | relative_url }}">발표 내용과 사진 보기</a></span>{% endif %}
             {% if presentation.awards %}
               {% for award in presentation.awards %}
                 <span><strong>{{ award.presenter_ko }}</strong> 학생이 발표한 공동연구: {{ award.label_ko }}</span>
