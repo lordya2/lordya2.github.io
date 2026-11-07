@@ -9,7 +9,7 @@ body_class: conference-update-page
 og_image: /assets/events/kopoms-2026/group.jpg
 og_image_alt: 'Hyun Seok Lee and five student presenters making K hand gestures at the 2026 KOPOMS Fall Conference.'
 ---
-{% assign conference = site.data.people.conference_presentations | first %}
+{% assign conference = site.data.people.conference_presentations | where: 'conference', 'KOPOMS Fall Conference' | first %}
 
 <article class="conference-update">
   <section class="section" aria-labelledby="conference-update-title">
