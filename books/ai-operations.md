@@ -84,7 +84,7 @@ og_image_alt: AI는 어떻게 회사를 움직이는가 — 이현석 지음, �
     <aside class="card book-teaching">
       <p class="eyebrow">강의·기업교육</p>
       <h3>책의 질문을 함께 토론합니다</h3>
-      <p>2026년 10월 말부터 시작하는 고려대학교 MBA 강의에서 이 책을 교재로 활용할 예정입니다.</p>
+      <p>2026년 10월 말부터 고려대학교 MBA 강의에서 이 책을 교재로 활용하고 있습니다.</p>
       <p>AI와 운영 의사결정, 데이터 기반 성과 검증을 주제로 기업 강연과 워크숍도 논의할 수 있습니다.</p>
       <a class="button button--secondary" href="{{ '/pages/inquiry.html' | relative_url }}?type=executive-workshops&amp;source=ai-operations-book" data-analytics-event="book_speaking_inquiry">강연·워크숍 문의</a>
     </aside>

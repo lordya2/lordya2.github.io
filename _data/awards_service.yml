@@ -56,13 +56,20 @@ teaching_recognition:
     label: 'Excellence in Teaching Award (Service Operations Management), Korea University'
   - date: '06/2019'
     label: 'Betty and Forrest Simmons Excellence in Graduate Teaching Award, College of Business, Oregon State University'
+editorial_appointments:
+  - 'Journal of Operations Management: Incoming Associate Editor (effective January 1, 2027)'
+editorial_appointments_ko:
+  - 'Journal of Operations Management: Associate Editor 선임 (2027년 1월 1일 임기 시작)'
 editorial_review_boards:
-  - 'Journal of Operations Management (2023-present)'
-  - 'Decision Sciences (2023-present)'
+  - 'Journal of Operations Management: Editorial Review Board (2023-present)'
+  - 'Decision Sciences: Editorial Review Board (2023-present)'
+editorial_review_boards_ko:
+  - 'Journal of Operations Management: Editorial Review Board (2023년-현재)'
+  - 'Decision Sciences: Editorial Review Board (2023년-현재)'
 reviewing:
   journals: 'Management Science; Manufacturing & Service Operations Management; Production and Operations Management; Journal of Operations Management; Service Science; Decision Sciences.'
   conferences:
-    - 'M&SOM Service SIG (2020; 2021; 2022; 2023)'
+    - 'M&SOM Service SIG (2020; 2021; 2022; 2023; 2026)'
     - 'INFORMS BOM Best Working Paper Competition (2023)'
 memberships:
   - 'INFORMS'
@@ -91,6 +98,10 @@ homepage_highlights:
     title: 'Young Scholar Prize'
     organization: 'Korean Production and Operations Management Society'
     date: '05/2023'
+  - category: 'Service'
+    title: 'Incoming Associate Editor'
+    organization: 'Journal of Operations Management'
+    date: 'Effective January 1, 2027'
   - category: 'Service'
     title: 'Editorial Review Board'
     organization: 'Journal of Operations Management'

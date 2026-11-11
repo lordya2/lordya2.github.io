@@ -8,7 +8,7 @@ ROOT = File.expand_path('..', __dir__)
 SITE = File.join(ROOT, '_site')
 HUB = File.join(SITE, 'ko', 'index.html')
 HOME = File.join(SITE, 'index.html')
-SITEMAP = File.join(ROOT, 'sitemap.xml')
+SITEMAP = File.join(SITE, 'sitemap.xml')
 
 errors = []
 
@@ -38,7 +38,7 @@ title = html[/<title>(.*?)<\/title>/im, 1].to_s
 end
 errors << 'The Korean meta description is missing.' unless html.match?(/<meta\s+name="description"\s+content="[^"]*공급망 강연[^"]*">/)
 errors << 'The page must contain exactly one H1.' unless html.scan(/<h1\b/i).length == 1
-errors << 'The Korean hub must set the body class.' unless html.match?(/<body\s+class="ko-hub">/i)
+errors << 'The Korean hub must set the body class.' unless html.match?(/<body\s+class="[^"]*\bko-hub\b[^"]*">/i)
 
 required_section_ids = %w[updates research students research-impact industry media academic contact]
 required_section_ids.each do |id|
@@ -61,7 +61,7 @@ else
 end
 
 featured_count = publications.count { |paper| paper['featured'] }
-expected_research_cards = [featured_count, 5].min
+expected_research_cards = [featured_count, 3].min
 rendered_research_cards = html.scan(/class=["'][^"']*\bko-paper-card\b[^"']*["']/i).length
 errors << "Expected #{expected_research_cards} Korean research cards, rendered #{rendered_research_cards}." unless rendered_research_cards == expected_research_cards
 

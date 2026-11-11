@@ -11,7 +11,7 @@
   label_ko: 교육 EN
   url: /pages/teaching.html
   destination_lang: en
-- label: Speaking & Collaboration
+- label: Collaboration (KO)
   label_ko: 기업 강연·자문
   url: /pages/industry.html
   event: industry_page_click
@@ -30,11 +30,10 @@
   url: /assets/CV.pdf
   event: cv_download
   destination_lang: en
-- label: 협업 문의
+- label: Inquiries (KO)
   label_ko: 협업 문의
   url: /pages/inquiry.html?source=navigation
   event: inquiry_page_click
-  lang: ko
   destination_lang: ko
 - label: 한국어
   label_ko: 한국어 홈

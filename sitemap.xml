@@ -1,45 +1,20 @@
+---
+layout: null
+permalink: /sitemap.xml
+sitemap: false
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://hyunseoklee.com/</loc>
-  </url>
-  <url>
-    <loc>https://hyunseoklee.com/ko/</loc>
-  </url>
-  <url>
-    <loc>https://hyunseoklee.com/books/ai-operations/</loc>
-  </url>
-  <url>
-    <loc>https://hyunseoklee.com/updates/2026-kopoms-fall-conference/</loc>
-  </url>
-  <url>
-    <loc>https://hyunseoklee.com/ko/drug-shortage-recovery/</loc>
-  </url>
-  <url>
-    <loc>https://hyunseoklee.com/pages/research.html</loc>
-  </url>
-  <url>
-    <loc>https://hyunseoklee.com/pages/industry.html</loc>
-  </url>
-  <url>
-    <loc>https://hyunseoklee.com/pages/inquiry.html</loc>
-  </url>
-  <url>
-    <loc>https://hyunseoklee.com/pages/media.html</loc>
-  </url>
-  <url>
-    <loc>https://hyunseoklee.com/pages/people.html</loc>
-  </url>
-  <url>
-    <loc>https://hyunseoklee.com/pages/award.html</loc>
-  </url>
-  <url>
-    <loc>https://hyunseoklee.com/pages/teaching.html</loc>
-  </url>
-  <url>
-    <loc>https://hyunseoklee.com/pages/news.html</loc>
-  </url>
-  <url>
-    <loc>https://hyunseoklee.com/assets/CV.pdf</loc>
-  </url>
+{% assign sitemap_pages = site.pages | sort: 'url' %}
+{% for entry in sitemap_pages %}
+  {% if entry.layout and entry.sitemap != false %}
+  <url><loc>{{ entry.url | replace: 'index.html', '' | prepend: site.production_url | xml_escape }}</loc></url>
+  {% endif %}
+{% endfor %}
+{% for entry in site.posts %}
+  {% unless entry.sitemap == false %}
+  <url><loc>{{ entry.url | prepend: site.production_url | xml_escape }}</loc></url>
+  {% endunless %}
+{% endfor %}
+  <url><loc>{{ site.data.profile.cv_url | prepend: site.production_url | xml_escape }}</loc></url>
 </urlset>

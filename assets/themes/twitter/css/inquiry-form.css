@@ -3,7 +3,15 @@
 }
 
 .inquiry-page > .lead-text {
-  margin-bottom: 1.75rem;
+  margin-bottom: .65rem;
+}
+
+.inquiry-direct {
+  margin: 0 0 1.75rem;
+}
+
+.inquiry-form [hidden] {
+  display: none;
 }
 
 .inquiry-notice,

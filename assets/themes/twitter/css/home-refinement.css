@@ -1,0 +1,63 @@
+/* Home-only refinements: retain the site palette and make each section easier to scan. */
+.home-refined .section { padding-top: 3rem; padding-bottom: 3rem; }
+.home-refined .section--compact { padding-top: 2.25rem; padding-bottom: 2.25rem; }
+.home-refined h2 { max-width: 960px; font-size: clamp(1.65rem, 2.6vw, 2.2rem); }
+.home-refined .hero, .home-refined .ko-hero { min-height: 0; gap: 2.5rem; }
+.home-refined .hero h1 { font-size: clamp(2.15rem, 4.2vw, 3.25rem); line-height: 1.08; letter-spacing: -.045em; }
+.home-refined .hero h1 .hero__name-end { display: inline; margin: 0; color: inherit; font-size: inherit; letter-spacing: inherit; white-space: nowrap; }
+.home-refined .hero h1 > span[lang="ko"] { font-size: .5em; }
+.home-refined .hero__title { margin-bottom: .35rem; font-size: 1.12rem; font-weight: 750; }
+.home-refined .hero__roles { margin-top: 0; color: var(--muted); font-size: .93rem; line-height: 1.5; }
+.home-refined .hero__portrait, .home-refined .ko-hero__portrait { width: 100%; max-width: 300px; justify-self: end; }
+.home-refined .ko-hero h1 { font-size: clamp(2.45rem, 4.2vw, 3.4rem); }
+.home-refined .ko-hero__appointment { margin-bottom: .75rem; line-height: 1.5; }
+.home-refined .book-feature { grid-template-columns: 130px minmax(0, 1fr); gap: 2rem; }
+.home-refined .book-feature__cover { max-width: 130px; }
+.home-refined .book-feature h2 { margin-bottom: .65rem; }
+.home-refined .book-feature__content > p:not(.eyebrow):not(.book-feature__subtitle) { margin: .65rem 0 1rem; }
+.home-refined .timeline-list li { grid-template-columns: 8.25rem minmax(0, 1fr); gap: 1rem; padding: .8rem 0; }
+.home-quick-links { display: flex; flex-wrap: wrap; gap: .6rem 1.5rem; width: min(var(--max), calc(100% - 2rem)); margin: 0 auto; padding: 1.25rem 0; border-bottom: 1px solid var(--border); }
+.home-quick-links a { font-weight: 750; }
+.home-refined .home-student-grid, .home-refined .ko-student-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .8rem; margin-top: 1.25rem; }
+.home-refined .home-student-card, .home-refined .ko-student-card { max-width: none; padding: 1rem; }
+.home-refined .home-student-card h3, .home-refined .ko-student-card h3 { font-size: 1.1rem; line-height: 1.35; }
+.home-refined .home-student-card h3 span, .home-refined .ko-student-card h3 span { display: block; margin-top: .15rem; }
+.home-refined .home-student-card__meta, .home-refined .ko-student-card__meta { margin-bottom: .65rem; font-size: .86rem; line-height: 1.45; font-weight: 600; }
+.home-refined .home-student-card > p, .home-refined .ko-student-card > p { line-height: 1.5; }
+.home-refined .home-student-card > p:not([class]), .home-refined .ko-student-card > p:not([class]) { margin-top: 0; font-size: .96rem; }
+.home-refined .home-student-card__link, .home-refined .ko-student-card__link { margin-top: auto; margin-bottom: 0; padding-top: .5rem; font-size: .9rem; }
+.home-refined .home-achievement { padding: 1rem 1.2rem; gap: 1rem; }
+.home-refined .home-achievement h3 { font-size: 1.1rem; line-height: 1.45; }
+.home-refined .home-achievement .card-label { margin: 0; }
+.home-refined .ko-paper-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.home-refined .ko-paper-card__finding { margin-top: .5rem; }
+.home-refined .ko-paper-card__links { margin-bottom: 0; }
+.home-refined .academic-overview-card .compact-list { gap: .55rem; }
+.home-refined .academic-overview-card .compact-list li { padding-bottom: .55rem; }
+.home-refined .academic-overview-card .compact-list:not(.compact-list--stacked) li { grid-template-columns: 1fr; gap: .15rem; }
+.home-refined .ko-opportunity { gap: 1.5rem; padding: 1.25rem; }
+.home-details summary { color: var(--brand); font-weight: 800; cursor: pointer; }
+.home-details summary:focus-visible { outline: 3px solid #ffbf47; outline-offset: 3px; }
+.home-details ul { margin-top: .75rem; }
+@media (max-width: 1100px) {
+  .home-refined .home-student-grid, .home-refined .ko-student-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 820px) {
+  .home-refined .section { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+  .home-refined .section--compact { padding-top: 2rem; padding-bottom: 2rem; }
+  .home-refined .hero, .home-refined .ko-hero { gap: 1.75rem; }
+  .home-refined .hero__portrait, .home-refined .ko-hero__portrait { justify-self: start; max-width: 250px; }
+  .home-refined .ko-paper-grid { grid-template-columns: 1fr; }
+  .home-refined .home-student-grid, .home-refined .ko-student-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 540px) {
+  .home-refined .book-feature { grid-template-columns: 95px minmax(0, 1fr); gap: 1rem; align-items: start; }
+  .home-refined .book-feature__cover { max-width: 95px; }
+  .home-refined .book-feature h2 { font-size: 1.35rem; line-height: 1.3; }
+  .home-refined .book-feature__content { min-width: 0; }
+  .home-refined .book-feature__subtitle { font-size: .9rem; }
+  .home-refined .book-feature .button { font-size: .9rem; }
+  .home-refined .timeline-list li { grid-template-columns: 1fr; gap: .2rem; }
+  .home-refined .home-student-grid, .home-refined .ko-student-grid { grid-template-columns: 1fr; }
+  .home-refined .home-student-card h3 span, .home-refined .ko-student-card h3 span { display: inline; margin-left: .3rem; }
+}

@@ -125,6 +125,8 @@
   category: 'working_paper'
   short_title: 'Emergency Department Attendance Fees'
   citation: 'Lee, H., Park, E., and Rainer, T. (2026) Heterogeneous Patient Response to Uniform Increase in Emergency Department Attendance Fees: A Territory-Wide Study.'
+  question: 'How do different patient groups respond to a uniform increase in emergency department attendance fees?'
+  manuscript_request: true
   status: 'Under revision at Manufacturing & Service Operations Management (second decision: Minor Revision).'
   research_theme_ids:
     - 'healthcare-pharmaceutical-supply-chains'
@@ -133,6 +135,8 @@
   category: 'working_paper'
   short_title: 'Lean but Fragile?'
   citation: 'Lee, H., Lu, G., and Won, J. (2026) Lean but Fragile? How Supply-Base De-scaling Shapes Performance under Disruption.'
+  question: 'How does reducing the supplier base before a disruption relate to a firm’s inventory responses and performance during the disruption?'
+  manuscript_request: true
   status: 'Under revision at Journal of Operations Management (first decision: Major Revision).'
   note: 'Excellent Paper Award (우수논문상), 2026 Korean Production and Operations Management Society (KOPOMS) Fall Conference, October 23, 2026.'
 - id: 'coupons-multihoming-phantom-demand'

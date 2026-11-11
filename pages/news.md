@@ -1,5 +1,6 @@
 ---
 layout: page
+permalink: /pages/news.html
 title: News
 hide_page_header: true
 description: Archive of recent news, awards, publications, teaching recognition, and professional updates.
