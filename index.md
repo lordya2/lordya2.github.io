@@ -5,6 +5,8 @@ description: Hyun Seok ("Huck") Lee uses operational data, field experiments, an
 keywords: Hyun Seok, Huck, Lee, Operations Management, Supply Chain, Healthcare, Retail, KUBS.
 lang: en
 alternate_url: /ko/
+body_class: home-refined
+extra_css: /assets/themes/twitter/css/home-refinement.css
 ---
 {% assign profile = site.data.profile %}
 {% assign industry = site.data.industry_collaboration %}
@@ -13,13 +15,14 @@ alternate_url: /ko/
 <section class="hero section" aria-labelledby="hero-title">
   <div class="hero__content">
     <p class="eyebrow">{{ profile.affiliation }}</p>
-    <h1 id="hero-title">{{ profile.name }} <span lang="ko">{{ profile.name_ko }}</span></h1>
-    <p class="hero__title">{{ profile.display_title }}</p>
+    <h1 id="hero-title">{{ profile.name | replace: '("Huck") Lee', '<span class="hero__name-end">("Huck") Lee</span>' }} <span lang="ko">{{ profile.name_ko }}</span></h1>
+    <p class="hero__title">Associate Professor, LSOM &amp; Business Analytics</p>
+    <p class="hero__roles">Associate Dean for Research · Department Chair of MS/PhD Programs · KUBS Research Fellow</p>
     <p class="hero__positioning"><strong class="hero__tagline">{{ profile.positioning_lead }}</strong> {{ profile.positioning }}</p>
     <nav class="button-row" aria-label="Primary paths">
       <a class="button" href="{{ '/pages/research.html' | relative_url }}">Explore research</a>
       <a class="button button--secondary" href="{{ '/pages/people.html' | relative_url }}" data-analytics-event="people_page_click">Meet the research group</a>
-      <a class="button button--secondary" href="#work-with-organizations" data-analytics-event="organization_pathways_click"><span lang="ko">기업 협력</span> · Work with organizations</a>
+      <a class="button button--secondary" href="#work-with-organizations" data-analytics-event="organization_pathways_click">Work with organizations</a>
     </nav>
     <nav class="hero__utility-links" aria-label="Profile resources">
       <a href="{{ profile.cv_url }}" data-analytics-event="cv_download">CV</a>
@@ -34,7 +37,7 @@ alternate_url: /ko/
 
 <section class="section section--compact section--tinted" id="news" aria-labelledby="news-title">
   <p class="eyebrow">Recent Updates</p>
-  <h2 id="news-title">Research, student achievements, and recent activities</h2>
+  <h2 id="news-title">Recent news</h2>
   {% assign recent_news = site.data.news | sort: "date" | reverse %}
   <ul class="timeline-list">
     {% for item in recent_news limit:3 %}
@@ -46,7 +49,7 @@ alternate_url: /ko/
 
 <section class="section" id="research-areas" aria-labelledby="research-areas-title">
   <p class="eyebrow">Research Areas</p>
-  <h2 id="research-areas-title">Research grounded in real operating problems</h2>
+  <h2 id="research-areas-title">Research areas</h2>
   <div class="card-grid card-grid--four">
     {% for area in site.data.research_areas %}<article class="card"><h3>{{ area.title }}</h3><p>{{ area.summary }}</p></article>{% endfor %}
   </div>
@@ -55,7 +58,7 @@ alternate_url: /ko/
 
 <section class="section section--tinted" id="featured-research" aria-labelledby="featured-research-title">
   <p class="eyebrow">Featured Research</p>
-  <h2 id="featured-research-title">Selected research and its operational implications</h2>
+  <h2 id="featured-research-title">Selected research</h2>
   {% assign featured_papers = site.data.publications | where: "featured", true | sort: "featured_order" %}
   <div class="card-grid card-grid--three research-highlight-grid">
     {% for paper in featured_papers limit:3 %}
@@ -74,16 +77,15 @@ alternate_url: /ko/
 
 <section class="section" id="research-group" aria-labelledby="research-group-title">
   <p class="eyebrow">Research Group &amp; Opportunities</p>
-  <h2 id="research-group-title">Students working on consequential operations questions</h2>
+  <h2 id="research-group-title">Research group</h2>
   <p class="lead-text">{{ people.group_intro }}</p>
   <div class="card-grid card-grid--four home-student-grid">
     {% for student in people.current_students %}
       <article class="card home-student-card">
-        <p class="home-student-card__area">{{ student.area }}</p>
         <h3><a href="{{ '/pages/people.html#' | append: student.id | relative_url }}">{{ student.name }}</a>{% if student.name_ko %} <span lang="ko">{{ student.name_ko }}</span>{% endif %}</h3>
-        <p class="home-student-card__meta">{{ student.program }}{% if student.entry_year %} · Entered {{ student.entry_year }}{% endif %}</p>
+        <p class="home-student-card__meta">{{ student.program }}</p>
         <p><strong>{{ student.project_title }}</strong></p>
-        <p>{{ student.project_summary }}</p>
+        <p class="home-student-card__link"><a href="{{ '/pages/people.html#' | append: student.id | relative_url }}" aria-label="Research details for {{ student.name }}">Research details →</a></p>
       </article>
     {% endfor %}
   </div>
@@ -93,7 +95,6 @@ alternate_url: /ko/
       <div>
         <p class="card-label">Student Achievement · {{ student_achievement.year }}</p>
         <h3>{{ student_achievement.student }}: {{ student_achievement.title }}</h3>
-        <p>{{ student_achievement.project_summary }}</p>
       </div>
       <p><a class="button button--ghost" href="{{ '/pages/people.html#' | append: student_achievement.id | relative_url }}">View funding details</a></p>
     </article>
@@ -104,26 +105,21 @@ alternate_url: /ko/
   </div>
 </section>
 
-<section class="section section--tinted" id="work-with-organizations" lang="ko" aria-labelledby="work-with-organizations-title">
-  <p class="eyebrow">Work with Organizations · 기업 협력</p>
-  <h2 id="work-with-organizations-title">운영 질문을 검증 가능한 의사결정으로 바꿉니다</h2>
-  <p class="lead-text">기업의 판매·재고·고객·물류·노동·서비스 데이터를 바탕으로 문제를 정의하고, 현장실험·인과추론·머신러닝을 결합해 실행 가능한 개선안을 도출합니다.</p>
-  <div class="card-grid card-grid--three">
-    {% for mode in industry.project_modes %}
-      <article class="card engagement-card">
-        <h3>{{ mode.title }}</h3>
-        <p>{{ mode.description }}</p>
-        <p><a class="button button--ghost" href="{{ '/pages/inquiry.html' | relative_url }}?type={{ mode.id | uri_escape }}&amp;source=homepage" data-analytics-event="{{ mode.event }}">{{ mode.cta }}</a></p>
-      </article>
-    {% endfor %}
-  </div>
-  <p class="collaboration-topics"><strong>주요 협력 주제:</strong> 수요·재고·추천, 현장실험과 효과평가, 공급망 회복탄력성, AI 기반 업무설계</p>
-  <p><a href="{{ '/pages/industry.html' | relative_url }}" data-analytics-event="industry_page_click">기업 강연·자문 및 공개 사례 자세히 보기</a></p>
+<section class="section section--tinted" id="work-with-organizations" aria-labelledby="work-with-organizations-title">
+  <p class="eyebrow">Work with Organizations</p>
+  <h2 id="work-with-organizations-title">Connect research to operating decisions</h2>
+  <p class="lead-text">I work with organizations through executive talks and workshops, operational research and advisory projects, and student capstone collaborations.</p>
+  <p>Topics include supply-chain resilience, retail and service operations, AI-enabled work, and evaluating the effects of operational changes.</p>
+  <nav class="button-row" aria-label="Organizational collaboration">
+    <a class="button" href="mailto:{{ profile.email }}?subject={{ 'Speaking or collaboration inquiry' | uri_escape }}" data-analytics-event="email_click">Discuss a collaboration</a>
+    <a class="button button--ghost" href="{{ '/pages/industry.html' | relative_url }}" hreflang="ko" data-analytics-event="industry_page_click">Topics and examples <span class="ko-button-note">(Korean)</span></a>
+    <a href="{{ '/pages/inquiry.html' | relative_url }}?source=homepage" hreflang="ko" data-analytics-event="inquiry_page_click">Inquiry form <span class="ko-link-note">(Korean)</span></a>
+  </nav>
 </section>
 
 <section class="section" id="media-impact-preview" aria-labelledby="media-impact-preview-title">
   <p class="eyebrow">Media &amp; Impact</p>
-  <h2 id="media-impact-preview-title">Research and ideas beyond academic journals</h2>
+  <h2 id="media-impact-preview-title">Media and essays</h2>
   {% assign latest_selected_media = site.data.media_impact.selected_media | sort: "date" | reverse %}
   {% assign latest_selected_item = latest_selected_media | first %}
   {% assign featured_impact = site.data.media_impact.featured | first %}
@@ -143,8 +139,6 @@ alternate_url: /ko/
       <article class="card media-group">
         <p class="card-label media-meta">{{ featured_impact.type }} · {{ featured_impact.date }}</p>
         <h3>{{ featured_impact.title }}</h3>
-        <p>{{ featured_impact.summary }}</p>
-        {% if featured_impact.related_work %}<p><span class="status-badge">Related research</span> {{ featured_impact.related_work }}</p>{% endif %}
         <p><a href="{{ '/pages/media.html#drug-shortage-coverage' | relative_url }}" data-analytics-event="media_impact_click">View grouped coverage</a></p>
       </article>
     {% endif %}
@@ -177,6 +171,7 @@ alternate_url: /ko/
       <p class="card-label">Editorial Service</p>
       <h3>Academic and professional service</h3>
       <ul class="compact-list compact-list--stacked">
+        {% for item in site.data.awards_service.editorial_appointments %}<li>{{ item }}</li>{% endfor %}
         {% for item in site.data.awards_service.editorial_review_boards %}<li>{{ item }}</li>{% endfor %}
         <li>Korean Production and Operations Management Society: Director and Editorial Board Member</li>
       </ul>
@@ -186,7 +181,7 @@ alternate_url: /ko/
       <p class="card-label">Teaching</p>
       <h3>Research training and analytics education</h3>
       <ul class="compact-list compact-list--stacked">
-        {% for item in site.data.teaching.homepage_cards %}<li><strong>{{ item.title }}</strong><br>{{ item.summary }}</li>{% endfor %}
+        {% for item in site.data.teaching.homepage_cards %}<li>{{ item.title }}</li>{% endfor %}
       </ul>
       <p><a href="{{ '/pages/teaching.html' | relative_url }}">View teaching history</a></p>
     </article>
@@ -200,7 +195,7 @@ alternate_url: /ko/
     <p>Prospective students can review current projects and research opportunities, organizations can use the collaboration inquiry, and academic inquiries are welcome by email.</p>
     <nav class="button-row contact-pathways" aria-label="Contact pathways">
       <a class="button" href="{{ '/pages/people.html#research-opportunities' | relative_url }}" data-analytics-event="student_opportunity_click">Prospective students</a>
-      <a class="button button--secondary" href="{{ '/pages/inquiry.html' | relative_url }}?source=homepage" lang="ko" data-analytics-event="inquiry_page_click">기업 강연·협업 문의</a>
+      <a class="button button--secondary" href="mailto:{{ profile.email }}?subject={{ 'Speaking or collaboration inquiry' | uri_escape }}" data-analytics-event="email_click">Speaking &amp; collaboration</a>
       <a class="button button--ghost" href="mailto:{{ profile.email }}" data-analytics-event="email_click">Academic inquiries</a>
     </nav>
     <p class="contact__name"><strong>{{ profile.name }}</strong> <span lang="ko">{{ profile.name_ko }}</span></p>

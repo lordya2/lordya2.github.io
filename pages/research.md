@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Research
+permalink: /pages/research.html
 hide_page_header: true
 description: Research themes, methods, publications, working papers, and selected work in progress.
 ---
@@ -15,6 +16,11 @@ description: Research themes, methods, publications, working papers, and selecte
 <section class="section page-section" aria-labelledby="research-title">
   <p class="eyebrow">Research</p>
   <h1 id="research-title">Research portfolio</h1>
+  <nav class="page-jump-nav" aria-label="Research sections">
+    <a href="#publications">Publications</a>
+    <a href="#working-papers">Working Papers</a>
+    <a href="#work-in-progress">Work in Progress</a>
+  </nav>
 
   <h2>Research Themes</h2>
   <div class="card-grid card-grid--four">{% for theme in research_themes.themes %}{% assign area = site.data.research_areas | where: "title", theme.title | first %}<article class="card research-theme-card"><h3>{{ theme.title }}</h3>{% if area %}<p>{{ area.summary }}</p>{% endif %}<h4>Representative papers</h4><ul class="representative-paper-list">{% for paper_id in theme.representative_papers %}{% assign paper = publications | where: "id", paper_id | first %}{% if paper %}<li><a href="#publication-{{ paper.id }}">{{ paper.short_title | default: paper.title | default: paper.citation }}</a></li>{% endif %}{% endfor %}</ul></article>{% endfor %}</div>
@@ -22,7 +28,7 @@ description: Research themes, methods, publications, working papers, and selecte
   <h2>Methodology</h2>
   <ul class="pill-list">{% for method in research_themes.methodology %}<li>{{ method }}</li>{% endfor %}</ul>
 
-  <h2>Peer-Reviewed Journal Publications</h2>
+  <h2 id="publications" class="publication-item">Peer-Reviewed Journal Publications</h2>
   <ol class="publication-list">
     {% for paper in peer_reviewed %}
       <li id="publication-{{ paper.id }}" class="publication-item">
@@ -38,8 +44,21 @@ description: Research themes, methods, publications, working papers, and selecte
     {% endfor %}
   </ol>
 
-  <h2>Working Papers</h2>
-  <ol class="publication-list">{% for paper in working_papers %}<li id="publication-{{ paper.id }}" class="publication-item"><p class="publication-citation">{{ paper.citation }}</p><p><span class="status-badge">{{ paper.status }}</span></p>{% if paper.note %}<p class="muted">{{ paper.note }}</p>{% endif %}</li>{% endfor %}</ol>
+  <h2 id="working-papers" class="publication-item">Working Papers</h2>
+  <ol class="publication-list">
+    {% for paper in working_papers %}
+      <li id="publication-{{ paper.id }}" class="publication-item">
+        <p class="publication-citation">{{ paper.citation }}</p>
+        {% if paper.question %}<p><strong>Research question:</strong> {{ paper.question }}</p>{% endif %}
+        <p><span class="status-badge">{{ paper.status }}</span></p>
+        {% if paper.note %}<p class="muted">{{ paper.note }}</p>{% endif %}
+        {% if paper.manuscript_request %}
+          {% assign request_subject = 'Manuscript request: ' | append: paper.short_title %}
+          <p class="link-row publication-links"><a href="mailto:{{ site.data.profile.email }}?subject={{ request_subject | uri_escape }}" aria-label="Request manuscript: {{ paper.short_title | escape }}">Request manuscript</a></p>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ol>
 
   <h2>Book Chapter</h2>
   <ol class="publication-list">{% for item in book_chapter %}<li id="publication-{{ item.id }}">{{ item.citation }}</li>{% endfor %}</ol>
@@ -47,7 +66,7 @@ description: Research themes, methods, publications, working papers, and selecte
   <h2>Publications in Korean with Students</h2>
   <ol class="publication-list">{% for item in korean_publications %}<li id="publication-{{ item.id }}">{{ item.citation }}</li>{% endfor %}</ol>
 
-  <h2>Selected Work in Progress</h2>
+  <h2 id="work-in-progress" class="publication-item">Selected Work in Progress</h2>
   <ol class="publication-list">{% for item in work_in_progress %}<li id="publication-{{ item.id }}" class="publication-item"><p class="publication-citation">{{ item.citation | default: item.title }}</p>{% if item.status or item.target %}<p>{% if item.status %}<span class="status-badge">{{ item.status }}</span>{% endif %}{% if item.target %} <span class="muted">Target: {{ item.target }}.</span>{% endif %}</p>{% endif %}</li>{% endfor %}</ol>
 
   <p><a class="button" href="{{ site.data.profile.cv_url }}" data-analytics-event="cv_download">Download full CV</a></p>

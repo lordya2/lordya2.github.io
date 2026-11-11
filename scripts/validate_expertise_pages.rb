@@ -8,7 +8,7 @@ SITE = File.join(ROOT, '_site')
 INDUSTRY = File.join(SITE, 'pages', 'industry.html')
 EXPLAINER = File.join(SITE, 'ko', 'drug-shortage-recovery', 'index.html')
 KOREAN_HUB = File.join(SITE, 'ko', 'index.html')
-SITEMAP = File.join(ROOT, 'sitemap.xml')
+SITEMAP = File.join(SITE, 'sitemap.xml')
 INQUIRY_SCRIPT = File.join(ROOT, 'assets', 'js', 'inquiry-form.js')
 
 errors = []

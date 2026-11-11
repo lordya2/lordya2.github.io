@@ -6,7 +6,8 @@ description: 이현석 고려대학교 경영대학 교수는 실증 운영관�
 permalink: /ko/
 lang: ko
 alternate_url: /
-body_class: ko-hub
+body_class: ko-hub home-refined
+extra_css: /assets/themes/twitter/css/home-refinement.css
 ---
 {% assign profile = site.data.profile %}
 {% assign people = site.data.people %}
@@ -19,7 +20,7 @@ body_class: ko-hub
     <h1 id="ko-hero-title">{{ profile.name_ko }} 교수</h1>
     <p class="ko-hero__title">{{ profile.positioning_lead_ko }}</p>
     <p class="ko-hero__research">실증 운영관리 · 공급망관리 · 헬스케어 운영</p>
-    <p class="ko-hero__positioning">{{ profile.positioning_ko }}</p>
+    <p class="ko-hero__positioning">기업과 기관의 운영 데이터, 현장실험과 인과추론을 활용해 헬스케어·공급망·리테일과 AI 기반 업무의 성과를 연구합니다.</p>
     <p class="ko-hero__appointment">{{ profile.display_title_ko }}</p>
     <nav class="button-row" aria-label="한국어 허브 주요 경로">
       <a class="button" href="#research">연구 보기</a>
@@ -39,37 +40,32 @@ body_class: ko-hub
 
 {% include book-feature.html lang='ko' %}
 
-<section class="section section--compact section--tinted" aria-labelledby="ko-paths-title">
-  <p class="eyebrow">빠른 안내</p>
-  <h2 id="ko-paths-title">방문 목적에 맞는 정보를 바로 찾으세요</h2>
-  <nav class="ko-path-grid" aria-label="방문 목적별 안내">
-    <a class="ko-path-card" href="#students">
-      <span class="ko-path-card__label">예비학생</span>
-      <strong>연구에 참여하고 싶다면</strong>
-      <span>현재 학생들의 연구, 연구 기회와 연락 방법을 확인할 수 있습니다.</span>
-    </a>
-    <a class="ko-path-card" href="#industry">
-      <span class="ko-path-card__label">기업·기관</span>
-      <strong>운영 문제를 함께 풀고 싶다면</strong>
-      <span>공급망 강연, 운영관리 자문·공동연구와 산학 프로젝트를 논의합니다.</span>
-    </a>
-    <a class="ko-path-card" href="#media">
-      <span class="ko-path-card__label">언론·행사</span>
-      <strong>연구 해설과 인터뷰가 필요하다면</strong>
-      <span>헬스케어 운영과 제약 공급망, 리테일, 플랫폼과 데이터 기반 의사결정을 설명합니다.</span>
-    </a>
-    <a class="ko-path-card" href="#academic">
-      <span class="ko-path-card__label">연구자·학계</span>
-      <strong>논문과 학술 협업을 찾는다면</strong>
-      <span>대표 연구, 전체 연구 포트폴리오, CV와 학술 프로필로 연결합니다.</span>
-    </a>
-  </nav>
+<section class="section section--compact section--tinted" id="updates" aria-labelledby="ko-updates-title">
+  <p class="eyebrow">최근 소식</p>
+  <h2 id="ko-updates-title">연구, 학생 성과와 최근 활동</h2>
+  {% assign recent_news = site.data.news | sort: "date" | reverse %}
+  <ul class="timeline-list">
+    {% for item in recent_news limit:3 %}
+      <li>
+        <time datetime="{{ item.date }}">{{ item.date }}</time>
+        {% assign news_url = item.url_ko | default: item.url %}
+        <span>{% if news_url %}<a href="{{ news_url | relative_url }}">{{ item.text_ko | default: item.text }}</a>{% else %}{{ item.text_ko | default: item.text }}{% endif %}</span>
+      </li>
+    {% endfor %}
+  </ul>
+  <p class="section-actions"><a href="{{ '/pages/news.html' | relative_url }}" data-analytics-event="news_archive_click">전체 소식 보기 <span class="ko-link-note">(영문)</span></a></p>
 </section>
+
+<nav class="home-quick-links" aria-label="방문 목적별 안내">
+  <a href="#students">예비학생 · 연구 참여</a>
+  <a href="#industry">기업·기관 · 강연과 협력</a>
+  <a href="#media">언론 · 연구 해설과 인터뷰</a>
+  <a href="#academic">연구자 · 논문과 학술 활동</a>
+</nav>
 
 <section class="section" id="research" aria-labelledby="ko-research-title">
   <p class="eyebrow">연구</p>
-  <h2 id="ko-research-title">운영관리·공급망·헬스케어의 실제 문제를 연구합니다</h2>
-  <p class="lead-text">이현석 교수는 고려대학교 경영대학에서 실증 운영관리(Empirical Operations Management)를 연구합니다. 기업과 공공기관의 운영 데이터, 현장실험과 인과추론을 활용해 정책과 운영 방식이 실제 성과에 미치는 영향을 분석합니다.</p>
+  <h2 id="ko-research-title">연구 분야</h2>
   <div class="card-grid card-grid--four ko-area-grid">
     {% for area in site.data.research_areas %}
       <article class="card">
@@ -83,10 +79,9 @@ body_class: ko-hub
 <section class="section section--tinted" id="research-impact" aria-labelledby="ko-research-impact-title">
   <p class="eyebrow">대표 연구와 임팩트</p>
   <h2 id="ko-research-impact-title">연구 질문, 주요 결과와 실무적 의미</h2>
-  <p class="lead-text">대표적으로 미국 의약품 부족 데이터를 분석해, 생산공장이 과거 위기에서 축적한 회복 경험이 이후 부족 사태의 회복을 어떻게 앞당기는지 연구했습니다. 이 연구는 Management Science에 온라인 게재되었으며, 고려대학교 공식 보도와 국내 언론, DBR을 통해 소개되었습니다.</p>
   {% assign featured_papers = site.data.publications | where: "featured", true | sort: "featured_order" %}
   <div class="ko-paper-grid">
-    {% for paper in featured_papers limit:5 %}
+    {% for paper in featured_papers limit:3 %}
       <article class="mini-paper ko-paper-card">
         <p class="research-card__venue" lang="en">{{ paper.venue }} · {{ paper.year }}</p>
         <h3>{{ paper.featured_short_title_ko | default: paper.featured_short_title | default: paper.short_title }}</h3>
@@ -113,7 +108,7 @@ body_class: ko-hub
 <section class="section" id="industry" aria-labelledby="ko-industry-title">
   <p class="eyebrow">기업·기관 협력</p>
   <h2 id="ko-industry-title">공급망 강연부터 운영관리 자문·공동연구까지</h2>
-  <p class="lead-text">기업·기관과는 공급망 리스크와 회복탄력성에 관한 강연·임원 워크숍, 데이터 기반 운영관리 자문·공동연구, 고려대 MSBA 캡스톤 및 산학 프로젝트 형태로 협력합니다. 문제를 먼저 정의하고, 활용 가능한 데이터와 의사결정 맥락에 맞춰 협업 방식을 설계합니다.</p>
+  <p class="lead-text">기업의 운영 질문과 데이터에 맞춰 강연·워크숍, 자문·공동연구, MSBA 산학 프로젝트를 함께 설계합니다.</p>
   <div class="card-grid card-grid--three">
     {% for mode in industry.project_modes %}
       <article class="card engagement-card">
@@ -123,7 +118,6 @@ body_class: ko-hub
       </article>
     {% endfor %}
   </div>
-  <p class="collaboration-topics"><strong>주요 협력 주제:</strong> 공급망 중단과 회복탄력성 · 의약품 부족과 제약 공급망 · 수요예측·추천·재고 · 리테일·서비스 운영 · 현장실험과 효과평가 · AI 기반 업무설계</p>
   <div class="button-row section-actions">
     <a class="button" href="{{ '/pages/industry.html' | relative_url }}" data-analytics-event="industry_page_click">기업 강연·자문 및 협업 사례</a>
     <a class="button button--ghost" href="{{ '/ko/drug-shortage-recovery/' | relative_url }}" data-analytics-event="drug_shortage_explainer_click">의약품 부족 연구 해설</a>
@@ -135,7 +129,6 @@ body_class: ko-hub
 <section class="section section--tinted" id="media" aria-labelledby="ko-media-title">
   <p class="eyebrow">미디어와 대외 소통</p>
   <h2 id="ko-media-title">연구와 생각을 기업, 학생, 사회와 나눕니다</h2>
-  <p class="lead-text">의약품 부족과 공급망 회복 연구는 고려대학교 공식 보도, 국내 언론과 DBR 연구 해설을 통해 소개되었습니다. 리테일 운영과 데이터 기반 의사결정에 관한 기고를 이어가는 한편, 브런치 연재 「교수님, 이런 질문 해도 되나요?」에서는 예비대학생과 대학생의 공부·팀플·진로 고민을 함께 생각합니다.</p>
   {% assign latest_selected_media = site.data.media_impact.selected_media | sort: "date" | reverse %}
   {% assign latest_selected_item = latest_selected_media | first %}
   {% assign featured_impact = site.data.media_impact.featured | first %}
@@ -169,34 +162,16 @@ body_class: ko-hub
   </div>
 </section>
 
-<section class="section section--compact" id="updates" aria-labelledby="ko-updates-title">
-  <p class="eyebrow">최근 소식</p>
-  <h2 id="ko-updates-title">연구, 학생 성과와 최근 활동</h2>
-  {% assign recent_news = site.data.news | sort: "date" | reverse %}
-  <ul class="timeline-list">
-    {% for item in recent_news limit:4 %}
-      <li>
-        <time datetime="{{ item.date }}">{{ item.date }}</time>
-        {% assign news_url = item.url_ko | default: item.url %}
-        <span>{% if news_url %}<a href="{{ news_url | relative_url }}">{{ item.text_ko | default: item.text }}</a>{% else %}{{ item.text_ko | default: item.text }}{% endif %}</span>
-      </li>
-    {% endfor %}
-  </ul>
-  <p class="section-actions"><a href="{{ '/pages/news.html' | relative_url }}" data-analytics-event="news_archive_click">전체 소식 보기 <span class="ko-link-note">(영문)</span></a></p>
-</section>
-
 <section class="section section--tinted" id="students" aria-labelledby="ko-students-title">
   <p class="eyebrow">연구 그룹과 연구 기회</p>
   <h2 id="ko-students-title">학생이 질문을 발전시키고 분석을 주도하는 연구</h2>
-  <p class="lead-text">{{ people.group_intro_ko }} {{ people.mentoring_approach_ko }}</p>
+  <p class="lead-text">{{ people.group_intro_ko }}</p>
   <div class="card-grid card-grid--four ko-student-grid">
     {% for student in people.current_students %}
       <article class="card ko-student-card">
-        <p class="ko-student-card__area">{{ student.area_ko }}</p>
         <h3{% unless student.name_ko %} lang="en"{% endunless %}>{% if student.name_ko %}{{ student.name_ko }} <span lang="en">{{ student.name }}</span>{% else %}{{ student.name }}{% endif %}</h3>
-        <p class="ko-student-card__meta">{{ student.program_ko }}{% if student.entry_year %} · {{ student.entry_year }}년 입학{% endif %}</p>
+        <p class="ko-student-card__meta">{{ student.program_ko }}</p>
         <p><strong>{{ student.project_title_ko }}</strong></p>
-        <p>{{ student.project_summary_ko }}</p>
         <p class="ko-student-card__link"><a href="{{ '/pages/people.html#' | append: student.id | relative_url }}">상세 보기 <span class="ko-link-note">(영문)</span></a></p>
       </article>
     {% endfor %}
@@ -210,7 +185,6 @@ body_class: ko-hub
       <div>
         <p class="card-label">학생 성과 · {{ student_achievement.year }}</p>
         <h3>윤세영 학생, 한국연구재단 박사과정생연구장려금지원사업 선정</h3>
-        <p>윤세영 학생이 2026년도 {{ student_achievement.program_ko }}에 선정되었습니다. {{ student_achievement.duration_ko }} 동안 「{{ student_achievement.project_title_ko }}」을 주제로 연구를 수행합니다.</p>
       </div>
       <p><a class="button button--ghost" href="{{ '/pages/people.html#' | append: student_achievement.id | relative_url }}">선정 내용 자세히 보기 <span class="ko-button-note">(영문)</span></a></p>
     </article>
@@ -221,7 +195,7 @@ body_class: ko-hub
       <p class="eyebrow">학회 발표</p>
       <h3 id="ko-conferences-title">학생과 졸업생의 연구 발표</h3>
       <ul>
-        {% for presentation in people.conference_presentations %}
+        {% for presentation in people.conference_presentations limit:2 %}
           <li>
             <strong><span lang="en">{{ presentation.conference }}</span> · {{ presentation.year }}</strong>
             <span>{{ presentation.presenter_ko }} · {{ presentation.location_ko }}</span>
@@ -242,7 +216,7 @@ body_class: ko-hub
       <h3 id="ko-alumni-title">연구 경험을 다음 단계로 연결한 졸업생</h3>
       <ul>
         {% for alum in people.alumni %}
-          <li><strong>{{ alum.name_ko }} <span lang="en">{{ alum.name }}</span></strong><span>{{ alum.degree_ko }} · {{ alum.year }}년 졸업</span><span>{{ alum.placement_ko }}{% if alum.note_ko %} · {{ alum.note_ko }}{% endif %}</span></li>
+          <li><strong>{{ alum.name_ko }} <span lang="en">{{ alum.name }}</span></strong><span>{{ alum.placement_ko }}{% if alum.note_ko %} · {{ alum.note_ko }}{% endif %}</span></li>
         {% endfor %}
       </ul>
     </article>
@@ -256,10 +230,10 @@ body_class: ko-hub
       <p><a class="button" href="{{ '/pages/people.html#research-opportunities' | relative_url }}" data-analytics-event="student_opportunity_click">연구 기회 상세 보기 <span class="ko-button-note">(영문)</span></a></p>
     </div>
     <div>
-      <p><strong>이메일에 포함하면 좋은 내용</strong></p>
-      <ul>
-        {% for item in opportunities.email_guidance_ko %}<li>{{ item }}</li>{% endfor %}
-      </ul>
+      <details class="home-details">
+        <summary>문의 이메일에 포함하면 좋은 내용</summary>
+        <ul>{% for item in opportunities.email_guidance_ko %}<li>{{ item }}</li>{% endfor %}</ul>
+      </details>
       <p class="muted">이메일 연락은 연구 관심과 적합성을 논의하기 위한 것이며, 고려대학교의 공식 입학 절차를 대신하지 않습니다.</p>
       <p><a href="mailto:{{ profile.email }}?subject={{ '연구 참여 문의' | uri_escape }}" data-analytics-event="student_email_click">{{ profile.email }}</a></p>
       <p><a href="https://biz.korea.ac.kr/eng/msphd/intro.html" target="_blank" rel="noopener noreferrer" data-analytics-event="official_admissions_click">KUBS 석·박사과정 공식 안내 <span class="ko-link-note">(영문)</span></a></p>
@@ -286,7 +260,7 @@ body_class: ko-hub
       <p class="card-label">교육</p>
       <h3>연구 방법과 운영분석 교육</h3>
       <ul class="compact-list compact-list--stacked">
-        {% for item in site.data.teaching.homepage_cards %}<li><strong>{{ item.title_ko }}</strong><br>{{ item.summary_ko }}</li>{% endfor %}
+        {% for item in site.data.teaching.homepage_cards %}<li>{{ item.title_ko }}</li>{% endfor %}
       </ul>
       <p><a href="{{ '/pages/teaching.html' | relative_url }}">교육 이력 보기 <span class="ko-link-note">(영문)</span></a></p>
     </article>
@@ -294,8 +268,10 @@ body_class: ko-hub
       <p class="card-label">학술 활동</p>
       <h3>학술지와 학회 봉사</h3>
       <ul class="compact-list compact-list--stacked">
-        <li><span lang="en">Journal of Operations Management</span> Editorial Review Board</li>
-        <li><span lang="en">Decision Sciences</span> Editorial Review Board</li>
+        {% assign editorial_appointments_ko = site.data.awards_service.editorial_appointments_ko | default: site.data.awards_service.editorial_appointments %}
+        {% assign editorial_boards_ko = site.data.awards_service.editorial_review_boards_ko | default: site.data.awards_service.editorial_review_boards %}
+        {% for item in editorial_appointments_ko %}<li>{{ item }}</li>{% endfor %}
+        {% for item in editorial_boards_ko %}<li>{{ item }}</li>{% endfor %}
         <li>한국생산운영관리학회 이사 및 편집위원</li>
       </ul>
       <p><a href="{{ '/pages/award.html' | relative_url }}">학술봉사 보기 <span class="ko-link-note">(영문)</span></a></p>

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Media & Impact
+permalink: /pages/media.html
 hide_page_header: true
 description: Books, media coverage, research impact, and public essays on AI, operations, university life, learning, and career choices.
 ---
@@ -23,19 +24,6 @@ description: Books, media coverage, research impact, and public essays on AI, op
       <p><a href="{{ book.url | append: '#english' | relative_url }}" data-analytics-event="book_detail_click">About the book and where to buy it</a></p>
     </div>
   </article>
-
-  <h2>Featured impact</h2>
-  <div class="media-grid">
-    {% for item in media.featured %}
-      <article class="card media-group">
-        <p class="card-label media-meta">{{ item.type }} · {{ item.date }}</p>
-        <h3>{{ item.title }}</h3>
-        <p>{{ item.summary }}</p>
-        {% if item.related_work %}<p><span class="status-badge">Related research</span> {{ item.related_work }}</p>{% endif %}
-        <p><a href="{{ item.url | relative_url }}" data-analytics-event="media_impact_click">View Media &amp; Impact coverage</a></p>
-      </article>
-    {% endfor %}
-  </div>
 
   <h2>Recent media coverage</h2>
   <div class="media-list">

@@ -1,5 +1,6 @@
 ---
 layout: page
+permalink: /pages/inquiry.html
 title: 기업 강연·운영관리 자문 문의
 seo_title: 기업 강연·운영관리 자문 문의 | 이현석 교수
 hide_page_header: true
@@ -13,7 +14,8 @@ extra_js: /assets/js/inquiry-form.js
 <section class="section page-section inquiry-page" lang="ko" aria-labelledby="inquiry-title">
   <p class="eyebrow">Speaking &amp; Collaboration Inquiry</p>
   <h1 id="inquiry-title">기업 강연·운영관리 자문·공동연구 문의</h1>
-  <p class="lead-text">관심 주제, 참석 대상, 희망 일정, 활용 가능한 데이터의 범위를 알려주시면 적합한 협력 방식을 검토하는 데 도움이 됩니다.</p>
+  <p class="lead-text">강연, 공동연구, 산학 프로젝트 또는 인터뷰에 대해 문의해 주세요. 문의 유형을 선택하면 필요한 항목을 안내합니다.</p>
+  <p class="inquiry-direct">간단한 문의는 <a href="mailto:{{ profile.email }}" data-analytics-event="email_click">{{ profile.email }}</a>로 바로 보내셔도 됩니다.</p>
 
   <div class="inquiry-notice" role="note" aria-labelledby="inquiry-privacy-title">
     <h2 id="inquiry-privacy-title">입력 전 확인해 주세요</h2>
@@ -30,7 +32,7 @@ extra_js: /assets/js/inquiry-form.js
           <input id="inquiry-name" name="name" type="text" autocomplete="name" maxlength="80" required>
         </div>
         <div class="form-field">
-          <label for="inquiry-company">회사·기관 <span aria-hidden="true">*</span></label>
+          <label for="inquiry-company"><span id="company-label">회사·기관</span> <span aria-hidden="true">*</span></label>
           <input id="inquiry-company" name="company" type="text" autocomplete="organization" maxlength="120" required>
         </div>
         <div class="form-field">
@@ -75,32 +77,33 @@ extra_js: /assets/js/inquiry-form.js
             <option>기타</option>
           </select>
         </div>
-        <div class="form-field form-field--wide">
+        <p class="form-help form-field--wide" id="inquiry-type-help" aria-live="polite">문의 유형과 관심 주제를 선택한 뒤, 논의하고 싶은 내용을 적어 주세요.</p>
+        <div class="form-field form-field--wide" data-inquiry-types="executive-workshops">
           <label for="inquiry-audience">대상·참석자 <span aria-hidden="true">*</span></label>
-          <input id="inquiry-audience" name="audience" type="text" maxlength="200" placeholder="예: 본부장급 20명, 데이터·전략 실무자 50명" required>
+          <input id="inquiry-audience" name="audience" type="text" maxlength="200" placeholder="예: 본부장급 20명, 데이터·전략 실무자 50명" data-required-for="executive-workshops">
         </div>
         <div class="form-field form-field--wide">
-          <label for="inquiry-schedule">희망 일정 <span aria-hidden="true">*</span></label>
-          <input id="inquiry-schedule" name="schedule" type="text" maxlength="160" placeholder="예: 10월 중 평일 오후, 협의 가능" required>
+          <label for="inquiry-schedule"><span id="schedule-label">희망 일정</span> <span id="schedule-required" aria-hidden="true" hidden>*</span></label>
+          <input id="inquiry-schedule" name="schedule" type="text" maxlength="160" placeholder="예: 다음 달 평일 오후, 협의 가능" data-required-for="executive-workshops media-interview">
         </div>
-        <div class="form-field form-field--wide">
+        <div class="form-field form-field--wide" data-inquiry-types="advisory-research industry-projects">
           <label for="data-availability">활용 가능 데이터 <span aria-hidden="true">*</span></label>
-          <select id="data-availability" name="data_availability" required aria-describedby="data-safety-note">
+          <select id="data-availability" name="data_availability" data-required-for="advisory-research industry-projects" aria-describedby="data-safety-note">
             <option value="">선택해 주세요</option>
-            <option>해당 없음 - 강연·워크숍</option>
             <option>미정·협의 필요</option>
+            <option>현재 활용 가능한 데이터 없음</option>
             <option>비식별·집계 데이터 활용 가능</option>
             <option>원자료 활용 가능성 내부 검토 필요</option>
           </select>
           <p class="form-help" id="data-safety-note">데이터 파일을 보내지 말고, 보유 데이터의 종류와 활용 가능 수준만 선택해 주세요.</p>
         </div>
-        <div class="form-field form-field--wide">
+        <div class="form-field form-field--wide" data-inquiry-types="advisory-research industry-projects">
           <label for="data-summary">데이터 종류·범위 설명</label>
           <textarea id="data-summary" name="data_summary" rows="4" maxlength="500" placeholder="예: 최근 2년간 월별·상품군별 판매 및 재고 집계 데이터. 비식별·집계 수준에서 활용 가능 여부를 검토 중입니다."></textarea>
         </div>
         <div class="form-field form-field--wide">
-          <label for="inquiry-message">추가로 전할 내용</label>
-          <textarea id="inquiry-message" name="message" rows="5" maxlength="1000" placeholder="다루고 싶은 경영 질문, 기대하는 결과물, 행사 형식 등을 적어 주세요."></textarea>
+          <label for="inquiry-message">문의 내용 <span aria-hidden="true">*</span></label>
+          <textarea id="inquiry-message" name="message" rows="5" maxlength="1000" placeholder="논의하고 싶은 주제와 기대하는 내용을 간략히 적어 주세요." required></textarea>
         </div>
       </div>
     </fieldset>
@@ -117,6 +120,7 @@ extra_js: /assets/js/inquiry-form.js
     </div>
     <p class="form-status" id="inquiry-status" role="status" aria-live="polite"></p>
     <p class="form-help">이메일 앱이 열리지 않으면 ‘문의 내용 복사’를 누른 뒤 <a href="mailto:{{ profile.email }}" data-analytics-event="email_click">{{ profile.email }}</a>로 보내 주세요.</p>
+    <noscript><p class="form-help">문의 유형에 맞는 항목 표시와 내용 복사에는 JavaScript가 필요합니다. 위 이메일 주소로 문의 내용을 직접 보내 주세요.</p></noscript>
   </form>
 
   <aside class="inquiry-resources" aria-labelledby="inquiry-resources-title">

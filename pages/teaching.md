@@ -1,5 +1,6 @@
 ---
 layout: page
+permalink: /pages/teaching.html
 title: Teaching
 hide_page_header: true
 description: Complete institution, course, audience, language, and semester history from the CV.

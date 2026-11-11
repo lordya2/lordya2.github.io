@@ -1,5 +1,6 @@
 ---
 layout: page
+permalink: /pages/people.html
 title: 'Research Group & Opportunities'
 hide_page_header: true
 description: Current students, student-led research, research funding, conference presentations, alumni placements, and research opportunities in empirical operations management at Korea University.
