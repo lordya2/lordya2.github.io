@@ -1,0 +1,28 @@
+.fsu-seminar-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.fsu-location {
+  color: var(--muted);
+}
+
+.fsu-seminar-photos {
+  display: grid;
+  grid-template-columns: minmax(0, .75fr) minmax(0, 1.777fr);
+  align-items: center;
+  gap: .75rem;
+}
+
+@media (max-width: 600px) {
+  .fsu-seminar-photos {
+    grid-template-columns: 1fr;
+  }
+
+  .fsu-seminar-photos img:first-child {
+    width: 68%;
+    margin-inline: auto;
+  }
+}
