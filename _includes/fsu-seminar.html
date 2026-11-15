@@ -1,0 +1,24 @@
+<article class="conference-update">
+  <section class="section" aria-labelledby="fsu-title">
+    <div class="fsu-seminar-meta">
+      <p class="eyebrow">{{ page.event_label }} · <time datetime="2026-11-06">2026-11-06</time></p>
+      {% if page.lang == 'ko' %}
+      <a href="{{ page.alternate_url | relative_url }}" lang="en" hreflang="en">English ↗</a>
+      {% else %}
+      <a href="{{ page.alternate_url | relative_url }}" lang="ko" hreflang="ko">한국어 ↗</a>
+      {% endif %}
+    </div>
+    <div class="conference-update__intro">
+      <h1 id="fsu-title">{{ page.title }}</h1>
+      <p class="fsu-location">{{ page.location }}</p>
+      {{ seminar_body | markdownify }}
+    </div>
+    <figure class="conference-update__hero">
+      <div class="fsu-seminar-photos">
+        <img src="{{ page.og_image | relative_url }}" alt="{{ page.og_image_alt | escape }}" width="900" height="1200">
+        <img src="{{ '/assets/events/fsu-2026/discussion.jpg' | relative_url }}" alt="{{ page.discussion_alt | escape }}" width="1400" height="788">
+      </div>
+      <figcaption>{{ page.caption }}</figcaption>
+    </figure>
+  </section>
+</article>
